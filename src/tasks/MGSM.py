@@ -12,6 +12,7 @@ class MgsmTask(Task):
 
         super().__init__()
 
+        ################################
         # Download dataset
         data_card = "juletxara/mgsm"
         data_dir = "data/MGSM/"
@@ -31,18 +32,101 @@ class MgsmTask(Task):
             dataset["train"].to_pandas().to_csv(os.path.join(lang_dir, "train.tsv"), sep="\t", index=False)
             dataset["test"].to_pandas().to_csv(os.path.join(lang_dir, "test.tsv"), sep="\t", index=False)
 
-        
         # Load the chosen langauge dataset
         chosen_lang = args.chosen_lang
         lang_dir = os.path.join(data_dir, chosen_lang)
         train_file = os.path.join(lang_dir, "train.tsv")
         test_file = os.path.join(lang_dir, "test.tsv")
 
-        train_df = pd.read_csv(train_file, sep="\t", quoting=3)
-        test_df = pd.read_csv(test_file, sep="\t", quoting=3)
+        self.train_data = pd.read_csv(train_file, sep="\t", quoting=3)
+        self.test_data = pd.read_csv(test_file, sep="\t", quoting=3)
 
-        print(train_df.head())
-        print("---------------------------------------")
-        print("---------------------------------------")
-        print("---------------------------------------")
-        print(test_df.head())
+        # Set current data into either train or test
+        self.data = self.train_data
+
+        ################################
+        # Other variable initialization
+        self.stops = ['\n'] * 4
+        self.steps = 4
+        self.value_cache = {}
+
+
+
+    def set_data_split(self, split: str):
+        """
+        Set the current data split (train or test).
+        """
+        if split == "train":
+            self.data = self.train_data
+        elif split == "test":
+            self.data = self.test_data
+        else:
+            raise ValueError("Invalid split. Use 'train' or 'test'.")
+
+    def __len__(self) -> int:
+        """
+        Returns the number of data instances in the current split.
+        """
+        return len(self.data)
+
+    def get_input(self, idx: int) -> str:
+        """
+        Returns the question (input) at the given index in the current split.
+        """
+        if idx < 0 or idx >= len(self.data):
+            raise IndexError("Index out of range.")
+        return self.data.iloc[idx]["question"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
