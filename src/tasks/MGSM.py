@@ -51,7 +51,6 @@ class MgsmTask(Task):
         self.value_cache = {}
 
 
-
     def set_data_split(self, split: str):
         """
         Set the current data split (train or test).
@@ -63,11 +62,13 @@ class MgsmTask(Task):
         else:
             raise ValueError("Invalid split. Use 'train' or 'test'.")
 
+
     def __len__(self) -> int:
         """
         Returns the number of data instances in the current split.
         """
         return len(self.data)
+
 
     def get_input(self, idx: int) -> str:
         """
@@ -79,7 +80,33 @@ class MgsmTask(Task):
 
 
 
+    ##################
+    # TO BE TESTED
+    ##################
+    def test_output(self, idx: int, output: str):
+        """
+        Tests if the output solution matches the correct numeric answer for the problem at index `idx`.
 
+        Args:
+            idx (int): Index of the problem in the dataset.
+            output (str): The generated solution to evaluate.
+
+        Returns:
+            dict: {'r': 1} if the solution is correct, {'r': 0} otherwise.
+        """
+        # Extract the answer expression from the output
+        try:
+            expression = output.strip().split('\n')[-1].lower().replace('answer: ', '').split('=')[0]
+        except IndexError:
+            return {'r': 0}  # Return 0 if the output format is invalid
+
+        # Evaluate the expression and compare to the correct answer
+        correct_answer = self.data.iloc[idx]["answer_number"]
+        try:
+            result = sympy.simplify(expression)
+            return {'r': int(result == correct_answer)}
+        except Exception as e:
+            return {'r': 0}
 
 
 
