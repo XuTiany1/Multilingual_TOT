@@ -4,6 +4,7 @@ import sympy
 import pandas as pd
 from src.tasks.task import Task, DATA_PATH
 from datasets import load_dataset
+from prompts.MGSM_EN import *
 
 
 class MgsmTask(Task):
@@ -51,6 +52,9 @@ class MgsmTask(Task):
         self.value_cache = {}
 
 
+    ##################
+    # HELPER FUNC.
+    ##################
     def set_data_split(self, split: str):
         """
         Set the current data split (train or test).
@@ -109,16 +113,30 @@ class MgsmTask(Task):
             return {'r': 0}
 
 
+    ##################
+    # PROMPT
+    ##################
+    @staticmethod
+    def propose_prompt_wrap(x: str, y: str = '') -> str:
+
+
+
+    @staticmethod
+    def value_prompt_wrap(x:str, y: str) -> str:
+
+
+
+    @staticmethod
+    def value_outputs_unwrap(value_outputs: list) -> float:
+        """
+        value_outputs - a list of the judgements given from model from previous evaluation on the values
+        """
 
 
 
 
-
-
-
-
-
-
+    @staticmethod
+    def final_answer_prompt_wrap(x: str, y: str = '') -> str:
 
 
 

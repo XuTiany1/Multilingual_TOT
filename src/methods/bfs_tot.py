@@ -1,6 +1,7 @@
 import itertools
 import numpy as np
 from functools import partial
+from models.gpt import gpt
 
 
 
@@ -14,7 +15,6 @@ def get_value(task, x, y, n_evaluate_sample, cache_value=True):
     y - current solution candidate
     n_evaluate_sample - number of evaluations for y
     cache_value - boolean to store value
-    
     """
 
 
@@ -27,6 +27,8 @@ def get_values(tasks, x, ys, n_evaluate_sample, cache_value=True):
     cahce_value - boolean to store value
     
     """
+
+
 
 
 def get_votes(task, x, ys, n_evaluate_sample):
@@ -49,6 +51,7 @@ def get_proposals(task, x, y):
 
     this function should continue the solution
     """
+
 
 
 def get_samples(task, x, y, n_generate_sample, prompt_sample, stop):
