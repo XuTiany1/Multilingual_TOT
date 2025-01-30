@@ -2,6 +2,8 @@ import itertools
 import numpy as np
 from functools import partial
 from models.gpt import gpt
+from tasks.MGSM import MgsmTask
+from models.gemma import *
 
 
 
@@ -27,7 +29,6 @@ def get_values(tasks, x, ys, n_evaluate_sample, cache_value=True):
     cahce_value - boolean to store value
     
     """
-
 
 
 
@@ -63,6 +64,17 @@ def get_samples(task, x, y, n_generate_sample, prompt_sample, stop):
     prompt_sample 
     stop - stopping condition 
     """
+
+    if prompt_sample == 'standard':
+        prompt = task.standard_prompt_warp(x)
+    elif prompt_sample == 'cot':
+        prompt = task.cot_prompt_warp(x)
+    else:
+        raise ValueError(f'prompt_sample {prompt_sample} not recognized')
+    
+    samples = gemma_generate(prompt=prompt)
+
+    return samples
 
 
 

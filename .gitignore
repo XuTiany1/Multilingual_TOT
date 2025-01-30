@@ -1,9 +1,12 @@
 # Data
 data/
 
+# Model
+test/
+
+
 # Virtual Env
 tot_venv
-
 
 
 

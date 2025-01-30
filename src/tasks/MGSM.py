@@ -116,13 +116,44 @@ class MgsmTask(Task):
     ##################
     # PROMPT
     ##################
-    @staticmethod
-    def propose_prompt_wrap(x: str, y: str = '') -> str:
 
+    @staticmethod
+    def standard_prompt_wrap(x: str) -> str:
+
+        prompt = standard_prompt.format(
+            question = x
+        )
+        return prompt
+
+    @staticmethod
+    def cot_prompt(x: str) -> str:
+
+        prompt = cot_prompt.format(
+            question = x
+        )
+        return prompt
+
+    @staticmethod
+    def propose_prompt_wrap(num_mathematicians: str, lang: str, x: str, y: str = '') -> str:
+
+        prompt = propose_prompt.format(
+            n = num_mathematicians,
+            lang = lang,
+            question = x,
+            current_thought_process = y
+        )
+
+        return prompt
 
 
     @staticmethod
     def value_prompt_wrap(x:str, y: str) -> str:
+        prompt = value_prompt.format(
+            question = x,
+            curr_candidate = y
+        )
+
+        return prompt
 
 
 

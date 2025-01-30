@@ -1,13 +1,23 @@
 
 
 # standard prompt
-
+standard_prompt = '''
+Answer the following mathematical question. Just input the final answer as a number and nothing else. 
+Question: {question}
+Answer: 
+'''
 
 
 
 
 # cot prompt
-
+cot_prompt = '''
+Answer the following mathematical question. 
+Think this through step by step and leave your thought process below. 
+The last line should be of the form "The answer is xxx" where xxx is a number. 
+Question: {question}
+Step-by-step Answer:
+'''
 
 
 
@@ -66,7 +76,7 @@ Evaluation: sure
 ---
 Question: {question}
 
-Proposed Next Step: {step}
+Proposed Next Step: {curr_candidate}
 
 Evaluation:
 '''
