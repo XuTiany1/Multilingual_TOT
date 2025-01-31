@@ -22,14 +22,12 @@ def extract_thoughts(response):
     # Remove any "<end_of_turn><eos>" if accidentally generated
     response = re.sub(r"<end_of_turn><eos>", "", response)
 
-    # ✅ Extract only lines that start with "Mathematician i:"
     thought_lines = []
     for line in response.split("\n"):
         line = line.strip()
         if line.startswith("Mathematician "):  # Ensure it's a valid response
             thought_lines.append(line)
 
-    # 🚀 Debugging: Print final extracted thought process
     print(f"\n[DEBUG] Extracted Thought Process:\n{repr(thought_lines)}\n")
 
     return "\n".join(thought_lines).strip()  # Return only valid thoughts
@@ -54,7 +52,7 @@ def get_value(task, x, y, n_evaluate_sample, cache_value=True):
     
     # Generate evaluation response using Gemma
     value_outputs = gemma_generate(prompt=value_prompt, max_tokens=50)
-    value = task.value_outputs_unwrap(x, y, value_outputs)
+    value = task.value_outputs_unwrap(value_outputs)
     
     # Cache result
     if cache_value:
@@ -187,7 +185,7 @@ def solve(args, task, idx, to_print=True):
                 if thought.strip():  # Ignore empty lines
                     new_ys.append(y + "\n" + thought)
         
-
+        new_ys = new_ys
         ids = list(range(len(new_ys)))
 
 
@@ -195,8 +193,10 @@ def solve(args, task, idx, to_print=True):
         # Evaluation Step
         if args.method_evaluate == 'vote':
             values = get_votes(task, x, new_ys, args.n_evaluate_sample)
+        
         elif args.method_evaluate == 'value':
             values = get_values(task, x, new_ys, args.n_evaluate_sample)
+        
         elif args.method_evaluate == 'bypass':
             continue
 

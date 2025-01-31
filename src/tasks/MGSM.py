@@ -165,11 +165,36 @@ class MgsmTask(Task):
 
 
     @staticmethod
-    def value_outputs_unwrap(value_outputs: list) -> float:
+    def value_outputs_unwrap(value_outputs: str) -> float:
         """
-        value_outputs - a list of the judgements given from model from previous evaluation on the values
+        Extracts the model's evaluation judgment (sure, likely, impossible) 
+        and converts it into a numerical value.
+
+        Args:
+            value_outputs (str): Model's response containing the evaluation.
+
+        Returns:
+            float: Numeric value corresponding to the evaluation.
         """
-        return 1.1
+        print(f"[DEBUG] Raw Value Output: {repr(value_outputs)}")
+
+        # Normalize output (strip leading/trailing whitespace and convert to lowercase)
+        value_outputs = value_outputs.strip().lower()
+
+        # Extract the first occurrence of "sure", "likely", or "impossible"
+        match = re.search(r"(sure|likely|impossible)", value_outputs)
+        
+        if match:
+            judgment = match.group(1)  # Extract the matched word
+            eval_mapping = {
+                "sure": 1.0,
+                "likely": 0.5,
+                "impossible": 0.0
+            }
+            return eval_mapping[judgment]  # Convert to numerical value
+
+        print(f"[WARNING] Unexpected Value Output: {repr(value_outputs)}. Defaulting to 0.5")
+        return 0.5
 
 
 

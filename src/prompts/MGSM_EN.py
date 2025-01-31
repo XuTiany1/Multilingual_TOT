@@ -43,40 +43,37 @@ propose_prompt = USER_CHAT_TEMPLATE.format(
 
 
 # value_prompt
-value_prompt = '''
-Evaluate whether the given reasoning step contributes meaningfully to solving the problem. Assign one of the following judgments:
-- sure: The step is correct and a logical progression toward the solution.
-- likely: The step is plausible but may need further refinement or is missing key details.
-- impossible: The step is incorrect, irrelevant, or contradicts known facts.
-
----
-Question: Jason had 20 lollipops. He gave Denny some lollipops. Now Jason has 12 lollipops. How many lollipops did Jason give to Denny?
-
-Proposed Next Step: Compute the difference: 20 - 12.
-Evaluation: sure
-
-Proposed Next Step: Express the problem as an equation: 20 - x = 12.
-Evaluation: sure
-
-Proposed Next Step: Assume that Jason gave away 15 lollipops and verify by subtracting: 20 - 15 = 5.
-Evaluation: impossible
-
-Proposed Next Step: Represent the relationship as a fraction: 12 / 20.
-Evaluation: impossible
-
-Proposed Next Step: Consider that Jason's remaining lollipops should be doubled: 12 × 2.
-Evaluation: impossible
-
-Proposed Next Step: Reverse the reasoning by assuming the answer is x and checking if 12 + x = 20.
-Evaluation: sure
-
----
-Question: {question}
-
-Proposed Next Step: {curr_candidate}
-
-Evaluation:
-'''
+value_prompt = USER_CHAT_TEMPLATE.format(
+    prompt="Evaluate whether the given reasoning step contributes meaningfully to solving the problem. "
+           "Answer with just 'Evaluation: sure', 'Evaluation: likely', or 'Evaluation: impossible'. "
+           "Do not include explanations or any additional text.\n\n"
+           "Assign one of the following judgments:\n"
+           "- sure: The step is correct and a logical progression toward the solution.\n"
+           "- likely: The step is plausible but may need further refinement or is missing key details.\n"
+           "- impossible: The step is incorrect, irrelevant, or contradicts known facts.\n\n"
+           "---\n"
+           "Question: A train departs from Station A with 50 passengers. At the next stop, 15 passengers get off, "
+           "and 30 new passengers board. How many passengers are now on the train?\n\n"
+           "Proposed Next Step: Compute the net change: -15 + 30.\nEvaluation: sure\n\n"
+           "Proposed Next Step: Express the situation as an equation: 50 - 15 + 30 = x.\nEvaluation: sure\n\n"
+           "Proposed Next Step: Assume that the train lost 20 passengers at the next stop and check if the total matches.\nEvaluation: impossible\n\n"
+           "Proposed Next Step: Represent the relationship as a percentage: (50 - 15) / 50.\nEvaluation: impossible\n\n"
+           "Proposed Next Step: Consider doubling the number of passengers at each stop.\nEvaluation: impossible\n\n"
+           "Proposed Next Step: Reverse the reasoning by assuming the final count is x and working backward.\nEvaluation: sure\n\n"
+           "---\n"
+           "Question: There were nine computers in the server room. Five more computers were installed each day from Monday to Thursday. "
+           "How many computers are now in the server room?\n\n"
+           "Proposed Next Step: Compute the total computers added: 5 × 4.\nEvaluation: sure\n\n"
+           "Proposed Next Step: Represent the change as an arithmetic sequence: 9 + (5 × n) where n is the number of days.\nEvaluation: sure\n\n"
+           "Proposed Next Step: Consider that the computers were removed instead of added: 9 - (5 × 4).\nEvaluation: impossible\n\n"
+           "Proposed Next Step: Convert the problem into a ratio: (9 / 5) × 4.\nEvaluation: impossible\n\n"
+           "Proposed Next Step: Assume an exponential growth pattern instead of linear addition.\nEvaluation: impossible\n\n"
+           "Proposed Next Step: Check if reversing the calculation still results in 9 initial computers.\nEvaluation: sure\n\n"
+) + "---\n" \
+    "{question}\n\n" \
+    "Proposed Next Step: {curr_candidate}\n\n" \
+    "Evaluation:" \
+    + MODEL_CHAT_TEMPLATE
 
 
 # value_last_step_prompt
