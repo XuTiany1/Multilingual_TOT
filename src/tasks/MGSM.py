@@ -141,7 +141,7 @@ class MgsmTask(Task):
         return prompt
 
     @staticmethod
-    def propose_prompt_wrap(num_mathematicians: str, lang: str, x: str, y: str = '') -> str:
+    def propose_prompt_wrap(num_mathematicians: int, lang: str, x: str, y: str = '') -> str:
 
         prompt = propose_prompt.format(
             n = num_mathematicians,

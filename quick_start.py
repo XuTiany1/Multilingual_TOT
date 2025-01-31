@@ -9,7 +9,7 @@ args = argparse.Namespace(
     lang='en',
     naive_run=False, 
     prompt_sample='cot', 
-    method_generate='sample', 
+    method_generate='propose', 
     method_evaluate='bypass', 
     method_select='greedy', 
     n_generate_sample=1, 
@@ -18,4 +18,4 @@ args = argparse.Namespace(
 
 
 task = MgsmTask(args)
-ys, infos = naive_solve(args, task, 1)
+ys, infos = solve(args, task, 1)

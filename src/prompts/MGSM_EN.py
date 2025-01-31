@@ -20,25 +20,25 @@ cot_prompt = USER_CHAT_TEMPLATE.format(
 
 
 # propose_prompt
-propose_prompt = '''
-Imagine that you are composed of {n} independent mathematicians speaking {lang}, each with a unique perspective on how to tackle a multi-step math problem.
-
-Based on the given question and the current thought process, each mathematician will independently generate one unique, creative, and valid next step** toward solving the problem. Each step should differ in approach, leveraging different mathematical methods, problem breakdowns, or alternative representations.
-
-Each mathematician will explain their reasoning clearly and concisely before proposing their next step. They will only append their first step, allowing further discussion and refinement later.
-
-If no previous context exists, this marks the start of the thought process, and mathematicians will propose different ways to begin solving the problem.
-
-This process continues step by step until a definitive answer is reached.
-
----
-Question: {question}
-
-Context (previous thought process, if any):  
-{current_thought_process}
-
-List of potential future steps (each line represents the perspective of a single mathematician):
-'''
+propose_prompt = USER_CHAT_TEMPLATE.format(
+    prompt="Imagine that you are composed of {n} independent mathematicians speaking {lang}, "
+           "each with a unique perspective on how to tackle a multi-step math problem.\n\n"
+           "Before responding with your thought process, each mathematician should begin their response with "
+           "'Mathematician i: ', where 'i' can be 1, 2, or 3.\n\n"
+           "Based on the given question and the current thought process, each mathematician will independently "
+           "generate one unique, creative, and valid next step toward solving the problem. "
+           "Each step should differ in approach, leveraging different mathematical methods, problem breakdowns, "
+           "or alternative representations.\n\n"
+           "Each mathematician will explain their reasoning clearly and concisely before proposing their next step. "
+           "They will only append their first step, allowing further discussion and refinement later.\n\n"
+           "If no previous context exists, this marks the start of the thought process, and mathematicians will propose "
+           "different ways to begin solving the problem.\n\n"
+           "This process continues step by step until a definitive answer is reached.\n\n"
+) + "---\n" \
+    "Question: {question}\n\n" \
+    "Context (previous thought process, if any):\n{current_thought_process}\n\n" \
+    "List of potential future steps (each line represents the perspective of a single mathematician):\n" \
+    + MODEL_CHAT_TEMPLATE
 
 
 

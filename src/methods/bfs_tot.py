@@ -1,9 +1,38 @@
 import itertools
+import re
 import numpy as np
 from functools import partial
 from src.tasks.MGSM import MgsmTask
 from src.models.gemma import *
 
+
+
+##########################################################################
+# EXTRACT thoughts from tot
+
+def extract_thoughts(response):
+    """
+    Extracts only the generated thought process from Gemma's output.
+    Filters out empty lines and unwanted generic responses.
+    """
+
+    # Remove "<start_of_turn>model" and special tokens
+    response = response.replace("<start_of_turn>model\n", "").strip()
+
+    # Remove any "<end_of_turn><eos>" if accidentally generated
+    response = re.sub(r"<end_of_turn><eos>", "", response)
+
+    # ✅ Extract only lines that start with "Mathematician i:"
+    thought_lines = []
+    for line in response.split("\n"):
+        line = line.strip()
+        if line.startswith("Mathematician "):  # Ensure it's a valid response
+            thought_lines.append(line)
+
+    # 🚀 Debugging: Print final extracted thought process
+    print(f"\n[DEBUG] Extracted Thought Process:\n{repr(thought_lines)}\n")
+
+    return "\n".join(thought_lines).strip()  # Return only valid thoughts
 
 
 
@@ -69,7 +98,7 @@ def get_votes(task, x, ys, n_evaluate_sample):
 
 ##########################################################################
 # GENERATIVE PROMPTS
-def get_proposals(task, x, y):
+def get_proposals(task, x, y, num_generate_sample, language):
     """
     task - task object
     x - input
@@ -77,10 +106,12 @@ def get_proposals(task, x, y):
 
     this function should continue the solution
     """
-    propose_prompt = task.propose_prompt_wrap(x, y)
+    propose_prompt = task.propose_prompt_wrap(num_generate_sample, language, x, y)
     
     # Generate proposals using Gemma
-    proposals = gemma_generate(prompt=propose_prompt, max_tokens=100)
+    proposals = gemma_generate(prompt=propose_prompt, max_tokens=500)
+
+    print(proposals)
     
     # Split into multiple steps if necessary
     proposals = proposals.split("\n")
@@ -106,7 +137,7 @@ def get_samples(task, x, y, n_generate_sample, prompt_sample, stop):
         raise ValueError(f'prompt_sample {prompt_sample} not recognized')
     
     print(f"\n[DEBUG] Final Prompt:\n{repr(prompt)}\n")
-    
+
     # Generate samples using Gemma
     answer = gemma_generate(prompt=prompt, max_tokens=500)
 
@@ -141,9 +172,22 @@ def solve(args, task, idx, to_print=True):
                                   stop=task.stops[step]) for y in ys]
         # ToT
         elif args.method_generate == 'propose':
-            new_ys = [get_proposals(task, x, y) for y in ys]
+
+            new_ys = []
+
+            for y in ys:
+                proposals = get_proposals(task, 
+                                    x,
+                                    y,
+                                    args.n_generate_sample,
+                                    args.lang)
+            
+            # Each new thought should build on the previous one
+            for thought in proposals:
+                if thought.strip():  # Ignore empty lines
+                    new_ys.append(y + "\n" + thought)
         
-        new_ys = list(itertools.chain(*new_ys))
+
         ids = list(range(len(new_ys)))
 
 
