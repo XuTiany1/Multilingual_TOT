@@ -133,7 +133,7 @@ class MgsmTask(Task):
         return prompt
 
     @staticmethod
-    def cot_prompt(x: str) -> str:
+    def cot_prompt_wrap(x: str) -> str:
 
         prompt = cot_prompt.format(
             question = x

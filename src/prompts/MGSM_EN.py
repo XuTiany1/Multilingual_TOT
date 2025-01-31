@@ -11,14 +11,11 @@ standard_prompt = USER_CHAT_TEMPLATE.format(
 
 
 # cot prompt
-cot_prompt = '''
-Answer the following mathematical question. 
-Think this through step by step and leave your thought process below. 
-The last line should be of the form "The answer is xxx" where xxx is a number. 
-Question: {question}
-Step-by-step Answer:
-'''
-
+cot_prompt = USER_CHAT_TEMPLATE.format(
+    prompt="Answer the following mathematical question. "
+           "Think this through step by step and leave your thought process below. "
+           "The last line should be of the form 'The answer is xxx' where xxx is a number.\n"
+) + "Question: {question}\nStep-by-step Answer:\n" + MODEL_CHAT_TEMPLATE
 
 
 
