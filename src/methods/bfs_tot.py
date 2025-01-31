@@ -180,10 +180,10 @@ def solve(args, task, idx, to_print=True):
                                     args.n_generate_sample,
                                     args.lang)
             
-            # Each new thought should build on the previous one
-            for thought in proposals:
-                if thought.strip():  # Ignore empty lines
-                    new_ys.append(y + "\n" + thought)
+                # Each new thought should build on the previous one
+                for thought in proposals:
+                    if thought.strip():  # Ignore empty lines
+                        new_ys.append(y + "\n" + thought)
         
         new_ys = new_ys
         ids = list(range(len(new_ys)))
