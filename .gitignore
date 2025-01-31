@@ -4,6 +4,7 @@ data/
 # Model
 test/
 models/
+src/models/__pycache__/
 
 
 # Virtual Env
