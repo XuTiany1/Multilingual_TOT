@@ -1,11 +1,11 @@
-
+USER_CHAT_TEMPLATE = "<start_of_turn>user\n{prompt}<end_of_turn><eos>\n"
+MODEL_CHAT_TEMPLATE = "<start_of_turn>model\n"
 
 # standard prompt
-standard_prompt = '''
-Answer the following mathematical question. Just input the final answer as a number and nothing else. 
-Question: {question}
-Answer: 
-'''
+standard_prompt = USER_CHAT_TEMPLATE.format(
+    prompt="Answer the following mathematical question. Just input the final answer as a number and nothing else.\n"
+) + "{question}\nAnswer: " + MODEL_CHAT_TEMPLATE
+
 
 
 

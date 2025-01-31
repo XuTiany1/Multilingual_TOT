@@ -104,7 +104,9 @@ def get_samples(task, x, y, n_generate_sample, prompt_sample, stop):
         prompt = task.cot_prompt_wrap(x)
     else:
         raise ValueError(f'prompt_sample {prompt_sample} not recognized')
-
+    
+    print(f"\n[DEBUG] Final Prompt:\n{repr(prompt)}\n")
+    
     # Generate samples using Gemma
     answer = gemma_generate(prompt=prompt, max_tokens=500)
 

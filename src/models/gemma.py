@@ -1,26 +1,40 @@
 import os
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from huggingface_hub import login
 
 
 # Select GPU manually (GPU 1, because it's free)
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+
+print(f"CUDA_VISIBLE_DEVICES set to: {os.environ.get('CUDA_VISIBLE_DEVICES')}")
+
+
+assert torch.cuda.device_count() == 1, f"Expected only 1 visible GPU, found {torch.cuda.device_count()}."
+
 
 # Check if GPU is available
-device = "cuda" if torch.cuda.is_available() else "cpu"
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 torch_dtype = torch.float16 if torch.cuda.is_available() else torch.float32  # Use FP16 on GPU
 
+
 print(f"Using device: {device}")
+print(f"CUDA_VISIBLE_DEVICES: {os.environ.get('CUDA_VISIBLE_DEVICES')}")
+print(f"Allocated GPU Memory: {torch.cuda.memory_allocated(device)}")
+print(f"Reserved GPU Memory: {torch.cuda.memory_reserved(device)}")
+
+# Debug: Check GPU mapping
+print(f"Available GPUs in this process: {torch.cuda.device_count()}")
+for i in range(torch.cuda.device_count()):
+    print(f"GPU {i}: {torch.cuda.get_device_name(i)}")
 
 # Define the model directory
-model_dir = os.path.expanduser("~/Tianyi/Multilingual_TOT/models/gemma-2-9b")
+model_dir = os.path.expanduser("~/Tianyi/Multilingual_TOT/models/gemma-2-9b-it")
 
 # Ensure the directory exists
 os.makedirs(model_dir, exist_ok=True)
 
 # Model name
-model_name = "google/gemma-2-9b"
+model_name = "google/gemma-2-9b-it"
 
 # Load tokenizer and model
 if not os.path.exists(os.path.join(model_dir, "config.json")):
@@ -42,6 +56,10 @@ else:
     )
 
 # Move model to the correct device and set to evaluation mode
+print(f"Using device: {device}")
+print(f"CUDA_VISIBLE_DEVICES: {os.environ.get('CUDA_VISIBLE_DEVICES')}")
+print(f"Allocated GPU Memory: {torch.cuda.memory_allocated(device)}")
+print(f"Reserved GPU Memory: {torch.cuda.memory_reserved(device)}")
 model.to(device)
 model.eval()
 
@@ -49,16 +67,11 @@ print("Model loaded successfully!")
 
 
 def gemma_generate(prompt, max_tokens=10, temperature=0.2, top_p=0.5):
-
-    prompt = (
-        "Answer the following mathematical question. Just input the final answer as a number and nothing else.\n"
-        "Question: I have two apples. I get another apple. How many apples do I have now?\nAnswer: "
-    )
     
     inputs = tokenizer(prompt, return_tensors="pt").to(device)
 
     # Debugging: Print tokenized input IDs
-    print(f"Tokenized input IDs: {inputs['input_ids']}")
+    print(f"\n[DEBUG] Tokenized Input IDs: {inputs['input_ids']}\n")
 
     with torch.no_grad():
         outputs = model.generate(
@@ -67,7 +80,8 @@ def gemma_generate(prompt, max_tokens=10, temperature=0.2, top_p=0.5):
             max_new_tokens=max_tokens,
             temperature=temperature,
             top_p=top_p,
-            do_sample=False  # Ensures a deterministic output
+            do_sample=False,
+            eos_token_id=tokenizer.eos_token_id  
         )
 
     print(f"Generated Raw Tokens: {outputs}")  # Debugging
@@ -80,7 +94,35 @@ def gemma_generate(prompt, max_tokens=10, temperature=0.2, top_p=0.5):
 
     return response.strip()
 
-#def gemma_generate(prompt, max_tokens=100, temperature=0.7, top_p=0.9):
+# Example test
+if __name__ == "__main__":
+    prompt = (
+        "Answer the following mathematical question.\n"
+        "Provide only the final number as the answer. Do not explain anything.\n"
+        "Question: I have two apples. I get another apple. How many apples do I have now?\n"
+        "Answer: "
+    )
+    
+    response = gemma_generate(prompt, max_tokens=10, temperature=0.2, top_p=0.5)
+    print(f"Model Response: {response}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #def gemma_generate(prompt, max_tokens=100, temperature=0.7, top_p=0.9):
 #    """
 #    Generates text using Gemma 2-9B.
 #
@@ -113,15 +155,3 @@ def gemma_generate(prompt, max_tokens=10, temperature=0.2, top_p=0.5):
 #    response = tokenizer.decode(generated_tokens, skip_special_tokens=True)
 #
 #    return response.strip()  # Remove trailing spaces/newlines
-
-# Example test
-if __name__ == "__main__":
-    prompt = (
-        "Answer the following mathematical question. Just input the final answer as a number and nothing else.\n"
-        "Question: I have two apples. I get another apple. How many apples do I have now?\nAnswer: "
-    )
-    
-    response = gemma_generate(prompt, max_tokens=10, temperature=0.2, top_p=0.5)
-    print(f"Model Response: {response}")
-
-    
