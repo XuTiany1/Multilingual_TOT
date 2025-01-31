@@ -4,7 +4,7 @@ import sympy
 import pandas as pd
 from src.tasks.task import Task, DATA_PATH
 from datasets import load_dataset
-from prompts.MGSM_EN import *
+from src.prompts.MGSM_EN import *
 
 
 class MgsmTask(Task):
@@ -22,11 +22,18 @@ class MgsmTask(Task):
 
         # Download and save datasets for each language
         for curr_lang in languages:
+
+            lang_dir = os.path.join(data_dir, curr_lang)
+            train_file = os.path.join(lang_dir, "train.tsv")
+            test_file = os.path.join(lang_dir, "test.tsv")
+
+            # Skip downloading if files already exist
+            if os.path.exists(train_file) and os.path.exists(test_file):
+                print(f"Dataset for {curr_lang} already exists. Skipping download.")
+                continue  # Skip to next language
+
             print(f"Downloading dataset for language: {curr_lang}")
             dataset = load_dataset(data_card, curr_lang)
-            
-            # Save to disk in the corresponding directory
-            lang_dir = os.path.join(data_dir, curr_lang)
             os.makedirs(lang_dir, exist_ok=True)
 
             # Save train and test splits as TSV files
@@ -34,7 +41,7 @@ class MgsmTask(Task):
             dataset["test"].to_pandas().to_csv(os.path.join(lang_dir, "test.tsv"), sep="\t", index=False)
 
         # Load the chosen langauge dataset
-        chosen_lang = args.chosen_lang
+        chosen_lang = args.lang
         lang_dir = os.path.join(data_dir, chosen_lang)
         train_file = os.path.join(lang_dir, "train.tsv")
         test_file = os.path.join(lang_dir, "test.tsv")
@@ -162,12 +169,9 @@ class MgsmTask(Task):
         """
         value_outputs - a list of the judgements given from model from previous evaluation on the values
         """
+        return 1.1
 
 
-
-
-    @staticmethod
-    def final_answer_prompt_wrap(x: str, y: str = '') -> str:
 
 
 

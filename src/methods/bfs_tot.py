@@ -1,9 +1,8 @@
 import itertools
 import numpy as np
 from functools import partial
-from models.gpt import gpt
-from tasks.MGSM import MgsmTask
-from models.gemma import *
+from src.tasks.MGSM import MgsmTask
+from src.models.gemma import *
 
 
 
@@ -18,9 +17,24 @@ def get_value(task, x, y, n_evaluate_sample, cache_value=True):
     n_evaluate_sample - number of evaluations for y
     cache_value - boolean to store value
     """
+    value_prompt = task.value_prompt_wrap(x, y)
+    
+    # Cache check
+    if cache_value and value_prompt in task.value_cache:
+        return task.value_cache[value_prompt]
+    
+    # Generate evaluation response using Gemma
+    value_outputs = gemma_generate(prompt=value_prompt, max_tokens=50)
+    value = task.value_outputs_unwrap(x, y, value_outputs)
+    
+    # Cache result
+    if cache_value:
+        task.value_cache[value_prompt] = value
+
+    return value
 
 
-def get_values(tasks, x, ys, n_evaluate_sample, cache_value=True):
+def get_values(task, x, ys, n_evaluate_sample, cache_value=True):
     """
     task - task object
     x - input
@@ -29,7 +43,18 @@ def get_values(tasks, x, ys, n_evaluate_sample, cache_value=True):
     cahce_value - boolean to store value
     
     """
+    values = []
+    local_value_cache = {}
 
+    for y in ys:  # Iterate over each solution candidate
+        if y in local_value_cache:  # Avoid duplicate evaluation
+            value = 0
+        else:
+            value = get_value(task, x, y, n_evaluate_sample, cache_value=cache_value)
+            local_value_cache[y] = value
+        values.append(value)
+    
+    return values
 
 
 def get_votes(task, x, ys, n_evaluate_sample):
@@ -52,7 +77,15 @@ def get_proposals(task, x, y):
 
     this function should continue the solution
     """
+    propose_prompt = task.propose_prompt_wrap(x, y)
+    
+    # Generate proposals using Gemma
+    proposals = gemma_generate(prompt=propose_prompt, max_tokens=100)
+    
+    # Split into multiple steps if necessary
+    proposals = proposals.split("\n")
 
+    return [y + _ + '\n' for _ in proposals]
 
 
 def get_samples(task, x, y, n_generate_sample, prompt_sample, stop):
@@ -66,15 +99,16 @@ def get_samples(task, x, y, n_generate_sample, prompt_sample, stop):
     """
 
     if prompt_sample == 'standard':
-        prompt = task.standard_prompt_warp(x)
+        prompt = task.standard_prompt_wrap(x)
     elif prompt_sample == 'cot':
-        prompt = task.cot_prompt_warp(x)
+        prompt = task.cot_prompt_wrap(x)
     else:
         raise ValueError(f'prompt_sample {prompt_sample} not recognized')
-    
-    samples = gemma_generate(prompt=prompt)
 
-    return samples
+    # Generate samples using Gemma
+    answer = gemma_generate(prompt=prompt, max_tokens=500)
+
+    return answer
 
 
 
@@ -117,6 +151,8 @@ def solve(args, task, idx, to_print=True):
             values = get_votes(task, x, new_ys, args.n_evaluate_sample)
         elif args.method_evaluate == 'value':
             values = get_values(task, x, new_ys, args.n_evaluate_sample)
+        elif args.method_evaluate == 'bypass':
+            continue
 
 
         ############################
@@ -129,7 +165,15 @@ def solve(args, task, idx, to_print=True):
         # Sample top k by greedy
         elif args.method_select == 'greedy':
             select_ids = sorted(ids, key=lambda x: values[x], reverse=True)[:args.n_select_sample]
+        
+        elif args.method_select == 'bypass':
+            continue
+        
+
         select_new_ys = [new_ys[select_id] for select_id in select_ids]
+
+
+    
         
 
         ############################
@@ -154,7 +198,29 @@ def solve(args, task, idx, to_print=True):
 
 
 
+def naive_solve(args, task, idx, to_print=True):
+    """
+    A simple solver using Gemma to generate responses.
 
+    Args:
+        args - argument object containing method configurations
+        task - the problem-solving task instance
+        idx - index of the input in the dataset
+        to_print - whether to print the results
+
+    Returns:
+        Generated response and metadata
+    """
+    # Get the input for the given index
+    x = task.get_input(idx)
+
+    # Generate samples using Gemma
+    ys = get_samples(task, x, '', args.n_generate_sample, args.prompt_sample, stop=None)
+
+    if to_print:
+        print(f"Generated response: {ys}")
+
+    return ys, {}
 
 
 

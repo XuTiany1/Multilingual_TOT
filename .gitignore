@@ -3,6 +3,7 @@ data/
 
 # Model
 test/
+models/
 
 
 # Virtual Env
