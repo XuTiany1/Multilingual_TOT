@@ -76,39 +76,57 @@ value_prompt = USER_CHAT_TEMPLATE.format(
     + MODEL_CHAT_TEMPLATE
 
 
-# value_last_step_prompt
-value_last_step_prompt = '''
-Evaluate whether the given reasoning chain and final answer correctly solve the problem. The answer must be mathematically valid, use correct logical steps, and reach the correct final result.
+# Force output prompt
+force_output_prompt = USER_CHAT_TEMPLATE.format(
+    prompt="Given all the context below, formulate the final answer to the problem.\n\n"
+           "Follow these rules strictly:\n"
+           "- Write the equations step by step, explaining each calculation logically.\n"
+           "- Build upon the provided context, ensuring every step is a logical continuation.\n"
+           "- Do not repeat any steps already present in the context.\n"
+           "- On the last line, provide the final answer as a number and nothing else.\n\n"
+           "Context (previous thought process, if any):\n"
+           "{context}\n\n"
+           "---\n"
+           "Question: A bakery sells 25 loaves of bread every hour. If the bakery operates for 8 hours, "
+           "how many loaves of bread does it sell in a day?\n\n"
+           "To determine the total number of loaves sold, I will calculate the number of loaves sold each hour.\n"
+           "The bakery sells 25 loaves per hour.\n"
+           "Since the bakery operates for 8 hours, I will multiply 25 by 8.\n\n"
+           "25 × 8 = 200.\n"
+           "Final Answer: 200\n\n"
+           "---\n"
+           "Question: A car travels at a speed of 60 km/h. How far does it travel in 3 hours?\n\n"
+           "First, I will identify the known values.\n"
+           "The car’s speed is 60 km/h, and the time traveled is 3 hours.\n"
+           "I will use the formula: Distance = Speed × Time.\n"
+           "60 × 3 = 180.\n"
+           "Final Answer: 180\n\n"
+) + "---\n" \
+    "Context (previous thought process, if any):\n{context}\n\n" \
+    "Question: {question}\n\n" \
+    "Solution:\n" \
+    "Step 1: " \
+    + MODEL_CHAT_TEMPLATE
 
----
-Question: Jason had 20 lollipops. He gave Denny some lollipops. Now Jason has 12 lollipops. How many lollipops did Jason give to Denny?
 
-Step-by-Step Answer: Jason started with 20 lollipops. He now has 12 lollipops. The difference between the starting amount and the current amount is 20 - 12 = 8. The answer is 8.
-Judgment: sure
-
-Step-by-Step Answer: Jason started with 20 lollipops. He assumes that he gave away 10 lollipops, so 20 - 10 = 10. The answer is 10.
-Judgment: impossible
-
-Step-by-Step Answer: Jason had 20 lollipops. We assume the remaining lollipops were 5, so we calculate the difference: 20 - 5 = 15. The answer is 15.
-Judgment: impossible
-
-Step-by-Step Answer: Jason started with 20 lollipops. He gave away x lollipops, so we set up the equation 20 - x = 12. Solving for x, we get x = 8. The answer is 8.
-Judgment: sure
-
----
-Question: {question}
-
-Step-by-Step Answer: {answer}
-
-Judgment:
-'''
-
-
-
-
-
-
-
+# Choose final answer
+final_judge_prompt = USER_CHAT_TEMPLATE.format(
+    prompt="You are a mathematical judge tasked with determining the final answer to a problem.\n\n"
+           "First, carefully analyze the problem statement. Then, rigorously examine the candidate answers given below.\n"
+           "Compare the reasoning in each candidate answer and determine the most accurate final result.\n\n"
+           "Follow these rules:\n"
+           "- Think through the problem logically before making a decision.\n"
+           "- If there are multiple valid answers, choose the most well-reasoned one.\n"
+           "- If there is any inconsistency or missing steps in a candidate answer, do not consider it.\n"
+           "- Your final output should be the single correct number, without any explanations or extra text.\n\n"
+           "---\n"
+           "Problem Statement:\n"
+           "{question}\n\n"
+           "Candidate Answers:\n"
+           "{candidate_answers}\n\n"
+           "---\n"
+           "Final Answer: "
+) + MODEL_CHAT_TEMPLATE
 
 
 

@@ -55,7 +55,7 @@ class MgsmTask(Task):
         ################################
         # Other variable initialization
         self.stops = ['\n'] * 4
-        self.steps = 4
+        self.steps = 3
         self.value_cache = {}
 
 
@@ -94,30 +94,24 @@ class MgsmTask(Task):
     ##################
     # TO BE TESTED
     ##################
-    def test_output(self, idx: int, output: str):
+    def ground_truth_answer(self, idx: int):
         """
-        Tests if the output solution matches the correct numeric answer for the problem at index `idx`.
-
-        Args:
-            idx (int): Index of the problem in the dataset.
-            output (str): The generated solution to evaluate.
-
-        Returns:
-            dict: {'r': 1} if the solution is correct, {'r': 0} otherwise.
+        output answer
         """
-        # Extract the answer expression from the output
-        try:
-            expression = output.strip().split('\n')[-1].lower().replace('answer: ', '').split('=')[0]
-        except IndexError:
-            return {'r': 0}  # Return 0 if the output format is invalid
+        print(self.data.iloc[idx])
+        print(self.data.iloc[idx]["answer_number"])
+        return self.data.iloc[idx]["answer_number"]
+    
+    # Normalize the outputs by removing non-numeric characters and extra spaces
+    def model_answer(self, answer):
+        answer = str(answer).strip().lower()  # Ensure it's a string and normalize case
+        answer = re.sub(r"[^\d.]", "", answer)  # Remove non-numeric characters except '.'
 
-        # Evaluate the expression and compare to the correct answer
-        correct_answer = self.data.iloc[idx]["answer_number"]
+
         try:
-            result = sympy.simplify(expression)
-            return {'r': int(result == correct_answer)}
-        except Exception as e:
-            return {'r': 0}
+            return int(float(answer))  # Converts to float first, then int to remove decimals
+        except ValueError:
+            return None  # Return None if no valid number is found
 
 
     ##################
@@ -195,8 +189,26 @@ class MgsmTask(Task):
 
         print(f"[WARNING] Unexpected Value Output: {repr(value_outputs)}. Defaulting to 0.5")
         return 0.5
+    
+    @staticmethod
+    def force_output_prompt_wrap(x: str, y: str):
+        prompt = force_output_prompt.format(
+            question = x,
+            context = y
+        )
+
+        return prompt
 
 
+
+    @staticmethod
+    def final_judgement_wrap(x: str, ys: str):
+        prompt = final_judge_prompt.format(
+            question=x,
+            candidate_answers=ys
+        )
+
+        return prompt
 
 
 

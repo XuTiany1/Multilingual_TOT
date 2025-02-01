@@ -142,6 +142,41 @@ def get_samples(task, x, y, n_generate_sample, prompt_sample, stop):
     return answer
 
 
+##########################################################################
+# FORCE OUTPUT PROMPT
+def get_answers(task, x, ys):
+    """
+    task - task object
+    x - input
+    y - current unfinished solution from last step
+
+    this function should continue the solution
+    """
+
+
+    answers = []
+    local_answer_cache = {}
+
+
+    for y in ys:  # Iterate over each solution candidate
+
+        if y in local_answer_cache:  # Avoid duplicate evaluation
+            continue
+        else:
+            final_answer_prompt = task.force_output_prompt_wrap(x, y)
+            answer = gemma_generate(prompt=final_answer_prompt, max_tokens=500)
+            local_answer_cache[y] = answer
+        answers.append(answer)
+    
+    return answers
+
+def finalize_answer(task, x, ys):
+
+    final_judgement_prompt = task.final_judgement_wrap(x, ys)
+    answer = gemma_generate(prompt=final_judgement_prompt, max_tokens=100)
+
+    return answer
+
 
 ##########################################################################
 # SOLVE
@@ -155,7 +190,7 @@ def solve(args, task, idx, to_print=True):
     ys = ['']               # current output candidates
     infos = []
 
-    for step in range (task.steps):
+    for step in range (task.steps - 1):
         
         ############################
         # Generation Step
@@ -232,11 +267,17 @@ def solve(args, task, idx, to_print=True):
         ys = select_new_ys
 
 
+    ######################
+    # Force the final output
+    final_answers = get_answers(task, x, ys)
 
     if to_print: 
         print(ys)
+        print(f"final candidates: {final_answers}")
+    
+    model_output = finalize_answer(task, x, final_answers)
 
-    return ys, {'steps': infos}
+    return ys, {'steps': infos}, final_answers, model_output
 
 
 
