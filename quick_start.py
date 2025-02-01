@@ -3,10 +3,11 @@ from src.methods.bfs_tot import solve, naive_solve
 from src.tasks.MGSM import MgsmTask
 import re
 
+# languages = ['en', 'es', 'fr', 'de', 'ru', 'zh', 'ja', 'th', 'sw', 'bn', 'te']
 
 args = argparse.Namespace( 
     task='MGSM', 
-    lang='en',
+    lang='fr',
     naive_run=False, 
     prompt_sample='cot', 
     method_generate='propose', 
