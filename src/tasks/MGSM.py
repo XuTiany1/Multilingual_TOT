@@ -50,12 +50,12 @@ class MgsmTask(Task):
         self.test_data = pd.read_csv(test_file, sep="\t", quoting=3)
 
         # Set current data into either train or test
-        self.data = self.train_data
+        self.data = self.test_data
 
         ################################
         # Other variable initialization
         self.stops = ['\n'] * 4
-        self.steps = 3
+        self.steps = 5
         self.value_cache = {}
 
 

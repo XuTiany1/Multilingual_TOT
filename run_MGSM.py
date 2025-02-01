@@ -23,7 +23,7 @@ args = argparse.Namespace(
 task = MgsmTask(args)
 
 # Define test range
-num_samples = 2  # Adjust the number of test samples
+num_samples = 250  # Adjust the number of test samples
 correct_count = 0
 
 # Create a log directory if it doesn’t exist
