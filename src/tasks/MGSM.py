@@ -162,7 +162,7 @@ class MgsmTask(Task):
     def value_outputs_unwrap(value_outputs: str) -> float:
         """
         Extracts the model's evaluation judgment (sure, likely, impossible) 
-        and converts it into a numerical value.
+        in multiple languages and converts it into a numerical value.
 
         Args:
             value_outputs (str): Model's response containing the evaluation.
@@ -175,20 +175,41 @@ class MgsmTask(Task):
         # Normalize output (strip leading/trailing whitespace and convert to lowercase)
         value_outputs = value_outputs.strip().lower()
 
-        # Extract the first occurrence of "sure", "likely", or "impossible"
-        match = re.search(r"(sure|likely|impossible)", value_outputs)
-        
-        if match:
-            judgment = match.group(1)  # Extract the matched word
-            eval_mapping = {
-                "sure": 1.0,
-                "likely": 0.5,
-                "impossible": 0.0
-            }
-            return eval_mapping[judgment]  # Convert to numerical value
+        # Multi-language mapping of judgments to numeric values
+        multilang_eval_mapping = {
+            # English
+            "sure": 1.0, "likely": 0.5, "impossible": 0.0,
+            # French
+            "sûr": 1.0, "probable": 0.5, "impossible": 0.0,
+            # Bengali
+            "নিশ্চিত": 1.0, "সম্ভাব্য": 0.5, "অসম্ভব": 0.0,
+            # German
+            "sicher": 1.0, "wahrscheinlich": 0.5, "unmöglich": 0.0,
+            # Spanish
+            "seguro": 1.0, "probable": 0.5, "imposible": 0.0,
+            # Japanese
+            "確実": 1.0, "可能性あり": 0.5, "不可能": 0.0,
+            # Russian
+            "верно": 1.0, "вероятно": 0.5, "невозможно": 0.0,
+            # Swahili
+            "hakika": 1.0, "huenda": 0.5, "haiwezekani": 0.0,
+            # Telugu
+            "ఖచ్చితంగా": 1.0, "బహుశా": 0.5, "అసాధ్యం": 0.0,
+            # Thai
+            "แน่นอน": 1.0, "น่าจะเป็นไปได้": 0.5, "เป็นไปไม่ได้": 0.0,
+            # Chinese (Simplified)
+            "确定": 1.0, "可能": 0.5, "不可能": 0.0
+        }
 
-        print(f"[WARNING] Unexpected Value Output: {repr(value_outputs)}. Defaulting to 0.5")
-        return 0.5
+        # Regex pattern to match any of the known judgment words
+        pattern = r"\b(" + "|".join(re.escape(k) for k in multilang_eval_mapping.keys()) + r")\b"
+
+        # Search for the first matching judgment
+        match = re.search(pattern, value_outputs)
+        if match:
+            return multilang_eval_mapping[match.group(1)]  # Convert to numerical value
+
+        return 0.5  # Default if no valid judgment is found
     
     @staticmethod
     def force_output_prompt_wrap(x: str, y: str):

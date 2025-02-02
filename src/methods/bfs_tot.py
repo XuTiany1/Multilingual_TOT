@@ -298,6 +298,10 @@ def naive_solve(args, task, idx, to_print=True):
     # Generate samples using Gemma
     ys = get_samples(task, x, '', args.n_generate_sample, args.prompt_sample, stop=None)
 
+    if args.prompt_sample == 'cot':
+        match = re.search(r'The answer is (\d+)', ys)
+        ys = int(match.group(1)) if match else None
+
     if to_print:
         print(f"Generated response: {ys}")
 
