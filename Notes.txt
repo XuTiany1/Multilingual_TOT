@@ -1,0 +1,4 @@
+first run param:
+
+generate:1, MGSMstep = 5, select sample = 2
+

@@ -55,7 +55,7 @@ class MgsmTask(Task):
         ################################
         # Other variable initialization
         self.stops = ['\n'] * 4
-        self.steps = 5
+        self.steps = 4
         self.value_cache = {}
 
 

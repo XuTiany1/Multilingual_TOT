@@ -28,8 +28,6 @@ def extract_thoughts(response):
         if line.startswith("Mathematician "):  # Ensure it's a valid response
             thought_lines.append(line)
 
-    print(f"\n[DEBUG] Extracted Thought Process:\n{repr(thought_lines)}\n")
-
     return "\n".join(thought_lines).strip()  # Return only valid thoughts
 
 
@@ -108,8 +106,6 @@ def get_proposals(task, x, y, num_generate_sample, language):
     
     # Generate proposals using Gemma
     proposals = gemma_generate(prompt=propose_prompt, max_tokens=500)
-
-    print(proposals)
     
     # Split into multiple steps if necessary
     proposals = proposals.split("\n")
@@ -134,8 +130,6 @@ def get_samples(task, x, y, n_generate_sample, prompt_sample, stop):
     else:
         raise ValueError(f'prompt_sample {prompt_sample} not recognized')
     
-    print(f"\n[DEBUG] Final Prompt:\n{repr(prompt)}\n")
-
     # Generate samples using Gemma
     answer = gemma_generate(prompt=prompt, max_tokens=500)
 

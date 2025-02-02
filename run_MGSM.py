@@ -14,9 +14,9 @@ args = argparse.Namespace(
     method_generate='propose', 
     method_evaluate='value', 
     method_select='greedy', 
-    n_generate_sample=1, 
+    n_generate_sample=2, 
     n_evaluate_sample=3, 
-    n_select_sample=2
+    n_select_sample=5
 )
 
 # Create task instance
@@ -29,7 +29,7 @@ correct_count = 0
 # Create a log directory if it doesn’t exist
 log_dir = f"logs/MGSM/{args.lang}"
 os.makedirs(log_dir, exist_ok=True)
-log_file = os.path.join(log_dir, f"test_log_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt")
+log_file = os.path.join(log_dir, f"generate: {args.n_generate_sample} -- select:{args.n_select_sample}")
 
 # Run test loop
 with open(log_file, "w") as f:
@@ -39,7 +39,7 @@ for idx in range(1, num_samples + 1):
     print(f"\n--- Running Test {idx} ---")
 
     # Run model
-    ys, infos, final_answers, model_output = solve(args, task, idx)
+    ys, infos, final_answers, model_output = solve(args, task, idx, to_print=False)
 
     # Extract ground truth and model answer
     ground_truth_answer = task.ground_truth_answer(idx)
