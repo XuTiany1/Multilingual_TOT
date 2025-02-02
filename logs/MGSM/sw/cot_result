@@ -1092,3 +1092,405 @@ Model Prediction / Ground Truth: 23 / 23
 Correct Predictions / Total Tests: 134 / 182
 Current Accuracy: 73.63%
 ----------------------
+----------------------
+Problem 183: Timu mbili za mbio za uwanjani zinashindana na kila moja katika mbio za kupokezana kijiti za 4 kwa mita 400; mbio ambapo kila timu inayoshindana ina wanachama wanne ambao kila mmoja anakimbia mita 400, au kuzunguka mara moja, kwenye uwanja kamili. Mojawapo kati ya timu hizo mbili ina wakimbiaji wazuri na kila mmoja wao atakimbia mkondo wao wa mita 400 kwa sekunde 55. Timu hiyo nyingine haina wakimbiaji wazuri vile; mkimbiaji wao wa kwanza atakimbia mkondo wao wa mita 400 kwa sekunde 60 kisha kila mkimbiaji anayefuata atakuwa na kasi ya sekunde 3 zaidi ya aliyemtangulia. Kwa kutumia maelezo haya, timu iliyo na mbio ya haraka zaidi itashinda kwa sekunde ngapi?
+Model Prediction / Ground Truth: 38 / 2
+Correct Predictions / Total Tests: 134 / 183
+Current Accuracy: 73.22%
+----------------------
+----------------------
+Problem 184: Jerry anacheza dadu yenye pande sita. Ana uwezekano mgani mkubwa zaidi (katika asilimia) kuwa atabingirisha nambari kubwa kwa 3 zaidi ya kubingirisha nambari mbili za zushfwa mara mbili mfululizo?
+Model Prediction / Ground Truth: None / 25
+Correct Predictions / Total Tests: 134 / 184
+Current Accuracy: 72.83%
+----------------------
+----------------------
+Problem 185: Jenna na mamake waliokota tufaha kutoka kwa shamba lao la tufaha. Jenna aliokota nusu ya tufaha ambazo mamake aliokota. Ikiwa mamake alipata tufaha 20, wote wawili waliokota tufaha ngapi?
+Model Prediction / Ground Truth: 30 / 30
+Correct Predictions / Total Tests: 135 / 185
+Current Accuracy: 72.97%
+----------------------
+----------------------
+Problem 186: Russel anafanya kazi katika duka la wanyama wapenzi na anasambaza mirija miongoni mwa wanyama wagugunaji. Panya wamewekwa katika mabanda 3 katika vikundi vinavyotoshana na kila panya amepewa vipande 6 vya mrija. Kuna mabanda 10 ya buku ambao wamewekwa pekee yao na kila buku anapewa mirija 5. Pia kuna kundi la sungura ambapo vipande 20 vya mrija vimegawanywa miongoni mwa sungura. Hakuna mrija uliotumika kwingine tena katika duka. Iwapo vipanade 160 vya mrija vilikuwa vimesambazwa miongoni mwa wanyama wagugumizi, kuna panya wangapi katika kila banda?
+Model Prediction / Ground Truth: 5 / 5
+Correct Predictions / Total Tests: 136 / 186
+Current Accuracy: 73.12%
+----------------------
+----------------------
+Problem 187: Mendy anadaiwa $100 na Benedict. Wamekubali kuwa na riba ya kila mwezi ya 2%. Ikiwa Mendy aliweza kulipa baada ya miezi 3, anafaa kumpa Benedict pesa ngapi?
+Model Prediction / Ground Truth: 106 / 106
+Correct Predictions / Total Tests: 137 / 187
+Current Accuracy: 73.26%
+----------------------
+----------------------
+Problem 188: Muuzaji ananunua mifuko ya unga ngano kutoka kwa mkulima kwa kiwango cha $20 kwa kila mfuko. Ikiwa gharama ya kusafirisha kila mfuko kutoka shambani mpaka kwenye ghala ni $2, na muuzaji alipata faida ya jumla ya $400 baada ya kuuza mifuko yote kwa bei ya $30 kila mfuko, aliuza mifuko mingapi?
+Model Prediction / Ground Truth: 50 / 50
+Correct Predictions / Total Tests: 138 / 188
+Current Accuracy: 73.40%
+----------------------
+----------------------
+Problem 189: Marafiki watatu walitumia $20.25 kununua tikiti 3 za onesho. Pia walinunua chakula na bei ya tikiti ilikuwa imeshinda bei ya chakula na $4.50. Pia walienda kwenye safari 2 tofauti kwa bei ya $33 kwa kila safari. Ikiwa walikubali kugawanya gharama zote kwa usawa, kila mmoja wao alilipa pesa ngapi?
+Model Prediction / Ground Truth: 34 / 34
+Correct Predictions / Total Tests: 139 / 189
+Current Accuracy: 73.54%
+----------------------
+----------------------
+Problem 190: John anakusanya pichi kwa saa 3. Anaweza kukusanya pichi 2 kwa dakika moja. Atakusanya pichi ngapi kwa jumla?
+Model Prediction / Ground Truth: 360 / 360
+Correct Predictions / Total Tests: 140 / 190
+Current Accuracy: 73.68%
+----------------------
+----------------------
+Problem 191: Bata wanahitaji kula pauni 3.5 za wadudu kila wiki ili kuweza kuishi. Ikiwa kuna kundi la bata kumi, huwa wanakula pauni ngapi za wadudu kwa jumla kwa siku?
+Model Prediction / Ground Truth: 5 / 5
+Correct Predictions / Total Tests: 141 / 191
+Current Accuracy: 73.82%
+----------------------
+----------------------
+Problem 192: Tom hupanda miti 10 kila mwaka. Kila mwaka pia huwa anakata miti 2. Anaanza na miti 50. Baada ya miaka 10 30% ya miti inakufa. Amesalia na miti mingapi?
+Model Prediction / Ground Truth: 91 / 91
+Correct Predictions / Total Tests: 142 / 192
+Current Accuracy: 73.96%
+----------------------
+----------------------
+Problem 193: Sue anaishi katika mtaa wenye burudani. Wikendi moja, majirani waliamua kumfanyia Sue mzaha. Ijumaa asubuhi, majirani waliweka famingo 18 pinki wa plastiki kwenye bustani la mbele la Sue. Jumamosi asubuhi, majirani waliondoa thuluthi moja ya flamingo, wakawapaka rangi nyeupe, na kisha wakarudisha flamingo hawa waliopakwa kwenye bustani la mbele la Sue. Kisha, Jumapili asubuhi, waliongeza flamingo wengine 18 wa pinki wa plastiki kwenye mkusanyiko huo. Adhuhuri Jumapili, kulikuwa na flamingo ngapi wa pinki zaidi ya wa rangi nyeupe?
+Model Prediction / Ground Truth: 24 / 24
+Correct Predictions / Total Tests: 143 / 193
+Current Accuracy: 74.09%
+----------------------
+----------------------
+Problem 194: Violetta anataka kununua krayoni mpya. Anahitaji ziwe za rangi 5 tofauti na akawa tayari na $20 kufanya ununuzi huu. Bei ya krayoni moja ni $2. Atarudishiwa salio la pesa ngapi?
+Model Prediction / Ground Truth: 10 / 10
+Correct Predictions / Total Tests: 144 / 194
+Current Accuracy: 74.23%
+----------------------
+----------------------
+Problem 195: Bei ya kalamu ni sawa na jumla ya bei ya penseli na bei ya kifutio. Bei ya penseli ni $1.20 na bei ya kifutio ni $0.30. Kalamu 8 zitakuwa pesa ngapi?
+Model Prediction / Ground Truth: 12 / 12
+Correct Predictions / Total Tests: 145 / 195
+Current Accuracy: 74.36%
+----------------------
+----------------------
+Problem 196: Pauni 200 za karoti zinafaa kusambazwa kwa mikahawa 40 katika jiji fulani. Kila mkahawa unafaa kupokea pauni 2 za karoti. Pauni ngapi za karoti hazitatumika?
+Model Prediction / Ground Truth: 120 / 120
+Correct Predictions / Total Tests: 146 / 196
+Current Accuracy: 74.49%
+----------------------
+----------------------
+Problem 197: Katika jiji la Soda, kuna wakazi 23786. Wanajumuisha wanaume 8417 na wanawake 9092. Watu wengine waliosalia ni watoto. Kuna watoto wangapi katika jiji la Soda?
+Model Prediction / Ground Truth: 6277 / 6277
+Correct Predictions / Total Tests: 147 / 197
+Current Accuracy: 74.62%
+----------------------
+----------------------
+Problem 198: Elaine awali alikuwa na kadi 20 za Pokemon. Baada ya mwezi, alikusanya mara tatu zaidi ya idadi hiyo. Katika mwezi wa pili, kadi alizokusanya zilikuwa chache kwa kadi alizokusanya mwezi wa kwanza na 20. Mwezi wa tatu, alikusanya mara mbili ya jumla ya kadi za pokemon alizokusanya mwezi wa kwanza na wa pili. Kwa sasa ana jumla ya kadi ngapi za pokemon?
+Model Prediction / Ground Truth: 280 / 320
+Correct Predictions / Total Tests: 147 / 198
+Current Accuracy: 74.24%
+----------------------
+----------------------
+Problem 199: Mark ni mhariri wa nakala. Anahariri idadi inayotoshana ya sentensi kila wiki kwa ajili ya wachapishaji wawili tofauti, ambao kila mmoja anamlipa kwa kiwango tofauti kwa kila sentensi. Mchapishaji B anamlipa Mark mara mbili ya kile Mchapishaji A humlipa. Mark anahariri jumla ya sentensi 1000 kila wiki, na Publisher A humlipa senti 5 kwa kila sentensi. Mark hutengeneza pesa ngapi kwa wiki, kwa senti?
+Model Prediction / Ground Truth: 15000 / 7500
+Correct Predictions / Total Tests: 147 / 199
+Current Accuracy: 73.87%
+----------------------
+----------------------
+Problem 200: Baldur hupata maji kutoka kwa kisima. Huwa anateka ndoo 5 za maji kila asubuhi na ndoo 6 za maji kila alasiri. Ikiwa kila ndoo ina lita 5 za maji, huwa anapata lita ngapi za maji kila siku?
+Model Prediction / Ground Truth: 55 / 55
+Correct Predictions / Total Tests: 148 / 200
+Current Accuracy: 74.00%
+----------------------
+----------------------
+Problem 201: John anashinda tuzo kazini. Tuzo hiyo ina zawadi ya pesa ya mara 1 ya $5000 na kuongezwa mshahara kwa 5%. Ikiwa mshahara wake wa kila wiki ni 2000 na alipata tuzo siku ya kwanza ya mwaka, alitengeneza pesa ngapi kwa jumla mwaka huo?
+Model Prediction / Ground Truth: 114400 / 114200
+Correct Predictions / Total Tests: 148 / 201
+Current Accuracy: 73.63%
+----------------------
+----------------------
+Problem 202: Josie anapanda zabibu kwenye shamba lake la ekari 10. Kila ekari huzalisha tani 5 za zabibu kila mwaka, na kila tani ya zabibu hutengeneza mitungi 2 ya divai. Shamba lake huzalisha mitungi mingapi ya mvinyo kwa mwaka?
+Model Prediction / Ground Truth: 100 / 100
+Correct Predictions / Total Tests: 149 / 202
+Current Accuracy: 73.76%
+----------------------
+----------------------
+Problem 203: Chakula ambacho Carl anapenda zaidi ni jibini. Alikula sandwichi kila siku wiki hii wakati wa chakula cha mchana na kutumia slaisi 2 za jibini kwenye kila sandwichi. Alikula jibini na omleti za mayai wakati wa staftahi siku 3 katika wiki hiyo na omleti moja ilikuwa na slaisi moja zaidi ya jibini kuliko katika sandwichi yake. Aliandaa mlo mkubwa wa makaroni na jibini wa kumtoshea chajio kadhaa kwa wiki hiyo na akatumia slaisi 8 za jibini kwenye mlo huo. Alitumia slaisi ngapi za jibini kwa jumla?
+Model Prediction / Ground Truth: 31 / 31
+Correct Predictions / Total Tests: 150 / 203
+Current Accuracy: 73.89%
+----------------------
+----------------------
+Problem 204: Janet alikuwa na kalamu 22 za kijani na kalamu 10 za manjano. Kisha alinunua mifuko 6 ya kalamu za buluu na mifuko 2 ya kalamu nyekundu. Kulikuwa na kalamu 9 katika kila mfuko wa buluu na kalamu 6 katika kila mfuko wa kalamu nyekundu. Sasa Janet ana kalamu ngapi kwa jumla?
+Model Prediction / Ground Truth: 98 / 98
+Correct Predictions / Total Tests: 151 / 204
+Current Accuracy: 74.02%
+----------------------
+----------------------
+Problem 205: Brinley yupo katika darasa la hisabati la Mr. Bert. Mr. Bert hupeana mazoezi sita kila muhula. Huwa anawaruhusu wanafunzi kuondoa alama ya chini zaidi kwenye wastani wa matokeo kila muhula. Ikiwa Brinley ana alama za 89, 71, 92, 100 na 86 kwa mazoezi matano ya kwanza, anahitaji kupata alama ngapi katika zoezi la sita ili awe na wastani wa 93?
+Model Prediction / Ground Truth: 120 / 98
+Correct Predictions / Total Tests: 151 / 205
+Current Accuracy: 73.66%
+----------------------
+----------------------
+Problem 206: Micheal anapenda kuendesha baiskeli. Aliiendesha angalau mara 5 kwa wiki na kwenda umbali wa kilomita 25 mila mara. Alifanya hiyo kwa wiki nne, na kisha akaamua kuendesha baiskeli mara 2 pekee kwa wiki, lakini kwa kilomita 60 kila mara, na alifanya hiyo kwa wiki 3. Micheal alifanya kilomita ngapi kwa jumla?
+Model Prediction / Ground Truth: 860 / 860
+Correct Predictions / Total Tests: 152 / 206
+Current Accuracy: 73.79%
+----------------------
+----------------------
+Problem 207: Mfuko wa Joe wa pipi za Halloween una pipi 25 za chokoleti na pipi 80 za tufaha. Kila pipi ya chokoleti ina uzani wa mara mbili zaidi ya pipi ya tufaha. Ikiwa kila pipi ya chokoleti ina uzani wa gramu 40, mfuko wa Joe wa pipi una uzani gani kwa jumla, katika gramu?
+Model Prediction / Ground Truth: 2600 / 2600
+Correct Predictions / Total Tests: 153 / 207
+Current Accuracy: 73.91%
+----------------------
+----------------------
+Problem 208: Rose alienda kwa duka Jumatatu na akanunua keki 4. Jumanne alienda kwa duka tofauti akanunua mara tatu ya keki alizonunua Jumatatu. Jumatano alienda kwa duka lingine na akanunua mara 5 zaidi ya keki alizonunua Jumanne. Alinunua keki ngapi kwa jumla kwa siku hizo tatu?
+Model Prediction / Ground Truth: 76 / 76
+Correct Predictions / Total Tests: 154 / 208
+Current Accuracy: 74.04%
+----------------------
+----------------------
+Problem 209: Bei ya dazeni ishirini za vikombe ni $1200 kidogo kwa jumla ya gharama ya nusu dazeni ya sahani zinazouzwa $6000 kila moja. Piga hesabu ya jumla ya bei ya kila kikombe.
+Model Prediction / Ground Truth: 2900 / 145
+Correct Predictions / Total Tests: 154 / 209
+Current Accuracy: 73.68%
+----------------------
+----------------------
+Problem 210: Sara anataka kujinunulia jaketi mpya na jozi 2 za viatu. Jaketi anayotaka ni $30 na kila jozi ya viatu ni $20. Sara huwaangalia watoto wa jirani yake mara 4, na kupata $5 kila mara anapowaangalia. Wazazi wake humlipa $4 kila mara akifyeka nyasi. Ikiwa Sara tayari alikuwa nakiba ya $10 kabla ya kuanza kuwaangalia watoto wa jirani, ni mara ngapi atahitaji kufyeka nyasi kabla ya kuweza kumudu bei ya jaketi na viatu?
+Model Prediction / Ground Truth: 10 / 10
+Correct Predictions / Total Tests: 155 / 210
+Current Accuracy: 73.81%
+----------------------
+----------------------
+Problem 211: Jerry ana kundi la kuku. Kuku wekundu huzalisha mayai 3 kwa siku, na kuku weupe huzalisha mayai 5 kwa siku. Kila siku Jerry hukusanya mayai 42. Ikiwa ana kuku weupe wawili zaidi ya wekundu, ana kuku wekundu wangapi?
+Model Prediction / Ground Truth: 4 / 4
+Correct Predictions / Total Tests: 156 / 211
+Current Accuracy: 73.93%
+----------------------
+----------------------
+Problem 212: Gary anapenda kutembea kwenye ukingo wa mbuga wa ndani, ambao una umbo la mstatili na vipimo vyake ni maili 1.5 kwa maili 6. Ikiwa huwa anatembea maili 3 kwa saa, huwa anatumia saa ngapi kutembea?
+Model Prediction / Ground Truth: 5 / 5
+Correct Predictions / Total Tests: 157 / 212
+Current Accuracy: 74.06%
+----------------------
+----------------------
+Problem 213: Akiwa katika duka la dola, Sloane anahesabu wateja 100 wakiingia kwenye duka hilo. Siku inayofuata, anahesabu wateja 50 zaidi ya walioingia siku ya kwanza. Ikiwa jumla ya idadi ya wateja kufikia siku ya tatu ilikuwa 500, alihesabu wateja wangapi siku ya tatu?
+Model Prediction / Ground Truth: 250 / 250
+Correct Predictions / Total Tests: 158 / 213
+Current Accuracy: 74.18%
+----------------------
+----------------------
+Problem 214: Jerry ana vidimbwi viwili, vyote vina sehemu zinazovuja maji kwa kiwango cha mitungi 4 kwa dakika. Dakika 4 zilizopita, kidimbwi kikubwa kilikuwa na mara mbili zaidi ya idadi ya maji katika kidimbwi kidogo. Sasa kidimbwi kikubwa kina mara nne zaidi ya maji katika kidimbwi kidogo. Kidimbwi kidogo kina maji kiasi gani kwa sasa?
+Model Prediction / Ground Truth: None / 8
+Correct Predictions / Total Tests: 158 / 214
+Current Accuracy: 73.83%
+----------------------
+----------------------
+Problem 215: Lori anataka kununua jozi la kiatu kwa $320.00 na mshipi unaoendana nacho kwa $32.00. Kazi yake ya muda humlipa $8.00 kwa saa. Atahitaji kufanya kazi kwa saa ngapi kabla ya kuweza kufanya ununuzi?
+Model Prediction / Ground Truth: 44 / 44
+Correct Predictions / Total Tests: 159 / 215
+Current Accuracy: 73.95%
+----------------------
+----------------------
+Problem 216: Janeth alikopesha $2000 na akaahidi kurudisha na ziada ya 10% ya kiwango hicho. Ikiwa atakuwa akilipa $165 kila mwezi kwa miezi 12, salio la Janeth linalosalia kufikia wakati huo litakuwa ngapi?
+Model Prediction / Ground Truth: 220 / 220
+Correct Predictions / Total Tests: 160 / 216
+Current Accuracy: 74.07%
+----------------------
+----------------------
+Problem 217: Kuna waridi 4 katika chombo cha kuwekea maua. Kuna dalia 7 zaidi ya waridi katika chombo hicho. Kuna maua mangapi kwa jumla katika chombo hicho cha mua?
+Model Prediction / Ground Truth: 15 / 15
+Correct Predictions / Total Tests: 161 / 217
+Current Accuracy: 74.19%
+----------------------
+----------------------
+Problem 218: Umri wa Adrian ni mara tatu zaidi ya umri wa Harriet, na umri wa Harriet ni nusu ya umri wa Zack. Piga hesabu ya umri wa wastani wa wote watatu baada ya miaka mitatu iwapo umri wa Harriet wa sasa ni miaka 21.
+Model Prediction / Ground Truth: 45 / 45
+Correct Predictions / Total Tests: 162 / 218
+Current Accuracy: 74.31%
+----------------------
+----------------------
+Problem 219: Wanafunzi wanne walipata jumla ya alama 251 katika mchezo wa ubao. Naomi alipata alama 68 kati ya hizo. Yuri alipata alama 10 zaidi ya nusu ya alama za Naomi na Brianna alipata alama 17 zaidi ya Naomi. Jojo alipata alama ngapi?
+Model Prediction / Ground Truth: 54 / 54
+Correct Predictions / Total Tests: 163 / 219
+Current Accuracy: 74.43%
+----------------------
+----------------------
+Problem 220: Huwa inamchukua Carmen dakika 10 kukamilisha fumbo la maneno panda na dakika 5 kukamilisha fumbo la sudoku. Wikeni alitatua mafumbo 3 ya maneno panda na mafumbo 8 ya sudoku. Alitumia muda gani kwa jumla kucheza michezo hii?
+Model Prediction / Ground Truth: 70 / 70
+Correct Predictions / Total Tests: 164 / 220
+Current Accuracy: 74.55%
+----------------------
+----------------------
+Problem 221: Tangi ya maji imejazwa na lita 120 ya maji. Celine alitumia lita 90 ya maji kutoka kwa tangi hiyo kunyunyuzia shamba lake. Kisha aliweza kuteka maji ya mvua ambayo ni mara mbili zaidi ya maji ambayo yalikuwa yamesalia. Kwa sasa kuna lita ngapi za maji kwenye tangi hiyo?
+Model Prediction / Ground Truth: 90 / 90
+Correct Predictions / Total Tests: 165 / 221
+Current Accuracy: 74.66%
+----------------------
+----------------------
+Problem 222: Andy amepanda jeraniamu 90 na zambarau 40 chache zaidi ya jeraniamu. Amepanda maua mangapi kwa jumla?
+Model Prediction / Ground Truth: 130 / 140
+Correct Predictions / Total Tests: 165 / 222
+Current Accuracy: 74.32%
+----------------------
+----------------------
+Problem 223: Kampuni hutumia $15000 kwenye matangazo kwa mwaka, na kisha kutumia thuluthi moja ya kiwango hicho kwenye matangazo ya mwaka mwingine. Jumla ya kiwango cha pesa ambazo kampuni hiyo ilitumia kufanya matangazo miaka hiyo miwili ni ngapi?
+Model Prediction / Ground Truth: 20000 / 20000
+Correct Predictions / Total Tests: 166 / 223
+Current Accuracy: 74.44%
+----------------------
+----------------------
+Problem 224: Carlos na Benji wapo kwenye ufuo. Carlos anakodisha mashua kwa $30 kila saa na Benji anakodisha mashua ya ndizi kwa $18 kila saa. Carlos akitumia mashua yake kwa saa 3 na Benji akatumia yake kwa saa 5, wote wawili watalipa jumla ya pesa ngapi?
+Model Prediction / Ground Truth: 180 / 180
+Correct Predictions / Total Tests: 167 / 224
+Current Accuracy: 74.55%
+----------------------
+----------------------
+Problem 225: Andrew anapanga safari kutoka New Jersey kwenda Rochester. Huwa inachukua siku 6 kusafiri kwa basi na nusu ya siku hizo kusafiri kwa gari kutoka New Jersey kwenda Rochester.Atasafiri kwa siku ngapi ikiwa anapanga kwenda Rochester kwa basi na kurudi kutoka Rochester kwa gari?
+Model Prediction / Ground Truth: 9 / 9
+Correct Predictions / Total Tests: 168 / 225
+Current Accuracy: 74.67%
+----------------------
+----------------------
+Problem 226: James anahesabu kadi zake za Pokemon. Ana aina 30 za moto, aina 20 za nyasi, na aina 40 za maji. Akipoteza aina 8 za maji na kununua aina 14 za nyasi, asilimia ya nafasi ya kuokota kinasibu kadi ya aina ya maji itakuwa ngapi (ikiwa katika nambari kamili ya karibu)?
+Model Prediction / Ground Truth: 33 / 33
+Correct Predictions / Total Tests: 169 / 226
+Current Accuracy: 74.78%
+----------------------
+----------------------
+Problem 227: Chad aliagiza barito ya kujijengea wakati wa chakula cha mchana. Barito ya sehemu ya chini ni $6.50. Anaongeza nyama ya ziada kwa $2.00, jibini ya ziada kwa $1.00, parachichi ya $1.00 na sosi 2 za $0.25 kila moja. Kisha anaamua kuboresha mlo wake kwa $3.00 zaidi ya kuongeza chipsi na kinywaji. Aka kadi ya zawadi ya $5.00 ambayo anatumia kulipa. Bado anadaiwa pesa ngapi?
+Model Prediction / Ground Truth: 9 / 9
+Correct Predictions / Total Tests: 170 / 227
+Current Accuracy: 74.89%
+----------------------
+----------------------
+Problem 228: Kalinda anashughulikia fumbo la vipande 360 pamoja na mamake. Kawaida Kalinda anaweza kuongeza vipande 4 kwa dakika. Mamake kimsingi anaweza kuweza nusu ya vipande ambavyo Kalinda anaweza kuweka kwa dakika. Itawachukua saa ngapi kukamilisha fumbo hilo?
+Model Prediction / Ground Truth: 1 / 1
+Correct Predictions / Total Tests: 171 / 228
+Current Accuracy: 75.00%
+----------------------
+----------------------
+Problem 229: Shamba la tikitimaji lilizalisha tikitimaji 120. Ashlyn alienda kwenye shamba hilo baada ya miezi miwili na kupata kuwa 30% ya tikitimaji hizo zilikuwa tayari kuvunwa, hivyo alizivuna akarudi nazo nyumbani. Aliporudi tena wiki mbili baadaye, 3/4 ya tikitimaji zilizokuwa zimesalia zilikuwa tayari, hivyo alizivuna. Tikitimaji ngapi hazikuwa tayari kuvunwa baada ya wiki hizo mbili?
+Model Prediction / Ground Truth: 21 / 21
+Correct Predictions / Total Tests: 172 / 229
+Current Accuracy: 75.11%
+----------------------
+----------------------
+Problem 230: Mark ananunua magari 12 katika kampuni yake. Kila gari linauzwa kwa $20,000. Analipa ushuru wa 10% wa magari hayo na kisha $1000 ya usajili kwa kila moja yao. Jumla ya pesa alizolipia kila kitu ni ngapi?
+Model Prediction / Ground Truth: 204000 / 276000
+Correct Predictions / Total Tests: 172 / 230
+Current Accuracy: 74.78%
+----------------------
+----------------------
+Problem 231: Kylie na Robert wanafurahia kwenda kwenye ufuo kukusanya kombe. Jumatatu, Kylie anakusanya kombe 5 zaidi ya Robert, aliyekusanya kombe 20. Jumanne, Kylie anakusanya kombe mara 2 zaidi ya alizokusanya Jumatatu. Kylie alikusanya kombe ngapi siku ya Jumanne?
+Model Prediction / Ground Truth: 50 / 50
+Correct Predictions / Total Tests: 173 / 231
+Current Accuracy: 74.89%
+----------------------
+----------------------
+Problem 232: Dax alienda katika shamba lao kuokota tufaha na chungu ambao ni nusu ya idadi ya siafu katika shamba. Ikiwa kulikuwa na siafu 50, piga hesabu ya wadudu wote kwa jumla katika shamba hilo.
+Model Prediction / Ground Truth: 100 / 75
+Correct Predictions / Total Tests: 173 / 232
+Current Accuracy: 74.57%
+----------------------
+----------------------
+Problem 233: Kuna pengwini 36 wanaoota jua katika theluji. Theluthi moja yao wanaruka na kuogelea katika bahari. Theluthi nyingine moja wanaingia kwenye pango kula chakula chao cha usiku. Pengwini wangapi wamesalia bado wakiota jua?
+Model Prediction / Ground Truth: 12 / 12
+Correct Predictions / Total Tests: 174 / 233
+Current Accuracy: 74.68%
+----------------------
+----------------------
+Problem 234: Steve anaamua kuanza kula nyanya nyingi na anaamua kupanda nyanya zake. Huwa anakula mara mbili zaidi ya mchumba wake. Huwa anakula 6 kwa siku. Ikiwa mnyanya mmoja unaweza kuzalisha nyanya 3 kwa wiki, anahitaji miti mingapi ya nyanya?
+Model Prediction / Ground Truth: 21 / 21
+Correct Predictions / Total Tests: 175 / 234
+Current Accuracy: 74.79%
+----------------------
+----------------------
+Problem 235: John anaagiza pizza za kushiriki na marafiki zake. Kuna marafiki 20 kwa jumla, na John anahitaji kuhakikisha kila mmoja anaweza kupata vipande 4. Pizza zinauzwa zikiwa na vipande 8 pekee. John anahitaji kuagiza Pizza ngapi?
+Model Prediction / Ground Truth: 10 / 10
+Correct Predictions / Total Tests: 176 / 235
+Current Accuracy: 74.89%
+----------------------
+----------------------
+Problem 236: Ram hutumia kalamu nyingi. Aligundua kuwa anaweza kuokoa pesa kwa kuchanganya wino kutoka kwa kalamu tano zilizo tupu ili kutengeneza kalamu moja. Akinunua kalamu 25 na kisha akazitumia kutengeneza kalamu mpya wino ukipungua, atakuwa na kalamu ngapi kwa jumla?
+Model Prediction / Ground Truth: 5 / 31
+Correct Predictions / Total Tests: 176 / 236
+Current Accuracy: 74.58%
+----------------------
+----------------------
+Problem 237: Johnny alichukua marupurupu yake ya $20 na kuongeza $10 ya ziada. Kisha akawekeza jumla ya pesa hii, ambayo iliongezeka mara tatu baada ya mwaka. Alikuwa na pesa ngapi baada ya mwaka moja?
+Model Prediction / Ground Truth: 90 / 90
+Correct Predictions / Total Tests: 177 / 237
+Current Accuracy: 74.68%
+----------------------
+----------------------
+Problem 238: Mary ni mdogo kwa Joan kwa miaka miwili, Joan amemshinda Jessa na miaka mitano. Iwapo Jessa ana miaka 20, jumla ya umri wa wasichana hawa watatu ni ngapi?
+Model Prediction / Ground Truth: 68 / 68
+Correct Predictions / Total Tests: 178 / 238
+Current Accuracy: 74.79%
+----------------------
+----------------------
+Problem 239: Idadi ya wanafunzi katika ukumbi wa shule ilikuwa 1000. Ukumbi huo ulikuwa na milango 3 ambayo ni A, B, na C ambayo ilitumika kuingia na kutoka. Ikiwa baada ya mkutano 30% ya wanafunzi waliondoka kwenye jengo hilo kupitia mlango wa A, 3/5 ya waliosalia waliondokea mlango wa B, na wengine waliosalia waliondokea mlango wa C, piga hesabu ya wanafunzi waliondokea mlango wa C.
+Model Prediction / Ground Truth: 280 / 280
+Correct Predictions / Total Tests: 179 / 239
+Current Accuracy: 74.90%
+----------------------
+----------------------
+Problem 240: James pipi 6 zaidi ya Robert. John ana pipi mara mbili zaidi ya za Robert. Ikiwa John ana pipi 54, John ana pipi ngapi zaidi ya James?
+Model Prediction / Ground Truth: 21 / 21
+Correct Predictions / Total Tests: 180 / 240
+Current Accuracy: 75.00%
+----------------------
+----------------------
+Problem 241: Dolly ana vitabu viwili. Pandora ana kimoja. Ikiwa Dolly na Pandora husoma vitabu vya mwenzao pamoja na vyao, wote wawili watakuwa wamesoma vitabu vingapi mwishoni?
+Model Prediction / Ground Truth: 6 / 6
+Correct Predictions / Total Tests: 181 / 241
+Current Accuracy: 75.10%
+----------------------
+----------------------
+Problem 242: Mike alikuwa rafiki ya watu 5. Aliacha kuwa rafiki ya 2 kati yao. Huwa wanatumiana barua 2 kila wiki na barua hizo zina urefu wa kurasa 5. Huwa anajibu kwa ukarimu. Anaweza kuandika ukurasa kwa dakika 6. Huwa anatumia saa ngapi kuandika barua kwa wiki?
+Model Prediction / Ground Truth: 3 / 3
+Correct Predictions / Total Tests: 182 / 242
+Current Accuracy: 75.21%
+----------------------
+----------------------
+Problem 243: Jason ana mpango wa simu wa dakika 1000 kila mwezi. Kila siku anapiga simu kwa dakika 15 akiongea na mdosi wake, na ameongea kwa simu dakika 300 na watu wengine mwezi huu. Jason bado amesalia na dakika ngapi ikiwa mwezi huu una siku 30?
+Model Prediction / Ground Truth: 250 / 250
+Correct Predictions / Total Tests: 183 / 243
+Current Accuracy: 75.31%
+----------------------
+----------------------
+Problem 244: Griffin alikuwa na chipsi 24, lakini Kyle alichukua 5. Billy alichukua mara mbili zaidi ya Kyle. Ginger alimpa Griffin chipsi kadhaa, na kisha Colby akachukua kutoka kwa Griffin chipsi 3 chini ya zile ambazo Kyle alikuwa amechukua. Ikiwa mwishoni Griffin alikuwa na chipsi 27, Ginger alimpa Griffin chipsi ngapi?
+Model Prediction / Ground Truth: 20 / 20
+Correct Predictions / Total Tests: 184 / 244
+Current Accuracy: 75.41%
+----------------------
+----------------------
+Problem 245: Kuna konokono 4 katika tangisamaki na konokono 32 katika tangisamaki nyingine. Tofauti kati ya idadi ya konokono katika tangisamaki hizi mbili ni mara mbili zaidi ya idadi ya samaki katika tangisamaki zote mbili. Ikiwa tangisamaki zote mbili zina idadi sawa ya samaki, kuna samaki wangapi katika kila tangisamaki?
+Model Prediction / Ground Truth: 7 / 7
+Correct Predictions / Total Tests: 185 / 245
+Current Accuracy: 75.51%
+----------------------
+----------------------
+Problem 246: Msanii wa mapambo wa Jean hutoza $250 kila saa. Anahitaji mapambo ghali mno kwa filamu anayofanya na huwa inachukua saa 6 kufanya kila siku na anahitaji ifanywe mara 4 kwa wiki. Filamu hiyo inachukua wiki 5 kukamilisha. Baada ya filamu hiyo kuisha msanii wa mapambo humpa Jean kipunguzo cha 10% kwa sababu ya kiwango cha kazi alichofanya. Jean alimlipa pesa ngapi?
+Model Prediction / Ground Truth: 27000 / 27000
+Correct Predictions / Total Tests: 186 / 246
+Current Accuracy: 75.61%
+----------------------
+----------------------
+Problem 247: Isabelle alinunua vifaa vya sherehe kwa ajili ya sherehe ya siku ya kuzaliwa ya dadake mdogo. Alitumia $12 kununua viambato vya keki, $43 kununua zawadi za siku ya kuzaliwa, $15 kununua mapambo, $4 kufanya mialiko, na $22 kununua mifuko ya zawadi ya wageni. Anagawanya gharama hivyo sawasawa mara tatu na wazazi wake wawili. Kila mmoja alilipa dola ngapi?
+Model Prediction / Ground Truth: 32 / 32
+Correct Predictions / Total Tests: 187 / 247
+Current Accuracy: 75.71%
+----------------------
+----------------------
+Problem 248: Mpishi alinunua mifuko 4 ya vitunguu. Kila mfuko kina uzani wa pauni 50. Pauni moja ya vitunguu ni $1.50. Mpishi huyo alitumia pesa ngapi?
+Model Prediction / Ground Truth: 300 / 300
+Correct Predictions / Total Tests: 188 / 248
+Current Accuracy: 75.81%
+----------------------
+
+--- FINAL TEST SUMMARY ---
+Total Samples Tested: 249
+Correct Predictions: 188
+Final Accuracy: 75.81%
+----------------------

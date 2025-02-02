@@ -19,7 +19,7 @@ args = argparse.Namespace(
 
 
 
-idx = 1
+idx = 7
 task = MgsmTask(args)
 ys, infos, final_answers, model_output = solve(args, task, idx)
 

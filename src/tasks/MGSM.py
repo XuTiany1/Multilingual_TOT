@@ -55,7 +55,7 @@ class MgsmTask(Task):
         ################################
         # Other variable initialization
         self.stops = ['\n'] * 4
-        self.steps = 4
+        self.steps = 7
         self.value_cache = {}
 
 
@@ -87,6 +87,7 @@ class MgsmTask(Task):
         """
         if idx < 0 or idx >= len(self.data):
             raise IndexError("Index out of range.")
+        
         return self.data.iloc[idx]["question"]
 
 

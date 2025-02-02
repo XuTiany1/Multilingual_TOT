@@ -27,9 +27,8 @@ correct_count = 0
 log_dir = f"logs/MGSM/{args.lang}"
 os.makedirs(log_dir, exist_ok=True)
 
-languages = ['te']
+languages = ['en', 'es', 'fr', 'de', 'ru', 'zh', 'ja', 'th', 'sw', 'bn', 'te']
 for lang in languages:
-#log_file = os.path.join(log_dir, f"generate: {args.n_generate_sample} -- select:{args.n_select_sample}")
 
     # Reset count
     correct_count = 0
@@ -42,7 +41,9 @@ for lang in languages:
     # Create a log directory if it doesn’t exist
     log_dir = f"logs/MGSM/{args.lang}"
     os.makedirs(log_dir, exist_ok=True)
-    log_file = os.path.join(log_dir, f"cot_result")
+
+    log_file = os.path.join(log_dir, f"7 steps -- generate: {args.n_generate_sample} -- select:{args.n_select_sample}")
+    #log_file = os.path.join(log_dir, f"cot_result")
 
 
     # Run test loop

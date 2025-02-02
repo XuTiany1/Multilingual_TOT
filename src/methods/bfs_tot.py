@@ -102,15 +102,25 @@ def get_proposals(task, x, y, num_generate_sample, language):
 
     this function should continue the solution
     """
-    propose_prompt = task.propose_prompt_wrap(num_generate_sample, language, x, y)
+    y_cleaned = re.sub(r"^\s*Thought \d+: ", "", y.strip())
+
+    propose_prompt = task.propose_prompt_wrap(num_generate_sample, language, x, y_cleaned)
     
     # Generate proposals using Gemma
-    proposals = gemma_generate(prompt=propose_prompt, max_tokens=500)
+    proposals = gemma_generate(prompt=propose_prompt, max_tokens=700)
+
+    
+    proposals = proposals.replace("\n\n", "\n")  # Convert double newlines into single newlines
     
     # Split into multiple steps if necessary
     proposals = proposals.split("\n")
 
-    return [y + _ + '\n' for _ in proposals]
+    if y == "":
+        # Select only odd-indexed proposals (1st, 3rd, 5th, ...)
+        proposals = [proposals[i] for i in range(0, len(proposals), 2)]
+
+
+    return [y_cleaned + _ + '\n' for _ in proposals]
 
 
 def get_samples(task, x, y, n_generate_sample, prompt_sample, stop):
@@ -211,8 +221,7 @@ def solve(args, task, idx, to_print=True):
             
                 # Each new thought should build on the previous one
                 for thought in proposals:
-                    if thought.strip():  # Ignore empty lines
-                        new_ys.append(y + "\n" + thought)
+                    new_ys.append(thought)
         
         new_ys = new_ys
         ids = list(range(len(new_ys)))
