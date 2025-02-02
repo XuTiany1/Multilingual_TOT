@@ -186,3 +186,9 @@ Model Prediction / Ground Truth: 80 / 80
 Correct Predictions / Total Tests: 22 / 31
 Current Accuracy: 70.97%
 ----------------------
+----------------------
+Problem 32: ジョンは10匹の犬の面倒を見ています。各犬のために、1日に30分かけて散歩とそれぞれの世話をする必要があります。彼は1週間に何時間、犬の面倒を見ていますか？
+Model Prediction / Ground Truth: 35 / 35
+Correct Predictions / Total Tests: 23 / 32
+Current Accuracy: 71.88%
+----------------------
