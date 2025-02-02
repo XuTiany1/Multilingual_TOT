@@ -27,7 +27,7 @@ correct_count = 0
 log_dir = f"logs/MGSM/{args.lang}"
 os.makedirs(log_dir, exist_ok=True)
 
-languages = ['en', 'es', 'fr', 'de', 'ru', 'zh', 'ja', 'th', 'sw', 'bn', 'te']
+languages = ['te']
 for lang in languages:
 #log_file = os.path.join(log_dir, f"generate: {args.n_generate_sample} -- select:{args.n_select_sample}")
 
