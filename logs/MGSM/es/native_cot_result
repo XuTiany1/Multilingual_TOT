@@ -1,0 +1,14 @@
+--- TEST LOG START (2025-02-03 08:45:33) ---
+
+----------------------
+Problem 1: Una bata lleva 2 rollos de tela azul y la mitad de esa cantidad de tela blanca. ¿Cuántos rollos se necesitan en total?
+Model Prediction / Ground Truth: 3 / 3
+Correct Predictions / Total Tests: 1 / 1
+Current Accuracy: 100.00%
+----------------------
+----------------------
+Problem 2: Josh decide intentar remodelar y vender una casa. Compra una casa de $80 000 y luego agrega $50 000 para las reparaciones. Esto aumenta un 150 % el valor de la casa. ¿Cuánto obtuvo de ganancia?
+Model Prediction / Ground Truth: 195000 / 70000
+Correct Predictions / Total Tests: 1 / 2
+Current Accuracy: 50.00%
+----------------------
