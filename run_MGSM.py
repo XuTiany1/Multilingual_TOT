@@ -14,13 +14,13 @@ args = argparse.Namespace(
     method_generate='propose', 
     method_evaluate='value', 
     method_select='greedy', 
-    n_generate_sample=3, 
+    n_generate_sample=2, 
     n_evaluate_sample=3, 
     n_select_sample=5
 )
 
 # Define test range
-num_samples = 249  # Adjust the number of test samples
+num_samples = 50  # Adjust the number of test samples
 correct_count = 0
 
 # Create a log directory if it doesn’t exist
@@ -28,7 +28,10 @@ log_dir = f"logs/MGSM/{args.lang}"
 os.makedirs(log_dir, exist_ok=True)
 
 # languages = ['en', 'es', 'fr', 'de', 'ru', 'zh', 'ja', 'th', 'sw', 'bn', 'te']
-languages = ['en', 'es', 'fr', 'de', 'ru', 'zh', 'ja', 'th', 'sw', 'bn', 'te']
+# languages = ['en', 'es', 'fr', 'de', 'ru', 'zh', 'ja', 'th', 'sw', 'bn', 'te']
+
+
+languages = ['es']
 for lang in languages:
 
     # Reset count
@@ -43,7 +46,7 @@ for lang in languages:
     log_dir = f"logs/MGSM/{args.lang}"
     os.makedirs(log_dir, exist_ok=True)
 
-    log_file = os.path.join(log_dir, f"7 steps -- generate: {args.n_generate_sample} -- select:{args.n_select_sample}")
+    log_file = os.path.join(log_dir, f"7 steps --50 -- generate: {args.n_generate_sample} -- select:{args.n_select_sample}")
     #log_file = os.path.join(log_dir, f"cot_result")
 
 
@@ -73,6 +76,7 @@ for lang in languages:
         log_entry = (
             "----------------------\n"
             f"Problem {idx}: {task.get_input(idx)}\n"
+            f"Reasoning: {ys}"
             f"Model Prediction / Ground Truth: {model_answer} / {ground_truth_answer}\n"
             f"Correct Predictions / Total Tests: {correct_count} / {idx}\n"
             f"Current Accuracy: {accuracy:.2%}\n"

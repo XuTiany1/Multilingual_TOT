@@ -3,8 +3,7 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 
-# Select GPU manually (GPU 1, because it's free)
-os.environ["CUDA_VISIBLE_DEVICES"] = "4"
+os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
 print(f"CUDA_VISIBLE_DEVICES set to: {os.environ.get('CUDA_VISIBLE_DEVICES')}")
 

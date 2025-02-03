@@ -4,7 +4,7 @@ import sympy
 import pandas as pd
 from src.tasks.task import Task, DATA_PATH
 from datasets import load_dataset
-from src.prompts.MGSM_EN import *
+from src.prompts.MGSM_ES import *
 
 
 class MgsmTask(Task):

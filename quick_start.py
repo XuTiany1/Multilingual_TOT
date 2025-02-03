@@ -7,7 +7,7 @@ import re
 
 args = argparse.Namespace( 
     task='MGSM', 
-    lang='en',
+    lang='fr',
     naive_run=False, 
     prompt_sample='cot', 
     method_generate='propose', 
