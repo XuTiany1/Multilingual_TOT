@@ -1,0 +1,236 @@
+--- TEST LOG START (2025-02-03 04:09:39) ---
+
+----------------------
+Problem 1: Una bata lleva 2 rollos de tela azul y la mitad de esa cantidad de tela blanca. ¿Cuántos rollos se necesitan en total?
+Model Prediction / Ground Truth: 3 / 3
+Correct Predictions / Total Tests: 1 / 1
+Current Accuracy: 100.00%
+----------------------
+----------------------
+Problem 2: Josh decide intentar remodelar y vender una casa. Compra una casa de $80 000 y luego agrega $50 000 para las reparaciones. Esto aumenta un 150 % el valor de la casa. ¿Cuánto obtuvo de ganancia?
+Model Prediction / Ground Truth: 65000 / 70000
+Correct Predictions / Total Tests: 1 / 2
+Current Accuracy: 50.00%
+----------------------
+----------------------
+Problem 3: James decide correr 3 carreras de velocidad 3 veces por semana. Corre 60 metros en cada carrera de velocidad. ¿Cuántos metros corre en total por semana?
+Model Prediction / Ground Truth: 540 / 540
+Correct Predictions / Total Tests: 2 / 3
+Current Accuracy: 66.67%
+----------------------
+----------------------
+Problem 4: Todos los días, Wendi alimenta a cada uno de sus pollos con tres tazas de alimento mixto para pollo que contiene semillas, larvas y verduras para ayudarlos a mantenerse saludables. Alimenta a los pollos en tres comidas separadas. Por la mañana, le da a su bandada de pollos 15 tazas de alimento. Por la tarde, le da otras 25 tazas de alimento. ¿Cuántas tazas de alimento necesita darle a sus pollos en la última comida del día si el tamaño de la bandada de Wendi es de 20 pollos?
+Model Prediction / Ground Truth: 20 / 20
+Correct Predictions / Total Tests: 3 / 4
+Current Accuracy: 75.00%
+----------------------
+----------------------
+Problem 5: Kylar fue a la tienda a comprar vasos para su nuevo departamento. Un vaso cuesta $5, pero cada segundo vaso cuesta solo el 60 % del precio. Kylar quiere comprar 16 vasos. ¿Cuánto dinero necesita para pagarlos?
+Model Prediction / Ground Truth: 50 / 64
+Correct Predictions / Total Tests: 3 / 5
+Current Accuracy: 60.00%
+----------------------
+----------------------
+Problem 6: En Toulouse hay el doble de ovejas que en Charleston. En Charleston hay 4 veces más ovejas que en Seattle. ¿Cuántas ovejas hay en total en Toulouse, Charleston y Seattle si en Seattle hay 20 ovejas?
+Model Prediction / Ground Truth: 260 / 260
+Correct Predictions / Total Tests: 4 / 6
+Current Accuracy: 66.67%
+----------------------
+----------------------
+Problem 7: Carla está descargando un archivo de 200 GB. Por lo general, puede descargar 2 GB por minuto, pero en el 40 % de la descarga, Windows fuerza un reinicio para instalar actualizaciones, lo que demora 20 minutos. Entonces Carla tiene que reiniciar la descarga desde el principio. ¿Cuánto tiempo lleva la descarga del archivo?
+Model Prediction / Ground Truth: 120 / 160
+Correct Predictions / Total Tests: 4 / 7
+Current Accuracy: 57.14%
+----------------------
+----------------------
+Problem 8: John conduce durante 3 horas a una velocidad de 60 mph y luego da la vuelta porque se da cuenta de que se olvidó algo muy importante en la casa. Intenta volver a la casa en 4 horas, pero pasa las primeras 2 horas en un embotellamiento de tráfico. La siguiente media hora conduce a una velocidad de 30 mph antes de poder conducir el tiempo restante de las 4 horas a 80 mph. ¿A qué distancia de la casa se encuentra al final de esas 4 horas?
+Model Prediction / Ground Truth: 45 / 45
+Correct Predictions / Total Tests: 5 / 8
+Current Accuracy: 62.50%
+----------------------
+----------------------
+Problem 9: La tarifa de Eliza por hora para las primeras 40 horas de trabajo cada semana es $10. También recibe un pago por horas extras de 1,2 veces su tarifa habitual por hora. ¿Cuánto gana Eliza esta semana si trabajó 45 horas?
+Model Prediction / Ground Truth: 460 / 460
+Correct Predictions / Total Tests: 6 / 9
+Current Accuracy: 66.67%
+----------------------
+----------------------
+Problem 10: Un programa nuevo tuvo 60 descargas en el primer mes. La cantidad de descargas en el segundo mes fue tres veces más que las descargas en el primer mes, pero luego se redujo un 30 % en el tercer mes. ¿Cuántas descargas tuvo en total el programa durante los tres meses?
+Model Prediction / Ground Truth: 366 / 366
+Correct Predictions / Total Tests: 7 / 10
+Current Accuracy: 70.00%
+----------------------
+----------------------
+Problem 11: Toula fue a la panadería y compró distintos tipos de pasteles. Compró 3 docenas de donas que cuestan $68 la docena, 2 docenas de mini pastelillos que cuestan $80 la docena y 6 docenas de tortitas de queso a $55 la docena. ¿Cuánto costó todo?
+Model Prediction / Ground Truth: 694 / 694
+Correct Predictions / Total Tests: 8 / 11
+Current Accuracy: 72.73%
+----------------------
+----------------------
+Problem 12: Carlos planta un limonero. Plantar el árbol le costará $90. Cada año dará 7 limones, que puede vender a $1,5 cada uno. Regar y nutrir el árbol cuesta $3 al año. ¿Cuántos años le llevará comenzar a ganar dinero con el limonero?
+Model Prediction / Ground Truth: 10 / 13
+Correct Predictions / Total Tests: 8 / 12
+Current Accuracy: 66.67%
+----------------------
+----------------------
+Problem 13: Melanie es vendedora a domicilio. Vendió un tercio de sus aspiradoras en la casa verde, 2 más en la casa roja y la mitad de lo que le quedaba en la casa naranja. Si a Melanie le quedan 5 aspiradoras, ¿cuántas tenía al comienzo?
+Model Prediction / Ground Truth: 42 / 18
+Correct Predictions / Total Tests: 8 / 13
+Current Accuracy: 61.54%
+----------------------
+----------------------
+Problem 14: En una clase de danza de 20 estudiantes, el 20 % se inscribió en danza contemporánea, el 25 % del resto se inscribió en danza jazz y el resto se inscribió en danza hip-hop. ¿Qué porcentaje del total de los estudiantes se inscribió en danza hip-hop?
+Model Prediction / Ground Truth: 60 / 60
+Correct Predictions / Total Tests: 9 / 14
+Current Accuracy: 64.29%
+----------------------
+----------------------
+Problem 15: Un comerciante quiere elegir entre 2 planes de compra: joyas por un valor de $5000 o dispositivos electrónicos por un valor de $8000. Su asesor financiero especula con que el mercado de las joyas subirá un 2,5 % mientras que el mercado de los dispositivos electrónicos subirá un 1,2 % en el mismo mes. Si el comerciante quiere elegir una opción que le permita aumentar al máximo la ganancia al final de este mes, ¿de cuánto sería esta ganancia?
+Model Prediction / Ground Truth: 125 / 125
+Correct Predictions / Total Tests: 10 / 15
+Current Accuracy: 66.67%
+----------------------
+----------------------
+Problem 16: Dos trenes salen de San Rafael a la misma hora. Comienzan a viajar hacia el oeste, ambos recorren 80 millas. Al día siguiente, viajan hacia el norte y recorren 150 milla. ¿Qué distancia recorrió cada tren en los dos días?
+Model Prediction / Ground Truth: 230 / 230
+Correct Predictions / Total Tests: 11 / 16
+Current Accuracy: 68.75%
+----------------------
+----------------------
+Problem 17: A Jill le pagan $20 la hora por enseñar y $30 por ser entrenadora de porristas. ¿Cuál es su salario anual si trabaja 50 semanas al año, 35 horas a la semana como maestra y 15 horas a la semana como entrenadora?
+Model Prediction / Ground Truth: 57500 / 57500
+Correct Predictions / Total Tests: 12 / 17
+Current Accuracy: 70.59%
+----------------------
+----------------------
+Problem 18: Claire prepara una tortilla de huevos con 3 huevos todas las mañanas para el desayuno. ¿Cuántas docenas de huevo comerá en 4 semanas?
+Model Prediction / Ground Truth: 7 / 7
+Correct Predictions / Total Tests: 13 / 18
+Current Accuracy: 72.22%
+----------------------
+----------------------
+Problem 19: Marissa sale de excursión por un sendero de 12 millas. Le llevó 1 hora caminar las primeras 4 millas, luego otra hora caminar las siguientes dos millas. Si quiere que su velocidad promedio sea 4 millas por hora, ¿a qué velocidad (en millas por hora) debe caminar el resto de la distancia?
+Model Prediction / Ground Truth: 3 / 6
+Correct Predictions / Total Tests: 13 / 19
+Current Accuracy: 68.42%
+----------------------
+----------------------
+Problem 20: Tengo 10 litros de refresco de naranja que contienen dos tercios de agua y quiero agregarlo a 15 litros de refresco de piña que contienen tres quintos de agua. Pero al verterlo, derramo un litro de refresco de naranja. ¿Cuánta agua hay en los 24 litros restantes?
+Model Prediction / Ground Truth: 15 / 15
+Correct Predictions / Total Tests: 14 / 20
+Current Accuracy: 70.00%
+----------------------
+----------------------
+Problem 21: Raymond y Samantha son primos. Raymond nació 6 años antes que Samantha. Raymond tuvo un hijo a los 23 años. Si Samantha ahora tiene 31 años, ¿cuántos años hace que nació el hijo de Raymond?
+Model Prediction / Ground Truth: 14 / 14
+Correct Predictions / Total Tests: 15 / 21
+Current Accuracy: 71.43%
+----------------------
+----------------------
+Problem 22: Billy vende DVD. El martes recibe 8 clientes. Sus primeros 3 clientes compran un DVD cada uno. Los siguientes 2 clientes compran 2 DVD cada uno. Los últimos 3 clientes no compran ningún DVD. ¿Cuántos DVD vendió Billy el martes?
+Model Prediction / Ground Truth: 7 / 7
+Correct Predictions / Total Tests: 16 / 22
+Current Accuracy: 72.73%
+----------------------
+----------------------
+Problem 23: Una vela se derrite 2 centímetros cada hora que está encendida. ¿Cuántos centímetros más corta será una vela después de arder de la 1:00 p. m. a las 5:00 p. m.?
+Model Prediction / Ground Truth: 8 / 8
+Correct Predictions / Total Tests: 17 / 23
+Current Accuracy: 73.91%
+----------------------
+----------------------
+Problem 24: Kyle compró el libro más vendido del año pasado por $19,50. Esto es con un 25 % de descuento del precio original. ¿Cuál era el precio original del libro?
+Model Prediction / Ground Truth: 26 / 26
+Correct Predictions / Total Tests: 18 / 24
+Current Accuracy: 75.00%
+----------------------
+----------------------
+Problem 25: Marie pidió una comida con pollo que cuesta $12, 5 cajas de leche que cuestan $3 cada una, 4 manazas que cuestan $1,50 cada una y algunas cajas de pizza. Marie pagó un total de $50. ¿Cuántas cajas de pizza pidió Marie si cada caja cuesta $8,50?
+Model Prediction / Ground Truth: 2 / 2
+Correct Predictions / Total Tests: 19 / 25
+Current Accuracy: 76.00%
+----------------------
+----------------------
+Problem 26: Mishka compró 3 pares de pantalones cortos, 3 pares de pantalones y 3 pares de zapatos. Un par de pantalones cortos cuesta $16,50. Un par de pantalones cuesta $22,50 y un par de zapatos cuesta $42. ¿Cuántos dólares gastó Mishka en todas las prendas de vestir?
+Model Prediction / Ground Truth: 243 / 243
+Correct Predictions / Total Tests: 20 / 26
+Current Accuracy: 76.92%
+----------------------
+----------------------
+Problem 27: Cynthia come una porción de helado todas las noches. Compra cajas de helado con 15 porciones de helado cada una a un costo de $4,00 la caja. ¿Cuánto gastará en helado después de 60 días?
+Model Prediction / Ground Truth: 16 / 16
+Correct Predictions / Total Tests: 21 / 27
+Current Accuracy: 77.78%
+----------------------
+----------------------
+Problem 28: Henry hizo dos paradas durante su viaje en bicicleta de 60 millas. Primero paró después de 20 millas. Su segunda parada fue 15 millas antes de terminar el viaje. ¿Cuántas millas recorrió entre la primera y la segunda parada?
+Model Prediction / Ground Truth: 25 / 25
+Correct Predictions / Total Tests: 22 / 28
+Current Accuracy: 78.57%
+----------------------
+----------------------
+Problem 29: Gloria está comprando zapatos cuando ve un par de botas que se ajustan a su presupuesto para zapatos. Sin embargo, debe elegir entre las botas y dos pares de zapatos de taco alto que sumados cuestan cinco dólares menos que las botas. Si un par de zapatos de taco alto cuesta $33 y el otro cuesta el doble, ¿cuánto cuestan las botas?
+Model Prediction / Ground Truth: 104 / 104
+Correct Predictions / Total Tests: 23 / 29
+Current Accuracy: 79.31%
+----------------------
+----------------------
+Problem 30: La proporción de las edades de Darrell y Allen es 7:11. Calcule la edad de Allen dentro de 10 años si la edad total de ambos ahora es 162.
+Model Prediction / Ground Truth: 109 / 109
+Correct Predictions / Total Tests: 24 / 30
+Current Accuracy: 80.00%
+----------------------
+----------------------
+Problem 31: Gunter está tratando de contar los caramelos de goma que hay en un frasco. Le pregunta a sus amigos cuántos creen que hay en el frasco. Uno dice 80. Otro dice 20 más que la mitad del primero. Un tercero dice un 25 % más que el primero. ¿Cuál es su cálculo promedio?
+Model Prediction / Ground Truth: 53 / 80
+Correct Predictions / Total Tests: 24 / 31
+Current Accuracy: 77.42%
+----------------------
+----------------------
+Problem 32: John cuida 10 perros. A cada perro le lleva media hora por día pasear y hacer sus necesidades. ¿Cuántas horas a la semana le dedica al cuidado de los perros?
+Model Prediction / Ground Truth: 35 / 35
+Correct Predictions / Total Tests: 25 / 32
+Current Accuracy: 78.12%
+----------------------
+----------------------
+Problem 33: Gretchen tiene 110 monedas. Hay 30 monedas más de oro que de plata. ¿Cuántas monedas de oro tiene Gretchen?
+Model Prediction / Ground Truth: 70 / 70
+Correct Predictions / Total Tests: 26 / 33
+Current Accuracy: 78.79%
+----------------------
+----------------------
+Problem 34: Siobhan tiene 2 joyas menos que Aaron. Aaron tiene 5 joyas más que la mitad de joyas de Raymond. Si Raymond tiene 40 joyas, ¿cuántas joyas tiene Siobhan?
+Model Prediction / Ground Truth: 23 / 23
+Correct Predictions / Total Tests: 27 / 34
+Current Accuracy: 79.41%
+----------------------
+----------------------
+Problem 35: Mike juega al pimpón durante 40 minutos. En los primeros 20 minutos, gana 4 puntos. En los segundos 20 minutos, gana un 25 % más de puntos. ¿Cuántos puntos ganó en total?
+Model Prediction / Ground Truth: 9 / 9
+Correct Predictions / Total Tests: 28 / 35
+Current Accuracy: 80.00%
+----------------------
+----------------------
+Problem 36: Terry come 2 yogures por día. Actualmente hay una oferta de 4 yogures por $5. ¿Cuánto gasta en yogur durante 30 días?
+Model Prediction / Ground Truth: 75 / 75
+Correct Predictions / Total Tests: 29 / 36
+Current Accuracy: 80.56%
+----------------------
+----------------------
+Problem 37: John planea vender todos sus juguetes y usar el dinero para comprar videojuegos. Tiene 13 juegos de Lego que vende a $15 cada uno. Termina comprando 8 videojuegos por $20 cada uno y le sobran $5. ¿Cuántos juegos de Lego le quedan todavía?
+Model Prediction / Ground Truth: 2 / 2
+Correct Predictions / Total Tests: 30 / 37
+Current Accuracy: 81.08%
+----------------------
+----------------------
+Problem 38: John corre 60 millas por semana. Corre 3 días a la semana. El primer día corre 3 horas y la mitad de lo que corre los otros dos días. ¿A qué velocidad corre?
+Model Prediction / Ground Truth: 6 / 10
+Correct Predictions / Total Tests: 30 / 38
+Current Accuracy: 78.95%
+----------------------
+----------------------
+Problem 39: Dana puede correr a una velocidad cuatro veces más rápido que lo que puede caminar, pero puede saltar a una velocidad que es la mitad de rápido de lo que puede correr. Si puede saltar a 3 millas por hora, ¿cuántas millas puede recorrer en seis horas si corre un tercio del tiempo y camina dos tercios del tiempo?
+Model Prediction / Ground Truth: 18 / 18
+Correct Predictions / Total Tests: 31 / 39
+Current Accuracy: 79.49%
+----------------------
