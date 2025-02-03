@@ -1,4 +1,4 @@
---- TEST LOG START (2025-02-02 22:00:18) ---
+--- TEST LOG START (2025-02-03 13:09:08) ---
 
 ----------------------
 Problem 1: ローブを作成するには、青色の繊維を2巻分、白色の繊維をその半分用いる必要があります。全体で何巻必要ですか？
@@ -8,97 +8,97 @@ Current Accuracy: 100.00%
 ----------------------
 ----------------------
 Problem 2: ジョッシュは不動産の売買に挑戦してみることにしました。8万ドルで家を購入し、5万ドルかけて修繕しました。その結果、家の価格は150%分増えました。ジョッシュの利益はいくらでしょうか？
-Model Prediction / Ground Truth: 65000 / 70000
+Model Prediction / Ground Truth: 0 / 70000
 Correct Predictions / Total Tests: 1 / 2
 Current Accuracy: 50.00%
 ----------------------
 ----------------------
 Problem 3: ジェイムズは週に3回、毎回3本のスプリントを走ることに決めました。スプリントごとに60メートル走ります。ジェイムズは1週間で何メートル走るでしょうか？
-Model Prediction / Ground Truth: 3780 / 540
-Correct Predictions / Total Tests: 1 / 3
-Current Accuracy: 33.33%
+Model Prediction / Ground Truth: 540 / 540
+Correct Predictions / Total Tests: 2 / 3
+Current Accuracy: 66.67%
 ----------------------
 ----------------------
 Problem 4: 毎日、ウェンディは飼っている鶏に対して、健康維持のため、種、ミールワーム、野菜を含む混合試料を3カップ分与えています。鶏への餌は3回に分けて与えています。朝、鶏全体に対して15カップ分の餌を与えます。午後、さらに25カップ分の餌を与えます。仮にウェンディの鶏の総数が20羽だった場合、3回目の餌やりでは何カップ分与える必要があるでしょうか？
 Model Prediction / Ground Truth: 20 / 20
-Correct Predictions / Total Tests: 2 / 4
-Current Accuracy: 50.00%
+Correct Predictions / Total Tests: 3 / 4
+Current Accuracy: 75.00%
 ----------------------
 ----------------------
 Problem 5: カイラーは新しいアパート用にグラスを買いに店に出かけました。グラスは1つあたり5ドルかかりますが、1つ買うと2つ目は本来の60%の価格で買えます。カイラーはグラスを16個買おうとしています。総額はいくらになるでしょうか？
-Model Prediction / Ground Truth: 64 / 64
+Model Prediction / Ground Truth: 78 / 64
 Correct Predictions / Total Tests: 3 / 5
 Current Accuracy: 60.00%
 ----------------------
 ----------------------
 Problem 6: トゥルーズはチャールストンに比べ2倍の数の羊を飼っています。チャールストンはシアトルに比べ4倍の数の羊を飼っています。シアトルが飼っている羊の数が20頭だったとしたら、トゥルーズ、チャールストン、シアトルが飼っている羊の総数は何頭でしょうか？
-Model Prediction / Ground Truth: 140 / 260
-Correct Predictions / Total Tests: 3 / 6
-Current Accuracy: 50.00%
+Model Prediction / Ground Truth: 260 / 260
+Correct Predictions / Total Tests: 4 / 6
+Current Accuracy: 66.67%
 ----------------------
 ----------------------
 Problem 7: カーラは200ギガバイトのファイルをダウンロードしダウンロードしようとしています。通常であれば1分あたり2ギガバイトの速度でダウンロードが可能なのですが、ダウンロードが40%進んだところで、ウィンドウズがアップデートのインストールのため20分かけて再起動してしまいます。その後、カーラは最初からダウンロードをし直すことになりました。ファイルのダウンロードにはどれほどの時間がかかりますか？
-Model Prediction / Ground Truth: 60 / 160
-Correct Predictions / Total Tests: 3 / 7
-Current Accuracy: 42.86%
+Model Prediction / Ground Truth: 100 / 160
+Correct Predictions / Total Tests: 4 / 7
+Current Accuracy: 57.14%
 ----------------------
 ----------------------
 Problem 8: ジョンは時速60マイルで3時間車を運転した後に、自宅に非常に大事なものを忘れたことに気づいたため引き返します。4時間以内に自宅に戻ろうとしますが、最初の2時間は大渋滞で動けません。次の30分間を時速30マイルで運転し、その後時速80マイルで自宅に向かいました。4時間が経過したタイミングで、ジョンは自宅から何マイル離れていることになりますか？
-Model Prediction / Ground Truth: 75 / 45
-Correct Predictions / Total Tests: 3 / 8
-Current Accuracy: 37.50%
+Model Prediction / Ground Truth: 285 / 45
+Correct Predictions / Total Tests: 4 / 8
+Current Accuracy: 50.00%
 ----------------------
 ----------------------
 Problem 9: エライザの時給は、週の最初の40時間は、10ドルです。残業代は通常の1.2倍の給料が支払われます。エライザが今週45時間働いたとしたら、彼女が手にできる給料はいくらでしょうか？
 Model Prediction / Ground Truth: 460 / 460
-Correct Predictions / Total Tests: 4 / 9
-Current Accuracy: 44.44%
+Correct Predictions / Total Tests: 5 / 9
+Current Accuracy: 55.56%
 ----------------------
 ----------------------
 Problem 10: 新規のプログラムが最初の月は60回ダウンロードされました。2か月目にはダウンロード回数は3倍に膨れ上がりましたが、3か月目は30%減少しました。3か月間でプログラムのダウンロード回数は合計何回だったでしょうか？
 Model Prediction / Ground Truth: 366 / 366
-Correct Predictions / Total Tests: 5 / 10
-Current Accuracy: 50.00%
+Correct Predictions / Total Tests: 6 / 10
+Current Accuracy: 60.00%
 ----------------------
 ----------------------
 Problem 11: トゥーラはパン屋さんに行き、様々なペーストリーを買いました。12個あたり68ドルかかるドーナッツを36個、12個あたり80ドルかかるミニカップケーキを24個、12個あたり55ドルかかるミニチーズケーキを72個購入しました。合計金額はいくらだったでしょうか？
 Model Prediction / Ground Truth: 694 / 694
-Correct Predictions / Total Tests: 6 / 11
-Current Accuracy: 54.55%
+Correct Predictions / Total Tests: 7 / 11
+Current Accuracy: 63.64%
 ----------------------
 ----------------------
 Problem 12: カルロスはレモンの木を植えようとしています。レモンの木は植えるのに90ドルかかります。毎年7個のレモンがなり、1つあたり1.5ドルで売れます。木に水をやり肥料を与えるのに1年間で3ドルかかります。カルロスがレモンの木で収益を得るようになるには何年かかりますか？
-Model Prediction / Ground Truth: 15 / 13
-Correct Predictions / Total Tests: 6 / 12
-Current Accuracy: 50.00%
+Model Prediction / Ground Truth: 12 / 13
+Correct Predictions / Total Tests: 7 / 12
+Current Accuracy: 58.33%
 ----------------------
 ----------------------
 Problem 13: メラニーは訪問販売員です。販売中の掃除機のうち、緑の家で3分の1、赤の家で2台、オレンジの家で残数の半分を販売しました。メラニーの手元に掃除機が5台残っている場合、販売開始時点で何台持っていたことになりますか？
-Model Prediction / Ground Truth: 10 / 18
-Correct Predictions / Total Tests: 6 / 13
-Current Accuracy: 46.15%
+Model Prediction / Ground Truth: 11 / 18
+Correct Predictions / Total Tests: 7 / 13
+Current Accuracy: 53.85%
 ----------------------
 ----------------------
 Problem 14: 20人の生徒からなるダンスクラスで、20%がコンテンポラリーダンス、残りの生徒のうち25%がジャズダンス、その残りがヒップホップダンスを学んでいます。生徒全体のうちヒップホップダンスを学んでいる人の割合は何ですか？
 Model Prediction / Ground Truth: 60 / 60
-Correct Predictions / Total Tests: 7 / 14
-Current Accuracy: 50.00%
+Correct Predictions / Total Tests: 8 / 14
+Current Accuracy: 57.14%
 ----------------------
 ----------------------
 Problem 15: ある商人が、5,000ドルの宝石と8,000ドルの電化製品という2つの仕入れ計画から1つを選択しようとしています。商人の金融アドバイザーの推測によれば、今後同じ月の間に、宝石の価格は2.5%、電化製品の価格は1.2%上昇します。この月の終わりに利益を最大化できるよう仕入れ計画を選択するとすると、その利益はいくらになりますか？
 Model Prediction / Ground Truth: 125 / 125
-Correct Predictions / Total Tests: 8 / 15
-Current Accuracy: 53.33%
+Correct Predictions / Total Tests: 9 / 15
+Current Accuracy: 60.00%
 ----------------------
 ----------------------
 Problem 16: サンラファエルを2つの電車が同時に出発します。いずれも西の方向に向かって80マイル走行します。次の日、北の方向に向かって150マイル進みました。それぞれの電車が2日間で走行した距離は何マイルですか？
 Model Prediction / Ground Truth: 230 / 230
-Correct Predictions / Total Tests: 9 / 16
-Current Accuracy: 56.25%
+Correct Predictions / Total Tests: 10 / 16
+Current Accuracy: 62.50%
 ----------------------
 ----------------------
 Problem 17: ジルは、教員としては時給20ドル、チアリーディングコーチとしては時給30ドル受け取ります。ジルが年間50週間働き、1週間に35時間を教員、15時間をコーチとして働いた場合、年間の給料はいくらになりますか？
-Model Prediction / Ground Truth: 57500 / 57500
+Model Prediction / Ground Truth: 500 / 57500
 Correct Predictions / Total Tests: 10 / 17
 Current Accuracy: 58.82%
 ----------------------
@@ -110,49 +110,49 @@ Current Accuracy: 55.56%
 ----------------------
 ----------------------
 Problem 19: マリッサは12マイルにわたるハイキングをします。最初の4マイルを歩くのに1時間かかり、次の2マイルを歩くのにまた1時間かかりました。1時間あたり平均4マイルの時速で歩きたい場合、残りの距離はどれくらいの速度（1時間あたりのマイル数）で歩かないといけませんか？
-Model Prediction / Ground Truth: 4 / 6
+Model Prediction / Ground Truth: 5 / 6
 Correct Predictions / Total Tests: 10 / 19
 Current Accuracy: 52.63%
 ----------------------
 ----------------------
 Problem 20: 3分の2が水からなる10リットルのオレンジジュースがあります。5分の3が水からなる15リットルのパイナップルドリンクにこれを加えようとしています。注いでいる途中でオレンジジュースを1リットルこぼしてしまいました。残り24リットルのうち水はどれくらい含まれていますか？
-Model Prediction / Ground Truth: 14 / 15
+Model Prediction / Ground Truth: 4 / 15
 Correct Predictions / Total Tests: 10 / 20
 Current Accuracy: 50.00%
 ----------------------
 ----------------------
 Problem 21: レイモンドとサマンサはいとこ同士です。レイモンドはサマンサより6年間早く生まれました。レイモンドには23歳の時に息子ができました。サマンサが今31歳だとしたら、レイモンドの息子が生まれたのは何年前のことですか？
-Model Prediction / Ground Truth: 2 / 14
-Correct Predictions / Total Tests: 10 / 21
-Current Accuracy: 47.62%
+Model Prediction / Ground Truth: 14 / 14
+Correct Predictions / Total Tests: 11 / 21
+Current Accuracy: 52.38%
 ----------------------
 ----------------------
 Problem 22: ビリーはDVDを売ります。彼は火曜日に8人のお客様がいます。彼の最初の3人のお客様はそれぞれ1枚のDVDを購入します。彼の翌日の2人の顧客は2枚のDVDをそれぞれ購入しました。の最後の3人のお客様はDVDを購入しません。ビリーは火曜日に何枚のDVDを売りましたか？
 Model Prediction / Ground Truth: 7 / 7
-Correct Predictions / Total Tests: 11 / 22
-Current Accuracy: 50.00%
+Correct Predictions / Total Tests: 12 / 22
+Current Accuracy: 54.55%
 ----------------------
 ----------------------
 Problem 23: 蝋燭は1時間燃えるごとに、2センチ溶けます。午後1時から、午後5時までに燃えた蝋燭は、何センチ短くなるでしょう？
 Model Prediction / Ground Truth: 8 / 8
-Correct Predictions / Total Tests: 12 / 23
-Current Accuracy: 52.17%
+Correct Predictions / Total Tests: 13 / 23
+Current Accuracy: 56.52%
 ----------------------
 ----------------------
 Problem 24: カイルは去年、ベストセラーの本を$19.50で購入しました。元の価格よりも25%安値です。この本の元の価格はいくらですか？
 Model Prediction / Ground Truth: 26 / 26
-Correct Predictions / Total Tests: 13 / 24
-Current Accuracy: 54.17%
+Correct Predictions / Total Tests: 14 / 24
+Current Accuracy: 58.33%
 ----------------------
 ----------------------
 Problem 25: マリーは$12のチキンのメニューを1つ、それぞれ$3の牛乳を5パック、それぞれ$1.5のリンゴを4つ、そしてピザを何箱か頼みました。マリーは全部で$50払いました。ピザが1箱$8.50だとしたら、マリーは何箱ピザを頼みましたか？
 Model Prediction / Ground Truth: 2 / 2
-Correct Predictions / Total Tests: 14 / 25
-Current Accuracy: 56.00%
+Correct Predictions / Total Tests: 15 / 25
+Current Accuracy: 60.00%
 ----------------------
 ----------------------
 Problem 26: ミシュカは半ズボンを3本、長ズボンを3本、靴を3足買いました。半ズボンは1本$16.50でした。長ズボンは1本$22.50で、靴は1足$42でした。すべての衣類にいくら使いましたか？
-Model Prediction / Ground Truth: 243 / 243
+Model Prediction / Ground Truth: 0 / 243
 Correct Predictions / Total Tests: 15 / 26
 Current Accuracy: 57.69%
 ----------------------
@@ -194,157 +194,157 @@ Current Accuracy: 62.50%
 ----------------------
 ----------------------
 Problem 33: グレッチェンは110枚のコインを持っています。金のコインは銀のコインよりも30枚多いです。グレッチェンは金のコインを何枚持っていますか？
-Model Prediction / Ground Truth: 80 / 70
-Correct Predictions / Total Tests: 20 / 33
-Current Accuracy: 60.61%
+Model Prediction / Ground Truth: 70 / 70
+Correct Predictions / Total Tests: 21 / 33
+Current Accuracy: 63.64%
 ----------------------
 ----------------------
 Problem 34: シヴォーンが持つ宝石の数は、アーロンよりも2個少ないです。アーロンはレイモンドよりも、5個多く宝石を持っています。もしもレイモンドが40個の宝石を持っている場合、シヴォーンはいくつ宝石を持っていますか？
 Model Prediction / Ground Truth: 43 / 23
-Correct Predictions / Total Tests: 20 / 34
-Current Accuracy: 58.82%
+Correct Predictions / Total Tests: 21 / 34
+Current Accuracy: 61.76%
 ----------------------
 ----------------------
 Problem 35: マイクは卓球を40分します。最初の20分に、彼は4ポイント得点します。次の20分では、彼は25%多く得点しました。全部で何ポイント得点しましたか？
 Model Prediction / Ground Truth: 9 / 9
-Correct Predictions / Total Tests: 21 / 35
-Current Accuracy: 60.00%
+Correct Predictions / Total Tests: 22 / 35
+Current Accuracy: 62.86%
 ----------------------
 ----------------------
 Problem 36: テリーは1日に2つヨーグルトを食べます。現在ヨーグルトは4つで$5のセール中です。彼は30日分のヨーグルトにいくら使いますか？
 Model Prediction / Ground Truth: 75 / 75
-Correct Predictions / Total Tests: 22 / 36
-Current Accuracy: 61.11%
+Correct Predictions / Total Tests: 23 / 36
+Current Accuracy: 63.89%
 ----------------------
 ----------------------
 Problem 37: ジョンは自分のすべてのおもちゃを売り、そのお金でビデオゲームを買う予定です。彼は13個のレゴセットを持っており、$15でそれぞれ売ります。彼は最終的に、$20のビデオゲームを8個買い、$5残りました。彼は現在、何個のレゴセットを持っていますか？
 Model Prediction / Ground Truth: 2 / 2
-Correct Predictions / Total Tests: 23 / 37
-Current Accuracy: 62.16%
+Correct Predictions / Total Tests: 24 / 37
+Current Accuracy: 64.86%
 ----------------------
 ----------------------
 Problem 38: ジョンは週に60マイル走ります。週に3日走ります。最初の日は3時間走り、その他の2日は半分走ります。彼の走る速度はどれくらいですか？
 Model Prediction / Ground Truth: 10 / 10
-Correct Predictions / Total Tests: 24 / 38
-Current Accuracy: 63.16%
+Correct Predictions / Total Tests: 25 / 38
+Current Accuracy: 65.79%
 ----------------------
 ----------------------
 Problem 39: ダナは、徒歩の時よりも4倍の速さで走ることができますが、走る速度の半分の速さでスキップすることができます。彼女が1時間に3マイルの速度でスキップできる場合、3分の1の時間を走り、3分の2を歩くとしたら、6時間で何キロ進めますか？
-Model Prediction / Ground Truth: 30 / 18
-Correct Predictions / Total Tests: 24 / 39
-Current Accuracy: 61.54%
+Model Prediction / Ground Truth: 63 / 18
+Correct Predictions / Total Tests: 25 / 39
+Current Accuracy: 64.10%
 ----------------------
 ----------------------
 Problem 40: ブランドンのiPhoneはベンのiPhoneの4倍古いです。ベンのiPhoneはスージーのiPhoneよりも2倍古いです。スージーのiPhoneが利用して1年目なら、ブランドンのiPhoneは何年目ですか？
 Model Prediction / Ground Truth: 8 / 8
-Correct Predictions / Total Tests: 25 / 40
-Current Accuracy: 62.50%
+Correct Predictions / Total Tests: 26 / 40
+Current Accuracy: 65.00%
 ----------------------
 ----------------------
 Problem 41: その大きなドラゴン、ペルグはファーボ山の頂上に座り、1000フィート内にいるものすべてに火を吹きました。ポリーは、ドラゴンを削げる唯一の武器として知られる金の槍を、400フィート投げることができました。その距離はドラゴンの炎が十分届く範囲です。しかし、ポリーがサファイアの宝石を持っている場合は、持たない時よりも槍を3倍遠くに投げることができました。宝石を持っていた場合、ポリーはドラゴンの炎が当たる範囲からどれくらい離れて、金の槍をドラゴンに当てることができますか？
 Model Prediction / Ground Truth: 200 / 200
-Correct Predictions / Total Tests: 26 / 41
-Current Accuracy: 63.41%
+Correct Predictions / Total Tests: 27 / 41
+Current Accuracy: 65.85%
 ----------------------
 ----------------------
 Problem 42: ジョーンズおばあちゃんは消防士の昼食会のためにアップルパイを5枚焼きました。それぞれのパイを8個に切り分け、ゲストが自分たちで取れるよう、その5枚のパイをブッフェテーブルに置きました。ゲストがそれぞれのパイを取り、食べた後、夜更けには14個のパイが残っていました。ゲストは何個のパイを食べましたか？
-Model Prediction / Ground Truth: 40 / 26
-Correct Predictions / Total Tests: 26 / 42
-Current Accuracy: 61.90%
+Model Prediction / Ground Truth: 26 / 26
+Correct Predictions / Total Tests: 28 / 42
+Current Accuracy: 66.67%
 ----------------------
 ----------------------
 Problem 43: 栄養価情報によると、ポテトチップス1袋は、1食あたり250カロリーです。あなたの毎日のカロリー目標が2000だとして、あなたがすでに1800カロリー摂取している場合、5食入りの1袋300グラムのポテトチップスを何グラム食べることができますか？
-Model Prediction / Ground Truth: 241 / 48
-Correct Predictions / Total Tests: 26 / 43
-Current Accuracy: 60.47%
+Model Prediction / Ground Truth: 48 / 48
+Correct Predictions / Total Tests: 29 / 43
+Current Accuracy: 67.44%
 ----------------------
 ----------------------
 Problem 44: チャーリーは蜜蝋を売りたいです。蜜蝋1ポンドあたり、彼は10本のテイパー型キャンドルを作れます。備品の蜜蝋と芯1ポンドあたり、$10.00のコストがかかります。彼は各キャンドルをそれぞれ$2.00で売るとしたら、20本のキャンドルを作って売った場合の純利益はいくらになりますか？
-Model Prediction / Ground Truth: 20 / 20
-Correct Predictions / Total Tests: 27 / 44
-Current Accuracy: 61.36%
+Model Prediction / Ground Truth: 0 / 20
+Correct Predictions / Total Tests: 29 / 44
+Current Accuracy: 65.91%
 ----------------------
 ----------------------
 Problem 45: メレディスは健康のトピックについて書き、毎日クライアントに提出することが本業の、フリーランスのブロガーです。ブログ記事は、リサーチして執筆するために平均4時間かかります。先週、月曜日に彼女は5記事書き、火曜日は月曜日の2/5倍の記事を書きました。水曜日、彼女は火曜日に書いた記事の数の倍の数を書きました。3日間で彼女は合計何時間、記事を書くことに使ったのかを計算しなさい。
 Model Prediction / Ground Truth: 44 / 104
-Correct Predictions / Total Tests: 27 / 45
-Current Accuracy: 60.00%
+Correct Predictions / Total Tests: 29 / 45
+Current Accuracy: 64.44%
 ----------------------
 ----------------------
 Problem 46: キャンディスはポストイットを80枚、コーヒーショップの仕事に向かう前に鞄に入れました。向かう途中、店に立ち寄り、ポストイットのパックを買いました。職場で、彼女は220個の様々なコーヒーカップにポストイットのメモを1枚ずつ貼りました。彼女に23枚のポストイットメモが残っていたとすると、彼女が購入したパックには何枚のポストイットメモが入っていましたか？
-Model Prediction / Ground Truth: 163 / 163
-Correct Predictions / Total Tests: 28 / 46
-Current Accuracy: 60.87%
+Model Prediction / Ground Truth: 277 / 163
+Correct Predictions / Total Tests: 29 / 46
+Current Accuracy: 63.04%
 ----------------------
 ----------------------
 Problem 47: ジョンは、青いネクタイの2倍の数の赤いネクタイを買います。赤いネクタイは青いネクタイよりも50%高いです。彼はそれぞれ$40の青いネクタイに$200使いました。彼はネクタイにいくら使いましたか？
-Model Prediction / Ground Truth: 200 / 800
-Correct Predictions / Total Tests: 28 / 47
-Current Accuracy: 59.57%
+Model Prediction / Ground Truth: 800 / 800
+Correct Predictions / Total Tests: 30 / 47
+Current Accuracy: 63.83%
 ----------------------
 ----------------------
 Problem 48: トレイシーは4フィートの長さのワイヤーを、庭でトマトの苗木を支えるために使っていました。ワイヤは今、6インチの長さに切り分けられています。彼女は幾つのワイヤを手に入れましたか？
 Model Prediction / Ground Truth: 8 / 8
-Correct Predictions / Total Tests: 29 / 48
-Current Accuracy: 60.42%
+Correct Predictions / Total Tests: 31 / 48
+Current Accuracy: 64.58%
 ----------------------
 ----------------------
 Problem 49: リチャードは15階建てのマンションに住んでいる。各階には8部屋あり、建物の3/4が入居されている。建物で未入居の部屋は全部で何室あるか？
 Model Prediction / Ground Truth: 30 / 30
-Correct Predictions / Total Tests: 30 / 49
-Current Accuracy: 61.22%
+Correct Predictions / Total Tests: 32 / 49
+Current Accuracy: 65.31%
 ----------------------
 ----------------------
 Problem 50: ロイドは卵牧場を持っている。彼の鶏は1日に252個の卵を作り、1ダース$2で売る。ロイドは卵で、週にいくら生み出すことができるか？
 Model Prediction / Ground Truth: 294 / 294
-Correct Predictions / Total Tests: 31 / 50
-Current Accuracy: 62.00%
+Correct Predictions / Total Tests: 33 / 50
+Current Accuracy: 66.00%
 ----------------------
 ----------------------
 Problem 51: トムの船は1時間に10マイル進むことができる。彼は午後1時から4時まで航海しています。それから彼は、時速6マイルで帰路に着きます。彼が戻るまでに、どれくらいかかりますか？
 Model Prediction / Ground Truth: 5 / 5
-Correct Predictions / Total Tests: 32 / 51
-Current Accuracy: 62.75%
+Correct Predictions / Total Tests: 34 / 51
+Current Accuracy: 66.67%
 ----------------------
 ----------------------
 Problem 52: ユーライアの本用の鞄は彼にとって重すぎになっている。彼は15ポンド底から取り除く必要がある。彼の漫画本はそれぞれ1/4ポンドで、おもちゃはそれぞれ1/2ポンドだ。彼が30冊の漫画本を取り除いたら、おもちゃはいくつ取り除く必要があるか？
-Model Prediction / Ground Truth: 7 / 15
-Correct Predictions / Total Tests: 32 / 52
-Current Accuracy: 61.54%
+Model Prediction / Ground Truth: 15 / 15
+Correct Predictions / Total Tests: 35 / 52
+Current Accuracy: 67.31%
 ----------------------
 ----------------------
 Problem 53: 整備士はトラックや車の修理に異なる料金を請求します。各トラックのタイヤの修理に整備士は$60、各車のタイヤの修理に整備士は$40請求します。木曜日、整備士は6個のトラックのタイヤと4個の車のタイヤを修理します。金曜日、整備士は12個のタイヤを修理しましたが、トラックタイヤは修理していません。整備士はより多くの収益をあげた日に、どれだけの多くの利益をあげましたか？
-Model Prediction / Ground Truth: 40 / 40
-Correct Predictions / Total Tests: 33 / 53
-Current Accuracy: 62.26%
+Model Prediction / Ground Truth: 520 / 40
+Correct Predictions / Total Tests: 35 / 53
+Current Accuracy: 66.04%
 ----------------------
 ----------------------
 Problem 54: ダウトファイア姉妹は、母親が電話で彼女たちに、自宅の2匹の猫が子猫を生んだと伝える時、地元のシェルターから迎えた7匹の子猫をつれて、自宅へと運転中です。彼女は、最初の猫、パッチーが、迎えられた子猫の数の3倍の数の子猫を生んだと、また、別の猫トリクシーは、12匹の子猫を生んだと言います。ダウトファイア家には今何匹の子猫がいますか？
 Model Prediction / Ground Truth: 33 / 40
-Correct Predictions / Total Tests: 33 / 54
-Current Accuracy: 61.11%
+Correct Predictions / Total Tests: 35 / 54
+Current Accuracy: 64.81%
 ----------------------
 ----------------------
 Problem 55: ジェーンは30個の飴を持っている。ジェーンはその飴のうち2つ食べる。残りの飴で、ジェーンは1つの袋に2つの飴を入れてセットにしたいと思っています。ジェーンは何袋用意できますか？
 Model Prediction / Ground Truth: 14 / 14
-Correct Predictions / Total Tests: 34 / 55
-Current Accuracy: 61.82%
+Correct Predictions / Total Tests: 36 / 55
+Current Accuracy: 65.45%
 ----------------------
 ----------------------
 Problem 56: ピーターは今週映画に行く予定です。彼はいつも$7のチケットと$7のポップコーンを買います。彼がその週のために42ドル持っているとしたら、映画に何回行けますか？
 Model Prediction / Ground Truth: 3 / 3
-Correct Predictions / Total Tests: 35 / 56
-Current Accuracy: 62.50%
+Correct Predictions / Total Tests: 37 / 56
+Current Accuracy: 66.07%
 ----------------------
 ----------------------
 Problem 57: 木の橋は5000ポンドを超える重さに耐えられません。配達トラックはそれぞれ15ポンドの同じ箱を33個積んでおり、橋を渡ろうとしています。運転手と空のトラックを合わせた重さは3755ポンドです。橋の重量制限を超える事なく、トラックに積み込める箱は、最大何個になりますか？
-Model Prediction / Ground Truth: 83 / 83
-Correct Predictions / Total Tests: 36 / 57
-Current Accuracy: 63.16%
+Model Prediction / Ground Truth: 50 / 83
+Correct Predictions / Total Tests: 37 / 57
+Current Accuracy: 64.91%
 ----------------------
 ----------------------
 Problem 58: スティーブンは食料品の注文をオンラインで行った。彼の最終的な請求書は$40.00だった。デリバリー会社を通したので、彼らが25%の手数料を最終的な総額に上乗せし、デリバリー料金として$3.00請求した。スティーブンはまた、$4.00チップを追加した。追加の手数料を足した後、スティーブンの食料品の注文の最終的な料金は？
-Model Prediction / Ground Truth: 57 / 57
+Model Prediction / Ground Truth: 0 / 57
 Correct Predictions / Total Tests: 37 / 58
 Current Accuracy: 63.79%
 ----------------------
@@ -356,7 +356,7 @@ Current Accuracy: 64.41%
 ----------------------
 ----------------------
 Problem 60: かごには、1つだめになり、20%がまだ青く、2つが酸っぱく、残りがいい状態のオレンジが25個入っています。何個のオレンジがいい状態ですか？
-Model Prediction / Ground Truth: 14 / 17
+Model Prediction / Ground Truth: 25 / 17
 Correct Predictions / Total Tests: 38 / 60
 Current Accuracy: 63.33%
 ----------------------
@@ -368,103 +368,103 @@ Current Accuracy: 63.93%
 ----------------------
 ----------------------
 Problem 62: マーシーが同じ会社で40年働くと、彼女は年に年金を$50,000もらえる。20年後から、彼女は年額5%の年金を受け取ることができるようになる。彼女が30年後にやめたら、彼女の年金は年額いくらになる？
-Model Prediction / Ground Truth: 522500 / 25000
+Model Prediction / Ground Truth: 50 / 25000
 Correct Predictions / Total Tests: 39 / 62
 Current Accuracy: 62.90%
 ----------------------
 ----------------------
 Problem 63: アリーナが毎月$140かかるストリーミングサービスをサブスクライブしている。最初の半年分を彼女が支払い、その後の半年をストリーミングサービスが10%割引料金で彼女に提供した場合、彼女がその年の終わりまでに、そのストリーミングサービスに支払った料金を計算しなさい。
-Model Prediction / Ground Truth: 756 / 1596
-Correct Predictions / Total Tests: 39 / 63
-Current Accuracy: 61.90%
+Model Prediction / Ground Truth: 1596 / 1596
+Correct Predictions / Total Tests: 40 / 63
+Current Accuracy: 63.49%
 ----------------------
 ----------------------
 Problem 64: ソフィアはロードトリップをすることを考えており、1タンク分のガソリンでどれくらいの距離を走れるかを知りたいと思っています。彼女は最後にタンクを満タンにして以来、100マイル運転しており、再度タンクを満タンにするには4ガロン入れる必要がありました。車の持主用マニュアルには、タンクには12ガロンのガスが入ると書いてあります。ソフィアは1タンク分のガソリンで何マイル進むことができますか？
 Model Prediction / Ground Truth: 300 / 300
-Correct Predictions / Total Tests: 40 / 64
-Current Accuracy: 62.50%
+Correct Predictions / Total Tests: 41 / 64
+Current Accuracy: 64.06%
 ----------------------
 ----------------------
 Problem 65: ジムはテレビを観て2時間過ごし、それからベッドに行ってその半分の時間読書します。これを週に3回行います。彼は4週間で、何時間テレビを観ることと読書に費やしますか？
-Model Prediction / Ground Truth: 36 / 36
+Model Prediction / Ground Truth: 12 / 36
 Correct Predictions / Total Tests: 41 / 65
 Current Accuracy: 63.08%
 ----------------------
 ----------------------
 Problem 66: バスケットボールの大会で、4校が競っている。各学校が女子バスケットボールチームと男子バスケットボールチームを参加させており、各チーム5人いる。各学校はまた、コーチも1人参加させている。すべての学校で、全部で何人の人間が参加しているか？
-Model Prediction / Ground Truth: 44 / 48
-Correct Predictions / Total Tests: 41 / 66
-Current Accuracy: 62.12%
+Model Prediction / Ground Truth: 48 / 48
+Correct Predictions / Total Tests: 42 / 66
+Current Accuracy: 63.64%
 ----------------------
 ----------------------
 Problem 67: トレジャーハンターは、宝石が詰まった、埋葬された宝のタンスを見つけた。175のダイヤモンドと、それよりも35少ないルビー、ルビーの2倍の数のエメラルドがあった。タンスには全部でいくつの宝石があった？
 Model Prediction / Ground Truth: 595 / 595
-Correct Predictions / Total Tests: 42 / 67
-Current Accuracy: 62.69%
+Correct Predictions / Total Tests: 43 / 67
+Current Accuracy: 64.18%
 ----------------------
 ----------------------
 Problem 68: ウェルツ博士の学校には、女の子の数の2倍の男の子がいます。女子が60人で、教師1人に生徒が5人なら、何人の先生がいますか？
 Model Prediction / Ground Truth: 36 / 36
-Correct Predictions / Total Tests: 43 / 68
-Current Accuracy: 63.24%
+Correct Predictions / Total Tests: 44 / 68
+Current Accuracy: 64.71%
 ----------------------
 ----------------------
 Problem 69: ベイリーは最初、ある程度のお金があります。それから彼女は8週間、$5の手当てを毎週受け取ります。8週間の終わりには、彼女が全部で$100持っていたとしたら、ベイリーは最初、いくら持っていましたか？
 Model Prediction / Ground Truth: 60 / 60
-Correct Predictions / Total Tests: 44 / 69
-Current Accuracy: 63.77%
+Correct Predictions / Total Tests: 45 / 69
+Current Accuracy: 65.22%
 ----------------------
 ----------------------
 Problem 70: ジュディは、平日は毎日5つのダンスのクラスを教えており、土曜日は8クラス教えています。もしも各クラスに15人の生徒がおり、1人に$15請求しているとしたら、彼女は1週間でいくら稼ぎますか？
 Model Prediction / Ground Truth: 7425 / 7425
-Correct Predictions / Total Tests: 45 / 70
-Current Accuracy: 64.29%
+Correct Predictions / Total Tests: 46 / 70
+Current Accuracy: 65.71%
 ----------------------
 ----------------------
 Problem 71: ケリーアンは料理の準備をするために2つのレシピがあり、1つ目は20の指示、2つ目は1つ目のレシピの2倍の指示がある。ケリーアンが2つの料理を準備するためには、どれだけの指示を読まなければいけないか？
 Model Prediction / Ground Truth: 60 / 60
-Correct Predictions / Total Tests: 46 / 71
-Current Accuracy: 64.79%
+Correct Predictions / Total Tests: 47 / 71
+Current Accuracy: 66.20%
 ----------------------
 ----------------------
 Problem 72: トミーは1スライス$3のブラウニーと、$4のチーズケーキを売って、自分のチャリティーの費用を集めている。もしもトミーが43個のブラウニーと、23個のチーズケーキを売れば、トミーはいくら集められますか？
 Model Prediction / Ground Truth: 221 / 221
-Correct Predictions / Total Tests: 47 / 72
-Current Accuracy: 65.28%
+Correct Predictions / Total Tests: 48 / 72
+Current Accuracy: 66.67%
 ----------------------
 ----------------------
 Problem 73: シーラは5つの携帯電話を3回払いで、それぞれ$150で購入した。各ユニットに、2%の利息が請求される。シーラは3カ月間、毎月いくら払うことになるか？
 Model Prediction / Ground Truth: 255 / 255
-Correct Predictions / Total Tests: 48 / 73
-Current Accuracy: 65.75%
+Correct Predictions / Total Tests: 49 / 73
+Current Accuracy: 67.12%
 ----------------------
 ----------------------
 Problem 74: アーティーはファーマーズマーケットでフラワースタンドを開いています。彼は3種類の花、マリーゴールド、ペチュニア、ベゴニアを売っています。マリーゴールドは1鉢$2.74、ペチュニアは1鉢$1.87、ベゴニアは1鉢$2.12です。アーティーはお釣りを今日持っていないので、彼はすべてを、最も近いドル単位で価格設定することに決めました。もしもアーティーがマリーゴールドを12鉢、ペチュニアを9鉢、ベゴニアを17鉢売るとしたら、彼はいくら売ることができますか？
 Model Prediction / Ground Truth: 86 / 88
-Correct Predictions / Total Tests: 48 / 74
-Current Accuracy: 64.86%
+Correct Predictions / Total Tests: 49 / 74
+Current Accuracy: 66.22%
 ----------------------
 ----------------------
 Problem 75: ルークは浜辺で砂の城を作り時間を過ごしている。彼は最終的に、砂の城の各階層は、その下の階層の半分の広さであると気付きます。もしも彼が、4階層の砂の城を作って、一番上の階の広さが16平方フィートの場合、各階層の平均の広さはどれくらいですか？
 Model Prediction / Ground Truth: 60 / 60
-Correct Predictions / Total Tests: 49 / 75
-Current Accuracy: 65.33%
+Correct Predictions / Total Tests: 50 / 75
+Current Accuracy: 66.67%
 ----------------------
 ----------------------
 Problem 76: セシリアは新しい子犬を買ったばかりだ。彼女の獣医によると、彼女は子犬に毎日、最初の180日間は、ドッグフードを1カップ与える必要がある。それから、犬の寿命の残り期間、ドッグフードを2カップ与える必要がある。ドッグフード1袋に110カップ分入っている場合、セシリアは最初の1年間何袋のドッグフードがいるか？
 Model Prediction / Ground Truth: 5 / 5
-Correct Predictions / Total Tests: 50 / 76
-Current Accuracy: 65.79%
+Correct Predictions / Total Tests: 51 / 76
+Current Accuracy: 67.11%
 ----------------------
 ----------------------
 Problem 77: レイモンドがサラが洗濯した分の半分洗濯をして、サラはデイビッドと同じくらい洗濯をした場合、サラが400ポンド洗濯をしたら、レイモンドとデイビッドの洗濯した量はどれだけの違いがありますか。
 Model Prediction / Ground Truth: 200 / 100
-Correct Predictions / Total Tests: 50 / 77
-Current Accuracy: 64.94%
+Correct Predictions / Total Tests: 51 / 77
+Current Accuracy: 66.23%
 ----------------------
 ----------------------
 Problem 78: ビンセントは3本で$2.50のパッケージか、2本で$1のパッケージで花を買えます。よりお得な価格で、18本の花を買ったら、いくらお得になりますか？
-Model Prediction / Ground Truth: 6 / 6
+Model Prediction / Ground Truth: 94 / 6
 Correct Predictions / Total Tests: 51 / 78
 Current Accuracy: 65.38%
 ----------------------
@@ -476,85 +476,85 @@ Current Accuracy: 65.82%
 ----------------------
 ----------------------
 Problem 80: 2人の少女がそれぞれ24リットルの水を6分の1飲んだ。それから男の子が水を6リットル飲んだ。何リットルの水が残ったか？
-Model Prediction / Ground Truth: 10 / 10
-Correct Predictions / Total Tests: 53 / 80
-Current Accuracy: 66.25%
+Model Prediction / Ground Truth: 34 / 10
+Correct Predictions / Total Tests: 52 / 80
+Current Accuracy: 65.00%
 ----------------------
 ----------------------
 Problem 81: チャーリーは10個のシールがあります。モールのストアで21個のシールを買い、誕生日に23個のシールをもらいました。それからチャーリーはそのうちの9個を妹にあげて、28個をグリーティングカードに使いました。チャーリーには何枚のシールが残っていますか？
 Model Prediction / Ground Truth: 17 / 17
-Correct Predictions / Total Tests: 54 / 81
-Current Accuracy: 66.67%
+Correct Predictions / Total Tests: 53 / 81
+Current Accuracy: 65.43%
 ----------------------
 ----------------------
 Problem 82: グレースの体重は125ポンドです。アレックスの体重はグレースの体重の4倍よりも2ポンド軽いです。彼女達の体重の合計は何ポンドですか？
 Model Prediction / Ground Truth: 623 / 623
-Correct Predictions / Total Tests: 55 / 82
-Current Accuracy: 67.07%
+Correct Predictions / Total Tests: 54 / 82
+Current Accuracy: 65.85%
 ----------------------
 ----------------------
 Problem 83: ダンはバラの苗を3つ植えます。それぞれのバラの苗には25本のバラがあります。それぞれのバラには8個のとげがあります。全部で何個のとげがありますか？
 Model Prediction / Ground Truth: 600 / 600
-Correct Predictions / Total Tests: 56 / 83
-Current Accuracy: 67.47%
+Correct Predictions / Total Tests: 55 / 83
+Current Accuracy: 66.27%
 ----------------------
 ----------------------
 Problem 84: サッカーチームが22試合行った。彼らは負けた試合の数よりも8試合多く勝った。彼らは何回勝ったか？
 Model Prediction / Ground Truth: 15 / 15
-Correct Predictions / Total Tests: 57 / 84
-Current Accuracy: 67.86%
+Correct Predictions / Total Tests: 56 / 84
+Current Accuracy: 66.67%
 ----------------------
 ----------------------
 Problem 85: ジーンはお土産のTシャツでキルトを縫っています。彼はバケーションに行くごとに1枚シャツを得ます。すべてのシャツがそれぞれのキルトのブロックとなります。各列に、異なる年のバケーションのブロックが使用されています。彼は23歳の時から年に4回バケーションに行っています。彼は現在34歳です。全部で何個のキルトのブロックがありますか？
 Model Prediction / Ground Truth: 44 / 44
-Correct Predictions / Total Tests: 58 / 85
-Current Accuracy: 68.24%
+Correct Predictions / Total Tests: 57 / 85
+Current Accuracy: 67.06%
 ----------------------
 ----------------------
 Problem 86: グレッグはリマインダーとして、1日に3度アラームが鳴るようにセットしています。グレッグがオフにするまで鳴り続けます。今日最初にアラームがなり、4回鳴りました。2度目に鳴った時、1度目に鳴った回数の3倍長く鳴りました。3度目に鳴った時は、2度目の長さの半分鳴りました。全部で何回アラームは鳴りましたか？
 Model Prediction / Ground Truth: 22 / 22
-Correct Predictions / Total Tests: 59 / 86
-Current Accuracy: 68.60%
+Correct Predictions / Total Tests: 58 / 86
+Current Accuracy: 67.44%
 ----------------------
 ----------------------
 Problem 87: ある企業は従業員に毎月$600払います。その会社は、5年間在籍した従業員の給料を毎年、当初の給料の10％ずつ増加させる方針を取り入れています。シルヴィーが、昨年の12月に、入社5年目を迎えた場合、彼女があと3年務めた後の年俸はいくらになりますか？
-Model Prediction / Ground Truth: 14980 / 9360
-Correct Predictions / Total Tests: 59 / 87
-Current Accuracy: 67.82%
+Model Prediction / Ground Truth: 46 / 9360
+Correct Predictions / Total Tests: 58 / 87
+Current Accuracy: 66.67%
 ----------------------
 ----------------------
 Problem 88: マリリンの最初のレコードはハラルドの10倍売れました。彼らが合わせて88,000枚売っていた場合、ハラルドは何枚売りましたか？
-Model Prediction / Ground Truth: 8000 / 8000
-Correct Predictions / Total Tests: 60 / 88
-Current Accuracy: 68.18%
+Model Prediction / Ground Truth: 0 / 8000
+Correct Predictions / Total Tests: 58 / 88
+Current Accuracy: 65.91%
 ----------------------
 ----------------------
 Problem 89: クリスティーナは誕生日会を計画しており、4分の1の出席者は参加しないので、各招待客につき.75個のギフトバッグが必要です。彼女は16人の友人を招待しました。ギフトバッグはそれぞれ$2です。彼女はいくら使うことになりますか？
 Model Prediction / Ground Truth: 18 / 24
-Correct Predictions / Total Tests: 60 / 89
-Current Accuracy: 67.42%
+Correct Predictions / Total Tests: 58 / 89
+Current Accuracy: 65.17%
 ----------------------
 ----------------------
 Problem 90: ティラノザウルスのテッドは恐竜ピクニックにポテトサラダを持っていこうと計画していました。彼は大人の恐竜はポテトサラダを10lbs食べ、子供は大人の半分を食べるとわかっています。テッドが皆に十分食べてもらいたいと思っている場合、もしも20匹の大人と5匹の子供がピクニックに参加するなら、何ポンドのポテトサラダをピクニックに持っていく必要がありますか？
 Model Prediction / Ground Truth: 225 / 225
-Correct Predictions / Total Tests: 61 / 90
-Current Accuracy: 67.78%
+Correct Predictions / Total Tests: 59 / 90
+Current Accuracy: 65.56%
 ----------------------
 ----------------------
 Problem 91: ジャンにはマルシアの3倍の数のペットを飼っています。マルシアはシンディーよりも2匹多くペットを飼っています。もしシンディーが4匹のペットを飼っているなら、3人は全部で何匹のペットを飼っていますか？
 Model Prediction / Ground Truth: 28 / 28
-Correct Predictions / Total Tests: 62 / 91
-Current Accuracy: 68.13%
+Correct Predictions / Total Tests: 60 / 91
+Current Accuracy: 65.93%
 ----------------------
 ----------------------
 Problem 92: エミリーはエイミー、ジャクソン、コリー、ジェームスという名前の4人の子供がいる。エイミーはジャクソンより5歳年上で、コリーより2歳若い。ジェームスが10歳で、コリーより1年若い場合、ジャクソンは何歳？
-Model Prediction / Ground Truth: 2 / 4
-Correct Predictions / Total Tests: 62 / 92
-Current Accuracy: 67.39%
+Model Prediction / Ground Truth: 4 / 4
+Correct Predictions / Total Tests: 61 / 92
+Current Accuracy: 66.30%
 ----------------------
 ----------------------
 Problem 93: リーはかつて、ジェラルドが400メートルハードルを走るよりも、2秒速いスピードで400メートルハードルを走ることができた。だがジェラルドが彼の食事を変えて、スピードが10%改善した。もしもリーが400メートルハードルを38秒で走ることができたら、食事を改善したジェラルドは400メートルハードルを何秒で走ることができるか？
-Model Prediction / Ground Truth: 39 / 36
+Model Prediction / Ground Truth: 36 / 36
 Correct Predictions / Total Tests: 62 / 93
 Current Accuracy: 66.67%
 ----------------------
@@ -578,31 +578,31 @@ Current Accuracy: 67.71%
 ----------------------
 ----------------------
 Problem 97: フリーダがトマトの缶詰でソースを作ると、そのボリュームが半分減る。彼女が使うそれぞれ16オンスのトマト缶には3つのトマトが入っている。トマトソースの最後のバッチには32オンス入っていた。フリーダはトマトをいくつ使った？
-Model Prediction / Ground Truth: 6 / 12
-Correct Predictions / Total Tests: 65 / 97
-Current Accuracy: 67.01%
+Model Prediction / Ground Truth: 12 / 12
+Correct Predictions / Total Tests: 66 / 97
+Current Accuracy: 68.04%
 ----------------------
 ----------------------
 Problem 98: 車が高速道路に並んでいる。そのうちの何台かは、渋滞の最初の15分間を走り、次の20台は渋滞の残りの15分を走っている。列のうち、5台の車は渋滞を走らなくていいよう、出口から出た。もともと30台の車が高速道路にいたのなら、渋滞の最初の15分間を走った車は何台いる？
 Model Prediction / Ground Truth: 5 / 5
-Correct Predictions / Total Tests: 66 / 98
-Current Accuracy: 67.35%
+Correct Predictions / Total Tests: 67 / 98
+Current Accuracy: 68.37%
 ----------------------
 ----------------------
 Problem 99: マリーは熱心な演芸家です。昨日、彼女はお気に入りの育種場から18個の新しい鉢植えを受け取りました。彼女はすでに、彼女の広い田舎の家の、40の窓枠にそれぞれ2つの鉢植えを所有している。気が大きくなった彼女は、各窓枠から、1つの鉢植えを友達や家族に明日あげることにした。マリーにはいくつの鉢植えが残る？
 Model Prediction / Ground Truth: 58 / 58
-Correct Predictions / Total Tests: 67 / 99
-Current Accuracy: 67.68%
+Correct Predictions / Total Tests: 68 / 99
+Current Accuracy: 68.69%
 ----------------------
 ----------------------
 Problem 100: ジェロームは特定の日に彼を訪ねてくる4人の友達がいます。最初の友達はジェロームがドアを開けるまでに、20回呼び鈴を鳴らし、2人目の友達はジェロームの最初の友達の1/4回鳴らしました。3人目の友達は呼び鈴を4人目の友達よりも10回多く鳴らしました。もしも4人目の友達が呼び鈴を60回鳴らしたら、呼び鈴は何回鳴りましたか？
 Model Prediction / Ground Truth: 155 / 175
-Correct Predictions / Total Tests: 67 / 100
-Current Accuracy: 67.00%
+Correct Predictions / Total Tests: 68 / 100
+Current Accuracy: 68.00%
 ----------------------
 ----------------------
 Problem 101: ソロは科学の教科書を4ページ、社会学の教科書を20ページ、歴史の教科書を7ページ、地理の教科書を8ページ読まねばならい。ソロは月曜日15ページ読んだ。彼が読み終わるまでに後4日ある場合、平均で1日に何ページ読む必要がある？
-Model Prediction / Ground Truth: 6 / 6
+Model Prediction / Ground Truth: 5 / 6
 Correct Predictions / Total Tests: 68 / 101
 Current Accuracy: 67.33%
 ----------------------
@@ -620,7 +620,7 @@ Current Accuracy: 67.96%
 ----------------------
 ----------------------
 Problem 104: ポピーは1000ピースのジグソーパズルを解いている。彼女は4分の1のピースをボードにはめて、彼女の母親が残りの3分の1をはめる。残りいくつのパズルのピースがはめられずに残っている？
-Model Prediction / Ground Truth: 250 / 500
+Model Prediction / Ground Truth: 0 / 500
 Correct Predictions / Total Tests: 70 / 104
 Current Accuracy: 67.31%
 ----------------------
@@ -632,7 +632,7 @@ Current Accuracy: 67.62%
 ----------------------
 ----------------------
 Problem 106: ジョンは3箱持っています。それぞれの箱は5インチ×6インチ×4インチです。壁は1インチの暑さです。3箱全部の内容量はどれくらいですか？
-Model Prediction / Ground Truth: 360 / 72
+Model Prediction / Ground Truth: 0 / 72
 Correct Predictions / Total Tests: 71 / 106
 Current Accuracy: 66.98%
 ----------------------
@@ -644,853 +644,853 @@ Current Accuracy: 67.29%
 ----------------------
 ----------------------
 Problem 108: ヘンリーは地元のコンテストのためにクッキーを作っています。彼は去年焼いた数の2倍焼きたいと思っています。焼き終えたら、彼は実際に、思っていた数より15枚多く焼いていることに気付きました。彼はクッキーを冷やすために取り出しながら、それらのうち5枚を取り除き、現在全部で110枚のクッキーがあります。ヘンリーは去年、何枚のクッキーを焼きましたか？
-Model Prediction / Ground Truth: 200 / 50
-Correct Predictions / Total Tests: 72 / 108
-Current Accuracy: 66.67%
+Model Prediction / Ground Truth: 50 / 50
+Correct Predictions / Total Tests: 73 / 108
+Current Accuracy: 67.59%
 ----------------------
 ----------------------
 Problem 109: 地元のガソリンステーションは、1ガロン$3.00で売っている。アプリ会社は、このガソリンステーションで給油すれば、1ガロンごとに$.20キャッシュバックしてくれる。もしも誰かが10ガロンのガソリンを買えば、キャッシュバックされた後のガス料金はいくらになりますか？
-Model Prediction / Ground Truth: 28 / 28
+Model Prediction / Ground Truth: 0 / 28
 Correct Predictions / Total Tests: 73 / 109
 Current Accuracy: 66.97%
 ----------------------
 ----------------------
 Problem 110: マルセルとベトリースはどちらが多くのフルーツロールを食べられるか競い合っており、彼らは見つけただけのフルーツロールを広げた。残念ながら、誰かが間違えており、ベトリースのものは、2ロール分の幅で、24ロール分の長さだった一方、マルセルのものは、3ロール分の幅で、14ロール分の長さだった。彼らがすべての量食べたとすると、彼らは平均でどれだけ食べたか？
-Model Prediction / Ground Truth: 18 / 45
-Correct Predictions / Total Tests: 73 / 110
-Current Accuracy: 66.36%
+Model Prediction / Ground Truth: 45 / 45
+Correct Predictions / Total Tests: 74 / 110
+Current Accuracy: 67.27%
 ----------------------
 ----------------------
 Problem 111: ジュリアのボートが、湖を運転中に水漏れを起こした。ボートは彼女が岸辺に向かい10フィートこぐたびに、2リットルの水が入っか。岸辺は64秒先だった。ジュリアが岸辺にたどり着くまでに、どれだけの水がボートに入ったか？
-Model Prediction / Ground Truth: 20 / 16
-Correct Predictions / Total Tests: 73 / 111
-Current Accuracy: 65.77%
+Model Prediction / Ground Truth: 8 / 16
+Correct Predictions / Total Tests: 74 / 111
+Current Accuracy: 66.67%
 ----------------------
 ----------------------
 Problem 112: 教室には、その教室を順番に使う4人の教師に共有される、ホワイトボードがある。各先生は1日に2クラスあり、各クラスでホワイトボードを使う。もしもホワイトボードが1回のクラスで3回掃除されるとしたら、ホワイトボードは1日に何回掃除されますか？
 Model Prediction / Ground Truth: 24 / 24
-Correct Predictions / Total Tests: 74 / 112
-Current Accuracy: 66.07%
+Correct Predictions / Total Tests: 75 / 112
+Current Accuracy: 66.96%
 ----------------------
 ----------------------
 Problem 113: ライアンは彼の庭に、1日に2つの花を植える。15日後、5つの花が育たなかったとすると、彼はいくつの花を持っているか？
 Model Prediction / Ground Truth: 25 / 25
-Correct Predictions / Total Tests: 75 / 113
-Current Accuracy: 66.37%
+Correct Predictions / Total Tests: 76 / 113
+Current Accuracy: 67.26%
 ----------------------
 ----------------------
 Problem 114: ジャマールの電話はブリタニーの電話の6倍多くの写真を保存できる。ブリタニーの電話が保存できる写真の最大の数は、ジャマールが動物園でアヒルを撮った写真の中の、鳥の数の50倍だ。もしもジャマールの携帯電話が、1800枚の写真を保存できる場合、ジャマールが動物園でアヒルを撮った写真に、何匹アヒルがいる？
 Model Prediction / Ground Truth: 6 / 6
-Correct Predictions / Total Tests: 76 / 114
-Current Accuracy: 66.67%
+Correct Predictions / Total Tests: 77 / 114
+Current Accuracy: 67.54%
 ----------------------
 ----------------------
 Problem 115: サーシャは材木の値段が、彼女がいくつか購入してから数か月で、50%上がっていることに気がつきました。彼女は残りがあるので、それらを売ることにしました。彼女は、2 x 4 x 10の板が10枚あり、それぞれ$10コストがかかります。彼女はまた、4 x 4 x 10の板も5枚あり、それらはそれぞれ$16で購入しました。彼女がすべて売った場合、彼女はいくら利益を得られますか？
 Model Prediction / Ground Truth: 90 / 90
-Correct Predictions / Total Tests: 77 / 115
-Current Accuracy: 66.96%
+Correct Predictions / Total Tests: 78 / 115
+Current Accuracy: 67.83%
 ----------------------
 ----------------------
 Problem 116: ケイティはコーヒーを、小さじ数杯の砂糖と数杯のお湯を7:13の割合で作ります。全部で小さじ120杯の砂糖とお湯を使った場合、彼女が使った砂糖が小さじ何杯になるかを計算しなさい。
 Model Prediction / Ground Truth: 42 / 42
-Correct Predictions / Total Tests: 78 / 116
-Current Accuracy: 67.24%
+Correct Predictions / Total Tests: 79 / 116
+Current Accuracy: 68.10%
 ----------------------
 ----------------------
 Problem 117: ジョンは彼の3人の子供に2足の靴をそれぞれ購入します。それぞれ$60します。彼はいくら払いましたか？
 Model Prediction / Ground Truth: 360 / 360
-Correct Predictions / Total Tests: 79 / 117
-Current Accuracy: 67.52%
+Correct Predictions / Total Tests: 80 / 117
+Current Accuracy: 68.38%
 ----------------------
 ----------------------
 Problem 118: 海辺の主な港の税関職員は、輸入車の2台分のコンテナをチェックしており、各コンテナには5台の車が中に入っている。次の日、さらに多くのコンテナが運び込まれ、港の車両の数は全部で30となった。すべてのコンテナに5台の車が入っていたとすると、2日目にいくつのコンテナが輸入されたかを計算しなさい。
 Model Prediction / Ground Truth: 4 / 4
-Correct Predictions / Total Tests: 80 / 118
-Current Accuracy: 67.80%
+Correct Predictions / Total Tests: 81 / 118
+Current Accuracy: 68.64%
 ----------------------
 ----------------------
 Problem 119: エイドリアンの給与総額は、リリアの給与よりも30%高い。4年後、彼の給与は上がり、4年前と比べて、40%収入を増やしていた。エイドリアンとリリアの給与が、同時に上がっていた場合、そしてエイドリアンが4年前、$40000稼いでいた場合、彼ら二人が4年後に受けとっか給与総額はいくらになりますか？
-Model Prediction / Ground Truth: 7440051040 / 95200
-Correct Predictions / Total Tests: 80 / 119
-Current Accuracy: 67.23%
+Model Prediction / Ground Truth: 95200 / 95200
+Correct Predictions / Total Tests: 82 / 119
+Current Accuracy: 68.91%
 ----------------------
 ----------------------
 Problem 120: ミゲルは、彼の絵に週に2パッドの紙を使う。もしも1パッドの紙に30枚入っているとすると、彼は毎月何枚の紙を使う？
-Model Prediction / Ground Truth: 60 / 240
-Correct Predictions / Total Tests: 80 / 120
-Current Accuracy: 66.67%
+Model Prediction / Ground Truth: 240 / 240
+Correct Predictions / Total Tests: 83 / 120
+Current Accuracy: 69.17%
 ----------------------
 ----------------------
 Problem 121: モリセットとケイルは、フルーツを持ってくるよう頼まれた。モリセットは5個のリンゴと8個のオレンジ、一方ケイルはモリセットの2倍の数のリンゴと半分の数のオレンジを持ってきた。彼らは全部でいくつフルーツを持っている？
 Model Prediction / Ground Truth: 27 / 27
-Correct Predictions / Total Tests: 81 / 121
-Current Accuracy: 66.94%
+Correct Predictions / Total Tests: 84 / 121
+Current Accuracy: 69.42%
 ----------------------
 ----------------------
 Problem 122: サディーは月曜日8時間寝た。次の2日間、宿題を終わらせなければならなかった彼女はそれぞれ2時間少ない時間寝た。もしも彼女が残りの週、その2日よりも1時間長く寝たら、彼女は1週間通して何時間寝たことになる？
-Model Prediction / Ground Truth: 43 / 48
-Correct Predictions / Total Tests: 81 / 122
-Current Accuracy: 66.39%
+Model Prediction / Ground Truth: 48 / 48
+Correct Predictions / Total Tests: 85 / 122
+Current Accuracy: 69.67%
 ----------------------
 ----------------------
 Problem 123: ロージーは1時間10マイルの速度で3時間走ります。その後、1時間5マイルの速度で走ります。彼女は7時間で何マイル走ることができますか？
-Model Prediction / Ground Truth: 50 / 50
-Correct Predictions / Total Tests: 82 / 123
-Current Accuracy: 66.67%
+Model Prediction / Ground Truth: 35 / 50
+Correct Predictions / Total Tests: 85 / 123
+Current Accuracy: 69.11%
 ----------------------
 ----------------------
 Problem 124: ジェニーは母親のオフィスで手伝いをしています。彼女には、切手が必要な60通の手紙の塊と、すでに切手が貼られた手紙の塊があります。切手が必要な手紙の3分の1に切手を貼ります。すでに切手を貼られた手紙の塊に今、30通の手紙があるとすると、ジェニーが作業を始めた時、その塊には何通の手紙がありました？
-Model Prediction / Ground Truth: 50 / 10
-Correct Predictions / Total Tests: 82 / 124
-Current Accuracy: 66.13%
+Model Prediction / Ground Truth: 70 / 10
+Correct Predictions / Total Tests: 85 / 124
+Current Accuracy: 68.55%
 ----------------------
 ----------------------
 Problem 125: ジュリアはシチューをご馳走するつもりで、自宅でのディナーパーティーのために準備をしていました。彼女はプラスチックのスプーンが足りないと気付き、新しいスプーンのパッケージを購入しました。後に、彼女の夫も、5本の新しいスプーンのパッケージを購入し、ジュリアに渡しました。ジュリアはシチューを作りながら、シチューの味見用に3本スプーンを使いました。後に、彼女はテーブルをセットしに行ったとき、全部で12本のスプーンがありました。ジュリアが購入したスプーンのパッケージには何本入っていましたか？
-Model Prediction / Ground Truth: 2 / 10
-Correct Predictions / Total Tests: 82 / 125
-Current Accuracy: 65.60%
+Model Prediction / Ground Truth: 9 / 10
+Correct Predictions / Total Tests: 85 / 125
+Current Accuracy: 68.00%
 ----------------------
 ----------------------
 Problem 126: ディランは、ソーセージバンを作るため、食品庫でチキンソーセージとフィッシュソーセージが必要だった。彼は38個のチキンソーセージと、チキンソーセージの数よりも6個多いフィッシュソーセージを買った。ディランは全部で何個のソーセージを買った？
 Model Prediction / Ground Truth: 82 / 82
-Correct Predictions / Total Tests: 83 / 126
-Current Accuracy: 65.87%
+Correct Predictions / Total Tests: 86 / 126
+Current Accuracy: 68.25%
 ----------------------
 ----------------------
 Problem 127: 新しい学校に引っ越して以来、エイミーはリリーより20人多く友達を作りました。リリーが50人友達を作ったなら、リリーとアビーは合わせて何人友達を作りましたか？
 Model Prediction / Ground Truth: 120 / 120
-Correct Predictions / Total Tests: 84 / 127
-Current Accuracy: 66.14%
+Correct Predictions / Total Tests: 87 / 127
+Current Accuracy: 68.50%
 ----------------------
 ----------------------
 Problem 128: ウェルの母親はスイカ、トウガラシ、オレンジを地元の店で売っています。スイカは各トウガラシの値段の3倍の値段です。オレンジはスイカより5安いです。ディロンは店に4つのスイカ、20個のトウガラシ、10個のオレンジを送りました。トウガラシ1つが$15の場合、全部でいくらになりますか？
 Model Prediction / Ground Truth: 880 / 880
-Correct Predictions / Total Tests: 85 / 128
-Current Accuracy: 66.41%
+Correct Predictions / Total Tests: 88 / 128
+Current Accuracy: 68.75%
 ----------------------
 ----------------------
 Problem 129: ある病院は500人の患者を毎日診察します。それぞれの患者は平均24分間診察されます。医者は病院に、1時間$150請求します。病院は患者に1時間$200請求します。病院はこれらの診察でいくら収益を得られますか？
-Model Prediction / Ground Truth: 10000 / 10000
-Correct Predictions / Total Tests: 86 / 129
-Current Accuracy: 66.67%
+Model Prediction / Ground Truth: 0 / 10000
+Correct Predictions / Total Tests: 88 / 129
+Current Accuracy: 68.22%
 ----------------------
 ----------------------
 Problem 130: ニッサは、サンタビレッジの彼女のデパートでエルフを演じる60人の期間従業員を雇います。3分の1のエルフが子供が彼らに吐いた後、辞めます。それから残りの10人が、子供が彼らのスネを蹴った後やめます。何人のエルフが残りますか？
 Model Prediction / Ground Truth: 30 / 30
-Correct Predictions / Total Tests: 87 / 130
-Current Accuracy: 66.92%
+Correct Predictions / Total Tests: 89 / 130
+Current Accuracy: 68.46%
 ----------------------
 ----------------------
 Problem 131: ジョゼフの5月の支出は$500でした。6月、彼の支出は$60少なくなりました。これら2か月の彼の支出の総額はいくらでしたか？
 Model Prediction / Ground Truth: 940 / 940
-Correct Predictions / Total Tests: 88 / 131
-Current Accuracy: 67.18%
+Correct Predictions / Total Tests: 90 / 131
+Current Accuracy: 68.70%
 ----------------------
 ----------------------
 Problem 132: パムとフレッドはカーニバルに行った。パムはジェットコースターに2回乗り、フレッドは4回乗った。その後、それぞれリュージュに2回乗った。それぞれ乗るために6チケット使うなら、彼らはその日何枚のチケットを使った？
 Model Prediction / Ground Truth: 60 / 60
-Correct Predictions / Total Tests: 89 / 132
-Current Accuracy: 67.42%
+Correct Predictions / Total Tests: 91 / 132
+Current Accuracy: 68.94%
 ----------------------
 ----------------------
 Problem 133: 月曜日、ウォルトは4マイル歩いた。火曜日、彼は月曜日に歩いた分の6倍のマイルを歩いた。彼が月曜から水曜まで歩いた距離は合計41マイルだった。水曜日、彼は何マイル歩いたか？
 Model Prediction / Ground Truth: 13 / 13
-Correct Predictions / Total Tests: 90 / 133
-Current Accuracy: 67.67%
+Correct Predictions / Total Tests: 92 / 133
+Current Accuracy: 69.17%
 ----------------------
 ----------------------
 Problem 134: トムは月に4台の車を洗車します。それぞれの車の洗車費用が$15だとすると、一年にいくら払いますか？
 Model Prediction / Ground Truth: 720 / 720
-Correct Predictions / Total Tests: 91 / 134
-Current Accuracy: 67.91%
+Correct Predictions / Total Tests: 93 / 134
+Current Accuracy: 69.40%
 ----------------------
 ----------------------
 Problem 135: ブライアンの友達ボビーは、ブライアンが所持するゲームの数の3倍よりも5個少ないゲームを持っています。もしもブライアンが20個のビデオゲームを持っていて、比較する直前に5個なくしていた場合、ボビーはゲームを何個もっていますか？
 Model Prediction / Ground Truth: 40 / 40
-Correct Predictions / Total Tests: 92 / 135
-Current Accuracy: 68.15%
+Correct Predictions / Total Tests: 94 / 135
+Current Accuracy: 69.63%
 ----------------------
 ----------------------
 Problem 136: 世界には27頭のユニコーンが残っています。そのうち3分の1は、スコティッシュハイランドです。スコティッシュユニコーンの3分の2はメスです。そこにメスのスコティッシュユニコーンは何頭いますか？
 Model Prediction / Ground Truth: 6 / 6
-Correct Predictions / Total Tests: 93 / 136
-Current Accuracy: 68.38%
+Correct Predictions / Total Tests: 95 / 136
+Current Accuracy: 69.85%
 ----------------------
 ----------------------
 Problem 137: ローリーはそれぞれ$7.50のサンドイッチを2つ注文し、それぞれ$1.50のポテトチップを2袋注文し、それぞれ$1.00のクッキーを2枚、配達してもらえるよう注文しました。会計時に20％の配達費が加算され、彼女は$5.00をチップで払いたいと思っています。配達の注文はいくらになりますか？
-Model Prediction / Ground Truth: 24 / 29
-Correct Predictions / Total Tests: 93 / 137
-Current Accuracy: 67.88%
+Model Prediction / Ground Truth: 0 / 29
+Correct Predictions / Total Tests: 95 / 137
+Current Accuracy: 69.34%
 ----------------------
 ----------------------
 Problem 138: マークは昨日75問あるテストを受けた。彼は1時間に5問を解くスピードでテストを終わらせた。今日、彼は同じスピードで100問あるテストを受けた。もしもマークが8時間かけて最初のテストを終わらせ、次のテストを6時間かけて終わらせたなら、彼が解けなかった問題は何問ある？
-Model Prediction / Ground Truth: 70 / 105
-Correct Predictions / Total Tests: 93 / 138
-Current Accuracy: 67.39%
+Model Prediction / Ground Truth: 105 / 105
+Correct Predictions / Total Tests: 96 / 138
+Current Accuracy: 69.57%
 ----------------------
 ----------------------
 Problem 139: キャンディーマシーンには、青いガムボールの数の4倍の数のピンクのガムボールが入っている。12個の青いガムボールが入っているとすると、ピンクはいくつあるか？
 Model Prediction / Ground Truth: 48 / 70
-Correct Predictions / Total Tests: 93 / 139
-Current Accuracy: 66.91%
+Correct Predictions / Total Tests: 96 / 139
+Current Accuracy: 69.06%
 ----------------------
 ----------------------
 Problem 140: 20台のレンタル可能な車の中、12台がオートマチックで、4台がマニュアルで、残りはセミオートマチックだ。セミオートマチックの割合は何%？
 Model Prediction / Ground Truth: 20 / 20
-Correct Predictions / Total Tests: 94 / 140
-Current Accuracy: 67.14%
+Correct Predictions / Total Tests: 97 / 140
+Current Accuracy: 69.29%
 ----------------------
 ----------------------
 Problem 141: 700匹の蜂が蜂の巣にいる。赤ちゃんの鉢の12倍、働き蜂がおり、女王蜂の2倍の赤ちゃんの蜂がいる。何匹の働き蜂がいますか？
-Model Prediction / Ground Truth: 700 / 400
-Correct Predictions / Total Tests: 94 / 141
-Current Accuracy: 66.67%
+Model Prediction / Ground Truth: 560 / 400
+Correct Predictions / Total Tests: 97 / 141
+Current Accuracy: 68.79%
 ----------------------
 ----------------------
 Problem 142: ジョーダンはビデオゲームを毎日2時間プレイする。彼はまた1時間に10ドル稼ぐアルバイトもしている。彼がゲームに使う時間を代わりにアルバイトしたら、1週間にジョーダンはいくら稼ぎますか？
 Model Prediction / Ground Truth: 140 / 140
-Correct Predictions / Total Tests: 95 / 142
-Current Accuracy: 66.90%
+Correct Predictions / Total Tests: 98 / 142
+Current Accuracy: 69.01%
 ----------------------
 ----------------------
 Problem 143: ジョンは牛乳を2ドルで、卵を3ドルで、電球を3ドルで、カップを3ドルで、4ドルでゴキブリ用の罠を購入する。食べ物以外には10%の税金が課される場合、すべてでいくらになりましたか。
-Model Prediction / Ground Truth: 19 / 16
-Correct Predictions / Total Tests: 95 / 143
-Current Accuracy: 66.43%
+Model Prediction / Ground Truth: 16 / 16
+Correct Predictions / Total Tests: 99 / 143
+Current Accuracy: 69.23%
 ----------------------
 ----------------------
 Problem 144: キムは家事の事業を始めました、そして顧客からいくら利益を出せるかを計算しました。彼は既に3人の顧客がいますが、別の5人の潜在顧客と商談中で、彼らを計算に入れてもいいと、十分な自信があります。それぞれの顧客の自宅は、掃除するためにブリーチ剤が2本、布1パックが必要です。ブリーチ剤のボトルはそれぞれ$2で、布のパックはそれぞれ$5です。これらだけが彼の支出です。彼は、毎週の総収入が$92になると計算しました。利益は総収入と総支出の差額です。ルーカスは毎週何ドルの利益を得ることになりますか？
-Model Prediction / Ground Truth: 60 / 20
-Correct Predictions / Total Tests: 95 / 144
-Current Accuracy: 65.97%
+Model Prediction / Ground Truth: 20 / 20
+Correct Predictions / Total Tests: 100 / 144
+Current Accuracy: 69.44%
 ----------------------
 ----------------------
 Problem 145: ジョンには10ヘクタールのパイナップル農場がある。1ヘクタールあたり100個のパイナップルがある。ジョンは3か月ごとにパイナップルを収穫できる。ジョンは年にいくつのパイナップルを収穫できる？
 Model Prediction / Ground Truth: 4000 / 4000
-Correct Predictions / Total Tests: 96 / 145
-Current Accuracy: 66.21%
+Correct Predictions / Total Tests: 101 / 145
+Current Accuracy: 69.66%
 ----------------------
 ----------------------
 Problem 146: ジョニーは彼の部屋の床のおもちゃを拾っている。彼は床に、500ピース入ったレゴの箱、500ピース入ったものの3倍の数が入った箱、1/4の数のピースが入った箱をひっくり返した。彼がすべてのレゴを拾い上げたら、全部で何個のブロックを拾い上げますか？
-Model Prediction / Ground Truth: 2375 / 2125
-Correct Predictions / Total Tests: 96 / 146
-Current Accuracy: 65.75%
+Model Prediction / Ground Truth: 2125 / 2125
+Correct Predictions / Total Tests: 102 / 146
+Current Accuracy: 69.86%
 ----------------------
 ----------------------
 Problem 147: デボラは、ミツバチの巣箱を監視し、1日に何匹のミツバチが出入りしているかをみています。最初の6時間に、巣箱から30匹のハチが出て行き、そのうちの2分の1が6時間以内に戻ってきたのを確認します。彼女は最初に巣箱を出て行ったハチの2倍の数のハチが、次の6時間で巣箱から飛び立ち、去っていくのを見ました。それから、先に出て行ったハチのうち、まだ戻っていないハチが、次の6時間で巣に戻ってきます。デボラはその日の最後の6時間で何匹のハチが、巣箱に戻ってくるのを見ますか？
 Model Prediction / Ground Truth: 15 / 75
-Correct Predictions / Total Tests: 96 / 147
-Current Accuracy: 65.31%
+Correct Predictions / Total Tests: 102 / 147
+Current Accuracy: 69.39%
 ----------------------
 ----------------------
 Problem 148: ブリタニーと母親は美術館に行く。入場料は大人が12ドル、子供が10ドルだ。ブリタニーの母は、会計をする人に子供1人、大人1人のチケット代金を払った。もしも彼女が、8ドルお釣りを受け取ったら、彼女は会計する人に何ドル渡したか？
 Model Prediction / Ground Truth: 30 / 30
-Correct Predictions / Total Tests: 97 / 148
-Current Accuracy: 65.54%
+Correct Predictions / Total Tests: 103 / 148
+Current Accuracy: 69.59%
 ----------------------
 ----------------------
 Problem 149: チャーリーはFacebookの友達がドロシーの3倍いる。ジェームズはドロシーの4倍、Facebookの友達がいる。チャーリーに12人、Facebookの友達がいある場合、ジェームズは何人のFacebook友達がいる？
 Model Prediction / Ground Truth: 16 / 16
-Correct Predictions / Total Tests: 98 / 149
-Current Accuracy: 65.77%
+Correct Predictions / Total Tests: 104 / 149
+Current Accuracy: 69.80%
 ----------------------
 ----------------------
 Problem 150: スティーブとティムは、どちらが学校から早く家に帰るかを決めることにした。スティーブは、ティムよりも遠くに住んでいるため、彼は自転車に乗ることができる。スティーブは学校から3マイル離れたところに住み、自転車で1分440フィート進むことができる。ティムは学校から2マイル離れたところに住む。もしもティムがスケートボードに乗り、1分264フィート進むことができれば、負けた方がレースを終えるまで、買った方はどれくらい待つことになるか？
 Model Prediction / Ground Truth: 4 / 4
-Correct Predictions / Total Tests: 99 / 150
-Current Accuracy: 66.00%
+Correct Predictions / Total Tests: 105 / 150
+Current Accuracy: 70.00%
 ----------------------
 ----------------------
 Problem 151: ショーンダは近所の子供達が本当に自転車の空気入れサービスを使えると決めた。彼女は、タイヤごとに請求することが最適だと決めた。各タイヤを膨らませるためには25セントかかる。最初の日、5人が自転車で、双方のタイヤを膨らませにきた。3人は、三輪車のタイヤをすべて膨らましにきた。最後に、1人が一輪車できた。彼女はその日、いくら稼いだか？
-Model Prediction / Ground Truth: 5 / 5
-Correct Predictions / Total Tests: 100 / 151
-Current Accuracy: 66.23%
+Model Prediction / Ground Truth: 3 / 5
+Correct Predictions / Total Tests: 105 / 151
+Current Accuracy: 69.54%
 ----------------------
 ----------------------
 Problem 152: カールはクッキーを10パック買う。各パックは6枚のクッキーが中に入っている。各クッキーは0.10ドルだ。カールが10ドル札で支払った場合、いくらのお釣りが返ってくる？
-Model Prediction / Ground Truth: 4 / 4
-Correct Predictions / Total Tests: 101 / 152
-Current Accuracy: 66.45%
+Model Prediction / Ground Truth: 0 / 4
+Correct Predictions / Total Tests: 105 / 152
+Current Accuracy: 69.08%
 ----------------------
 ----------------------
 Problem 153: デイブはフライドポテトの大きなパックを購入し、お腹がすいたカモメがパックを彼の手から奪うまえに14個食べました。カモメは地上に降りて、デイブが食べたフライドポテトの半分を貪りました。それから3匹の鳩が彼から食べ物を奪い、それぞれ3本のポテトを食べました。後から、アライグマが残ったポテトの3分の2を奪いました。アリが最後のフライドポテトを運んで行き、5つ残りました。デイブが買った時、何本のフライドポテトがパックに入っていましたか？
-Model Prediction / Ground Truth: 45 / 48
-Correct Predictions / Total Tests: 101 / 153
-Current Accuracy: 66.01%
+Model Prediction / Ground Truth: 40 / 48
+Correct Predictions / Total Tests: 105 / 153
+Current Accuracy: 68.63%
 ----------------------
 ----------------------
 Problem 154: 月曜、水曜、金曜に、大学生のキモは1時間の3つの講義を各日受ける。火曜と木曜に、彼は2時間の講義を2つ各日受ける。1セメスターで、学校は16週間ある。1セメスターで、キモは何時間講義に出席して過ごす？
 Model Prediction / Ground Truth: 272 / 272
-Correct Predictions / Total Tests: 102 / 154
-Current Accuracy: 66.23%
+Correct Predictions / Total Tests: 106 / 154
+Current Accuracy: 68.83%
 ----------------------
 ----------------------
 Problem 155: ビルは300個のロール、120個のチョコレートクロワッサン、60個のバゲットを毎日焼きます。各ロールは4インチの長さで、クロワッサンはそれぞれ6インチの長さ、バゲットはそれぞれ2フィートの長さです。ビルが焼いたものをすべて並べたら、何フィートになりますか？
 Model Prediction / Ground Truth: 280 / 280
-Correct Predictions / Total Tests: 103 / 155
-Current Accuracy: 66.45%
+Correct Predictions / Total Tests: 107 / 155
+Current Accuracy: 69.03%
 ----------------------
 ----------------------
 Problem 156: 動物園の飼育係が、動物園のすべての猿に餌を与える。彼は地元の農場に、2か月ごとにバナナをすべて注文する。猿が200本のバナナ、ゴリラが400本のバナナ、ヒヒが100本のバナナを毎月必要な場合、彼は2か月間でどれだけのバナナを頼む必要があるか？
 Model Prediction / Ground Truth: 1400 / 1400
-Correct Predictions / Total Tests: 104 / 156
-Current Accuracy: 66.67%
+Correct Predictions / Total Tests: 108 / 156
+Current Accuracy: 69.23%
 ----------------------
 ----------------------
 Problem 157: ブレイクとケリーは15分でどちらがたくさん走れるかを競っている。彼らは100ヤードの長さのフットボール場で、競走することに決めてあ。ブレイクは、15回走って往復する。ケリーは1回往復してから、ブレイクの隣で走りたくないと決め、40ヤードラインまで走って、戻った。彼女はこれを34回行った。勝者は敗者よりどれくらい長く走ったか？
-Model Prediction / Ground Truth: 280 / 80
-Correct Predictions / Total Tests: 104 / 157
-Current Accuracy: 66.24%
+Model Prediction / Ground Truth: 1220 / 80
+Correct Predictions / Total Tests: 108 / 157
+Current Accuracy: 68.79%
 ----------------------
 ----------------------
 Problem 158: ラファエルは学用品を買いに出かけた。彼は、各1.5ドルのペンを4本、各4ドルのノートを2冊買い、20ドルするボンド紙を1辺買った。ラファエルは全部でいくら使った？
 Model Prediction / Ground Truth: 34 / 34
-Correct Predictions / Total Tests: 105 / 158
-Current Accuracy: 66.46%
+Correct Predictions / Total Tests: 109 / 158
+Current Accuracy: 68.99%
 ----------------------
 ----------------------
 Problem 159: フィンは11匹のオタマジャクシが池で泳いでいるのを見ている。突然6匹、睡蓮の葉の下から隠れていたものが出てきて、そして、岩の下にそのうちの2匹が隠れるのを見た。フィンは、池に今何匹のオタマジャクシが見えていますか？
 Model Prediction / Ground Truth: 15 / 15
-Correct Predictions / Total Tests: 106 / 159
-Current Accuracy: 66.67%
+Correct Predictions / Total Tests: 110 / 159
+Current Accuracy: 69.18%
 ----------------------
 ----------------------
 Problem 160: 水のタンクの深さは、月曜日には17フィートだ。火曜日、タンクは7フィート水が増えた。水曜日、水の深さは火曜日の3分の2だ。水曜日のタンクの水の深さはどれくらいか？
-Model Prediction / Ground Truth: 16 / 16
-Correct Predictions / Total Tests: 107 / 160
-Current Accuracy: 66.88%
+Model Prediction / Ground Truth: 36 / 16
+Correct Predictions / Total Tests: 110 / 160
+Current Accuracy: 68.75%
 ----------------------
 ----------------------
 Problem 161: アナキンとロクシンは今日、浜辺に行った。アナキンは10匹のヒトデ、6匹のタツノオトシゴ、3匹のクマノミを捕まえた。一方ロクシンは、アナキンよりも5匹少ないヒトデ、3匹少ないタツノオトシゴ、2匹多いクマノミを捕まえた。彼らは何匹の魚を捕まえた？
 Model Prediction / Ground Truth: 32 / 32
-Correct Predictions / Total Tests: 108 / 161
-Current Accuracy: 67.08%
+Correct Predictions / Total Tests: 111 / 161
+Current Accuracy: 68.94%
 ----------------------
 ----------------------
 Problem 162: ビー玉1袋が20ドルで、値段は2か月ごとに、元の価格の20%ごとに値上がりする。36か月後、ビー玉1袋はいくらになる？
-Model Prediction / Ground Truth: 102 / 92
-Correct Predictions / Total Tests: 108 / 162
-Current Accuracy: 66.67%
+Model Prediction / Ground Truth: 56 / 92
+Correct Predictions / Total Tests: 111 / 162
+Current Accuracy: 68.52%
 ----------------------
 ----------------------
 Problem 163: 部屋に、様々なおもちゃがある：5個の赤い車、3個のアクションフィギュア、1つの人形。人形は3つのアクションフィギュアと同じ値段で、1つの赤い車は4ドルする。アクションフィギュアが5ドルだとすると、すべてのおもちゃはいくらの価値がある？
-Model Prediction / Ground Truth: 40 / 50
-Correct Predictions / Total Tests: 108 / 163
-Current Accuracy: 66.26%
+Model Prediction / Ground Truth: 50 / 50
+Correct Predictions / Total Tests: 112 / 163
+Current Accuracy: 68.71%
 ----------------------
 ----------------------
 Problem 164: ジャッキーは自分で税金を処理するか、会計士を雇おうか決めようとしている。自分で行えば、彼女は3時間フリーランスの仕事を減らし、1時間に35ドルが失われる収入となる。会計士は90ドルかかる。会計士を雇えば、彼女は後いくら得ることができるか？
-Model Prediction / Ground Truth: 105 / 15
-Correct Predictions / Total Tests: 108 / 164
-Current Accuracy: 65.85%
+Model Prediction / Ground Truth: 15 / 15
+Correct Predictions / Total Tests: 113 / 164
+Current Accuracy: 68.90%
 ----------------------
 ----------------------
 Problem 165: エルビラは、たくさんのアクセサリと合わせ、新しいコンピューターを30歳の誕生日のプレゼントに選んだ。彼女は家族全体から1500ユーロの予算が寄付されており、彼女は服に少しお金を残せると考えている。彼女はコンピューターショップに行き、スクリーン、キーボード、マウスと合わせて1090ユーロするマシンを選ぶ。彼女はまた、157ユーロでスキャナー、CDバーナーを74ユーロ、プリンターで102ユーロで買う。彼女は衣類にいくら残すことになる？
 Model Prediction / Ground Truth: 77 / 77
-Correct Predictions / Total Tests: 109 / 165
-Current Accuracy: 66.06%
+Correct Predictions / Total Tests: 114 / 165
+Current Accuracy: 69.09%
 ----------------------
 ----------------------
 Problem 166: サンドラの近所の人は、彼女が彼らの娘の面倒を見るたびに、9個の卵が入ったかごを彼女にくれる。スペイン風フランを作るには、3個の卵が必要だ。サンドラが学校の募金活動のために、15個のスペイン風フランを作る仕事があった場合、サンドラは何回子供の面倒を見なければならない？
-Model Prediction / Ground Truth: 45 / 5
-Correct Predictions / Total Tests: 109 / 166
-Current Accuracy: 65.66%
+Model Prediction / Ground Truth: 5 / 5
+Correct Predictions / Total Tests: 115 / 166
+Current Accuracy: 69.28%
 ----------------------
 ----------------------
 Problem 167: セスはブルックの2倍年上です。2年後、彼らの年齢の合計は28になります。セスは何歳ですか？
 Model Prediction / Ground Truth: 16 / 16
-Correct Predictions / Total Tests: 110 / 167
-Current Accuracy: 65.87%
+Correct Predictions / Total Tests: 116 / 167
+Current Accuracy: 69.46%
 ----------------------
 ----------------------
 Problem 168: ジミーはイーサルが持つ金額の二倍よりも$2多く持っています。イーサルが$8あるとすると、ジミーはいくら持っていますか？
 Model Prediction / Ground Truth: 18 / 18
-Correct Predictions / Total Tests: 111 / 168
-Current Accuracy: 66.07%
+Correct Predictions / Total Tests: 117 / 168
+Current Accuracy: 69.64%
 ----------------------
 ----------------------
 Problem 169: パンチョは1日に20マイル歩きます。彼は週末のみ、10マイル歩きます。彼は週に何マイル歩きますか？
 Model Prediction / Ground Truth: 120 / 120
-Correct Predictions / Total Tests: 112 / 169
-Current Accuracy: 66.27%
+Correct Predictions / Total Tests: 118 / 169
+Current Accuracy: 69.82%
 ----------------------
 ----------------------
 Problem 170: マーチングバンドは新しい制服を注文している。各制服は、25ドルの帽子と、帽子の3倍の値段のするジャケット、帽子とジャケットの平均価格のズボンだ。制服はすべてでいくらになる？
 Model Prediction / Ground Truth: 150 / 150
-Correct Predictions / Total Tests: 113 / 170
-Current Accuracy: 66.47%
+Correct Predictions / Total Tests: 119 / 170
+Current Accuracy: 70.00%
 ----------------------
 ----------------------
 Problem 171: ジェイクは昆虫博物館まで歩いている。彼は8本足の蜘蛛を80匹、6本足の虫を90匹、それぞれ10本の足がある希少な変異体の無脊椎動物を見る。ジェイクは全部で何本の足を見る？
-Model Prediction / Ground Truth: 1280 / 1210
-Correct Predictions / Total Tests: 113 / 171
-Current Accuracy: 66.08%
+Model Prediction / Ground Truth: 1190 / 1210
+Correct Predictions / Total Tests: 119 / 171
+Current Accuracy: 69.59%
 ----------------------
 ----------------------
 Problem 172: カブースには4羽の鳥がいる。サリーツーはグラニーレッドよりも3歳年上だ。グラニーレッドはサリーフォーの2倍の年だ。サリーフォーがサリーサーティートゥーと同じ年で、サリーサーティートゥーが8歳の場合、4羽の年の合計はいくらになる？
-Model Prediction / Ground Truth: 74 / 51
-Correct Predictions / Total Tests: 113 / 172
-Current Accuracy: 65.70%
+Model Prediction / Ground Truth: 47 / 51
+Correct Predictions / Total Tests: 119 / 172
+Current Accuracy: 69.19%
 ----------------------
 ----------------------
 Problem 173: ジェシカは毎月いくら借金を払えばいいか計算しようとしている。彼女の学費ローンは毎月最低300ドルの支払いで、クレジットカードは毎月200ドルの支払い、彼女の不動産ローンは毎月最低500どるだ。ジェシカが最低額より50%多く支払いたい場合、彼女は年にいくら支払う？
-Model Prediction / Ground Truth: 6000 / 18000
-Correct Predictions / Total Tests: 113 / 173
-Current Accuracy: 65.32%
+Model Prediction / Ground Truth: 0 / 18000
+Correct Predictions / Total Tests: 119 / 173
+Current Accuracy: 68.79%
 ----------------------
 ----------------------
 Problem 174: ビリーは家族みんなで集まり行うバーベキューのためにポテトサラダを用意するため、じゃがいもの皮を剥いてカットしている。大イベントだから、60個のじゃがいもを用意する必要がある。じゃがいもはおよそ同じ大きさのため、各じゃがいもを皮剥きしてカットするために同じ時間がかかる。ビリーが1つじゃがいもの皮を剥くために1.5分かかるが、カットには5秒しかかからない。ビリーがじゃがいもを用意するにはどれくらいかかる？
 Model Prediction / Ground Truth: 95 / 95
-Correct Predictions / Total Tests: 114 / 174
-Current Accuracy: 65.52%
+Correct Predictions / Total Tests: 120 / 174
+Current Accuracy: 68.97%
 ----------------------
 ----------------------
 Problem 175: ホアンと兄弟のカルロスは、レモネードを売っている。1ガロンあたり、3ドルのレモンと2ドルの砂糖を消費する。1杯あたり0.50ドルで売り1ガロンあたり20杯作れる。25ドルの儲けがでた場合、レモンにいくら使ったことになる？
 Model Prediction / Ground Truth: 15 / 15
-Correct Predictions / Total Tests: 115 / 175
-Current Accuracy: 65.71%
+Correct Predictions / Total Tests: 121 / 175
+Current Accuracy: 69.14%
 ----------------------
 ----------------------
 Problem 176: 240人のアジア系の人のレースで、80人が日本人で残りは中国人だった。中国人チームの男子の数が60だった場合、中国人チームの女子の数は何人？
 Model Prediction / Ground Truth: 100 / 100
-Correct Predictions / Total Tests: 116 / 176
-Current Accuracy: 65.91%
+Correct Predictions / Total Tests: 122 / 176
+Current Accuracy: 69.32%
 ----------------------
 ----------------------
 Problem 177: ゼイドは彼の給料の1/4を家賃に使用し、1/3を車の燃料に仕位、残りの半分を彼の好きなチャリティに寄付している。彼は娘に毎週の出費用に200ドル、妻に食料品や家庭用品用に700ドル渡している。ゼイドが6000ドル月に稼いでる場合、これらの出費と寄付の後にいくら残っているか？
-Model Prediction / Ground Truth: 1000 / 350
-Correct Predictions / Total Tests: 116 / 177
-Current Accuracy: 65.54%
+Model Prediction / Ground Truth: 350 / 350
+Correct Predictions / Total Tests: 123 / 177
+Current Accuracy: 69.49%
 ----------------------
 ----------------------
 Problem 178: ラニは、ボーよりも4匹少ない量の蟹を持つモニクよりも10匹多く蟹を持っている。ボーが40匹の蟹を持つ場合、3人は全部でいくつの蟹を持っているか。
-Model Prediction / Ground Truth: 118 / 122
-Correct Predictions / Total Tests: 116 / 178
-Current Accuracy: 65.17%
+Model Prediction / Ground Truth: 122 / 122
+Correct Predictions / Total Tests: 124 / 178
+Current Accuracy: 69.66%
 ----------------------
 ----------------------
 Problem 179: ロイドは算数の講師で1時間に10ドル稼ぐ。彼は最初の週、5時間教えて、次の週8時間教えた。彼は最初の2週間いくら稼いだか？
 Model Prediction / Ground Truth: 130 / 130
-Correct Predictions / Total Tests: 117 / 179
-Current Accuracy: 65.36%
+Correct Predictions / Total Tests: 125 / 179
+Current Accuracy: 69.83%
 ----------------------
 ----------------------
 Problem 180: サライの学校で、2人が学級委員長に立候補している。勝者が3/4の票を取った場合、クラスで投票した生徒の総数が80だった場合、敗者が取った表の数を計算しなさい。
 Model Prediction / Ground Truth: 20 / 20
-Correct Predictions / Total Tests: 118 / 180
-Current Accuracy: 65.56%
+Correct Predictions / Total Tests: 126 / 180
+Current Accuracy: 70.00%
 ----------------------
 ----------------------
 Problem 181: 角の花屋、サンドラは、フレッドによる注文の未配達をとても不快に感じていた。サンドラは白いカーネーションの4倍の赤い薔薇を注文し注文していた。彼女はまた、ピンクのオランダカイウを白いカネーションの5倍となる、200本注文していた。サンドラは午後5時までに赤いバラを配達できなければ、サプライヤーを変えると脅した。サンドラを取引先としてキープするためには、フレッドは午後5時までに何本の赤いバラを用意する必要があるか？
 Model Prediction / Ground Truth: 160 / 160
-Correct Predictions / Total Tests: 119 / 181
-Current Accuracy: 65.75%
+Correct Predictions / Total Tests: 127 / 181
+Current Accuracy: 70.17%
 ----------------------
 ----------------------
 Problem 182: ジェーンはマークよりも2歳年上だ。2年前、マークはジャンの年の半分よりも5個上の年だった。もしジャンが30歳なら、ジェーンは何歳？
-Model Prediction / Ground Truth: 25 / 23
-Correct Predictions / Total Tests: 119 / 182
-Current Accuracy: 65.38%
+Model Prediction / Ground Truth: 23 / 23
+Correct Predictions / Total Tests: 128 / 182
+Current Accuracy: 70.33%
 ----------------------
 ----------------------
 Problem 183: 2つの陸上チームが1600メートルリレーで競っている。1つのチームあたり4名がそれぞれ400メートルずつ、または標準的なトラック1周を走る競技である。1つのチームでは能力が均等で、それぞれ400メートルをちょうど55秒間で走りきる。もう1つのチームでは能力に多少ばらつきがあり、1人目の走者は60秒間で走り切り、その後の走者は前の走者よりもそれぞれ3秒早いタイムで走る。この情報をもとにすれば、勝利するチームは何秒差で勝利するだろうか？
 Model Prediction / Ground Truth: 2 / 2
-Correct Predictions / Total Tests: 120 / 183
-Current Accuracy: 65.57%
+Correct Predictions / Total Tests: 129 / 183
+Current Accuracy: 70.49%
 ----------------------
 ----------------------
 Problem 184: ジェリーは6面ダイスを振っている。彼が3よりも大きい数を出す確率は、偶数を2回連続で出す確率よりも（何%）高いか？
 Model Prediction / Ground Truth: 25 / 25
-Correct Predictions / Total Tests: 121 / 184
-Current Accuracy: 65.76%
+Correct Predictions / Total Tests: 130 / 184
+Current Accuracy: 70.65%
 ----------------------
 ----------------------
 Problem 185: ジェナと母親は、りんご農場からりんごをいくつか摘んだ。ジェナは母親の半分の数を摘んだ。彼女の母親が20個のりんごを摘んだ場合、二人でいくつのりんごを摘んだ？
 Model Prediction / Ground Truth: 30 / 30
-Correct Predictions / Total Tests: 122 / 185
-Current Accuracy: 65.95%
+Correct Predictions / Total Tests: 131 / 185
+Current Accuracy: 70.81%
 ----------------------
 ----------------------
 Problem 186: ラッセルはペットショップで働いていて、齧歯類の動物たちにわらを与えようとしている。3つのケージにそれぞれ同じ数のネズミがいて、ネズミには1匹につき6本のわらが与えられる。それとは別に、ハムスターが1匹ずつ入れられたケージが10個あり、ハムスターには1匹あたり5本のわらが与えられる。それとは別に、うさぎ小屋があり、20本のわらがうさぎ全体に与えられる。このペットショップでわらはそれ以外の用途では使われていない。齧歯類の動物たちに合計で160本のわらが与えられたとしたら、1つのケージに入っているネズミの数は何匹か？
 Model Prediction / Ground Truth: 15 / 5
-Correct Predictions / Total Tests: 122 / 186
-Current Accuracy: 65.59%
+Correct Predictions / Total Tests: 131 / 186
+Current Accuracy: 70.43%
 ----------------------
 ----------------------
 Problem 187: マンディはベネディクトに$100借りがあります。彼らは毎月2%の利子がつくことに同意しました。マンディが3か月後に返済できるとすると、彼女はベネディクトにいくら払えばいいですか？
 Model Prediction / Ground Truth: 106 / 106
-Correct Predictions / Total Tests: 123 / 187
-Current Accuracy: 65.78%
+Correct Predictions / Total Tests: 132 / 187
+Current Accuracy: 70.59%
 ----------------------
 ----------------------
 Problem 188: ある商人が1袋20ドルで農場から小麦を何袋か買った。農場から倉庫まで小麦の袋を輸送するのに2ドルかかるとして、またその商人が小麦を1袋30ドルで売ったところ400ドルの収益を得たとしたら、商人は何袋の小麦を売ったことになるか？
-Model Prediction / Ground Truth: 13 / 50
-Correct Predictions / Total Tests: 123 / 188
-Current Accuracy: 65.43%
+Model Prediction / Ground Truth: 14 / 50
+Correct Predictions / Total Tests: 132 / 188
+Current Accuracy: 70.21%
 ----------------------
 ----------------------
 Problem 189: 友人3人が移動遊園地の入場チケット3枚を20.25ドルで買った。チケットよりも4.50ドル安い金額で食べ物を買った。1ライドあたり33ドルの乗り物に2つ乗った。すべての支出を均等に分けることにした場合、1人あたりいくら支払ったか？
-Model Prediction / Ground Truth: 27 / 34
-Correct Predictions / Total Tests: 123 / 189
-Current Accuracy: 65.08%
+Model Prediction / Ground Truth: 34 / 34
+Correct Predictions / Total Tests: 133 / 189
+Current Accuracy: 70.37%
 ----------------------
 ----------------------
 Problem 190: ジョンは3時間桃を収穫します。彼は1分で2つの桃を収穫できます。彼はいくつの桃を収穫しますか？
 Model Prediction / Ground Truth: 360 / 360
-Correct Predictions / Total Tests: 124 / 190
-Current Accuracy: 65.26%
+Correct Predictions / Total Tests: 134 / 190
+Current Accuracy: 70.53%
 ----------------------
 ----------------------
 Problem 191: アヒルは毎週、生きていくために3.5ポンドの昆虫を食べる必要がある。もしも10羽のアヒルの群れがいる場合、1日につき何ポンドの昆虫が必要になる？
-Model Prediction / Ground Truth: 35 / 5
-Correct Predictions / Total Tests: 124 / 191
-Current Accuracy: 64.92%
+Model Prediction / Ground Truth: 0 / 5
+Correct Predictions / Total Tests: 134 / 191
+Current Accuracy: 70.16%
 ----------------------
 ----------------------
 Problem 192: トムは年に10本の木を植えます。毎年彼は、1年に2本の木を伐採します。彼は50本の木から始めます。10年後、30%の木は枯れます。彼には何本の木が残りますか？
 Model Prediction / Ground Truth: 91 / 91
-Correct Predictions / Total Tests: 125 / 192
-Current Accuracy: 65.10%
+Correct Predictions / Total Tests: 135 / 192
+Current Accuracy: 70.31%
 ----------------------
 ----------------------
 Problem 193: スーは愉快な地域に住んでいます。ある週末、近所の人たちがスーにいたずらをしようと決めました。金曜日の朝、近所の人は18匹のプラスチックのピンクフラミンゴを、スーの自宅前の庭に設置しました。土曜日の朝、近所の人はフラミンゴの3分の1をどかし、白く塗り、新しく塗られた白いフラミンゴを、スーの自宅前の庭に戻しました。それから、日曜日の朝、彼らは別の18個のプラスチックのピンクフラミンゴをそのコレクションに加えました。日曜日の午後、プラスチックのピンクフラミンゴはプラスチックの白いフラミンゴより何個多いですか？
-Model Prediction / Ground Truth: 12 / 24
-Correct Predictions / Total Tests: 125 / 193
-Current Accuracy: 64.77%
+Model Prediction / Ground Truth: 24 / 24
+Correct Predictions / Total Tests: 136 / 193
+Current Accuracy: 70.47%
 ----------------------
 ----------------------
 Problem 194: バイオレッタは新しいクレヨンを購入したいです。彼女は5つの違う色が必要で、今回の購入のために$20用意しました。1本のクレヨンは$2です。彼女のおつりはいくらになりますか？
 Model Prediction / Ground Truth: 10 / 10
-Correct Predictions / Total Tests: 126 / 194
-Current Accuracy: 64.95%
+Correct Predictions / Total Tests: 137 / 194
+Current Accuracy: 70.62%
 ----------------------
 ----------------------
 Problem 195: ペンは鉛筆と消しゴムを合わせた値段と同じ価格です。鉛筆は$1.20、消しゴムは$0.30です。ペン8本はいくらになりますか？
-Model Prediction / Ground Truth: 12 / 12
-Correct Predictions / Total Tests: 127 / 195
-Current Accuracy: 65.13%
+Model Prediction / Ground Truth: 0 / 12
+Correct Predictions / Total Tests: 137 / 195
+Current Accuracy: 70.26%
 ----------------------
 ----------------------
 Problem 196: ある町で、200ポンドの人参が40件のレストランに配布されようとしている。それぞれのレストランは2ポンドの人参を受け取ることになっている。配布されずに残る人参は何ポンドか？
 Model Prediction / Ground Truth: 120 / 120
-Correct Predictions / Total Tests: 128 / 196
-Current Accuracy: 65.31%
+Correct Predictions / Total Tests: 138 / 196
+Current Accuracy: 70.41%
 ----------------------
 ----------------------
 Problem 197: ソーダ市には住民が23,786人いる。これには8,417人の男性と9,092人の女性が含まれる。人口の残りは子どもである。ソーダ市にいる子どもの数は何人か？
-Model Prediction / Ground Truth: 6277 / 6277
-Correct Predictions / Total Tests: 129 / 197
-Current Accuracy: 65.48%
+Model Prediction / Ground Truth: 277 / 6277
+Correct Predictions / Total Tests: 138 / 197
+Current Accuracy: 70.05%
 ----------------------
 ----------------------
 Problem 198: エレインは最初ポケモンカードを20枚もっていた。1か月後、その3倍の枚数のカードを新たに集めていた。2か月目には、1か月目と比べて20枚少ない数のカードを集めた。3か月目には、1か月目と2か月目で集めたポケモンカードの合計数の2倍の枚数のカードを集めた。今エレインはポケモンカードを合計何枚もっているか？
 Model Prediction / Ground Truth: 320 / 320
-Correct Predictions / Total Tests: 130 / 198
-Current Accuracy: 65.66%
+Correct Predictions / Total Tests: 139 / 198
+Current Accuracy: 70.20%
 ----------------------
 ----------------------
 Problem 199: マークは編集者である。2つの出版社向けに毎週同じ数の文を編集しており、それぞれの出版社が1文あたりに支払う金額は異なる。出版社Bは出版社Aの2倍の金額を支払う。マークは毎週合計1,000文編集し、出版社Aは彼に1文あたり5セント支払う。マークは毎週何セントもらっているか？
-Model Prediction / Ground Truth: 5000 / 7500
-Correct Predictions / Total Tests: 130 / 199
-Current Accuracy: 65.33%
+Model Prediction / Ground Truth: 750 / 7500
+Correct Predictions / Total Tests: 139 / 199
+Current Accuracy: 69.85%
 ----------------------
 ----------------------
 Problem 200: バルダーは井戸から水を得る。彼は毎朝桶5杯の水を得て、午後は毎日6杯の水を得る。もし1桶につき5リットルの水が入っているなら、彼は毎日何リットルの水を得ているか？
 Model Prediction / Ground Truth: 55 / 55
-Correct Predictions / Total Tests: 131 / 200
-Current Accuracy: 65.50%
+Correct Predictions / Total Tests: 140 / 200
+Current Accuracy: 70.00%
 ----------------------
 ----------------------
 Problem 201: ジョンは仕事で賞を受賞した。この賞は5,000ドルの一時金と給料の5%アップを伴う。もしジョンが年間を通して毎週2,000ドル稼いでいて、1年の最初の日にこの賞を受け取っていた場合、ジョンはその年いくら受け取っていたか？
-Model Prediction / Ground Truth: 110400 / 114200
-Correct Predictions / Total Tests: 131 / 201
-Current Accuracy: 65.17%
+Model Prediction / Ground Truth: 200 / 114200
+Correct Predictions / Total Tests: 140 / 201
+Current Accuracy: 69.65%
 ----------------------
 ----------------------
 Problem 202: ジョジーは10エイカーの農場でブドウを育てている。各エイカーにつき、毎年ぶどうを5トン生産できる。ブドウ1トンにつき、ワイン2バレルを製造できる。彼女の農場は毎年、何バレルのワインを製造できるか？
 Model Prediction / Ground Truth: 100 / 100
-Correct Predictions / Total Tests: 132 / 202
-Current Accuracy: 65.35%
+Correct Predictions / Total Tests: 141 / 202
+Current Accuracy: 69.80%
 ----------------------
 ----------------------
 Problem 203: カールの大好物はチーズです。彼は今週毎日お昼にサンドイッチを食べて、サンドイッチ1つ1つにチーズを2切れ使いました。その週のうち3日間は、朝ごはんにチーズ卵オムレツを食べ、オムレツ1つあたりサンドイッチよりも1切れ多いチーズを使いました。その週、何日かは大きなお皿で使ったマカロニチーズを食べ続け、これにはチーズを8切れ使いました。合計で何切れのチーズを使ったでしょうか？
 Model Prediction / Ground Truth: 31 / 31
-Correct Predictions / Total Tests: 133 / 203
-Current Accuracy: 65.52%
+Correct Predictions / Total Tests: 142 / 203
+Current Accuracy: 69.95%
 ----------------------
 ----------------------
 Problem 204: ジャネットは22本の緑色のペンがあり、10本の黄色のペンがあります。それから彼女は青色のペンを6袋、赤色のペンを2袋購入しました。青色のペンの各袋には9本、赤色のペンの各袋には6本入っていました。ジャネットには今何本のペンがありますか？
 Model Prediction / Ground Truth: 98 / 98
-Correct Predictions / Total Tests: 134 / 204
-Current Accuracy: 65.69%
+Correct Predictions / Total Tests: 143 / 204
+Current Accuracy: 70.10%
 ----------------------
 ----------------------
 Problem 205: ブリンリーはバート先生の数学の授業を受けています。バート先生はセメスターごとに6回テストを行います。彼は、各セメスターで最も低いスコアを、平均点から取り除くことを生徒に許可しています。ブリンリーがもし、最初の5回のテストで89、71、92、100そして86点を取ったら、彼女が平均で93点を取るには、6回目のテストで何点取る必要がありますか？
 Model Prediction / Ground Truth: 120 / 98
-Correct Predictions / Total Tests: 134 / 205
-Current Accuracy: 65.37%
+Correct Predictions / Total Tests: 143 / 205
+Current Accuracy: 69.76%
 ----------------------
 ----------------------
 Problem 206: マイケルは自転車に乗ることが大好きです。彼は少なくとも週に5回乗って、毎回25キロ走ります。彼はそれを4週間行い、それから週に2回だけ、しかし60キロ毎回乗ることに決めました、彼はそれを3週間続けました。マイケルは全部で何キロ走りましたか？
 Model Prediction / Ground Truth: 860 / 860
-Correct Predictions / Total Tests: 135 / 206
-Current Accuracy: 65.53%
+Correct Predictions / Total Tests: 144 / 206
+Current Accuracy: 69.90%
 ----------------------
 ----------------------
 Problem 207: ジョーのハロウィーンキャンディーの袋には25個のチョコレートバーと80個のりんご飴が入っています。それぞれのチョコレートバーはりんご飴の2倍の重さです。それぞれのチョコレートバーが40グラムの場合、ジョーのキャンディーの袋の重さは何グラムになりますか？
 Model Prediction / Ground Truth: 2600 / 2600
-Correct Predictions / Total Tests: 136 / 207
-Current Accuracy: 65.70%
+Correct Predictions / Total Tests: 145 / 207
+Current Accuracy: 70.05%
 ----------------------
 ----------------------
 Problem 208: ローズは月曜日に店に行き、ケーキを4個買いました。火曜日、彼女は違う店に行って、3倍の数のケーキを買いました。水曜日、彼女はまた別の店に行って、火曜日に買ったケーキの数の5倍の数のケーキを購入しました。3日間で何個のケーキを購入しましたか？
 Model Prediction / Ground Truth: 76 / 76
-Correct Predictions / Total Tests: 137 / 208
-Current Accuracy: 65.87%
+Correct Predictions / Total Tests: 146 / 208
+Current Accuracy: 70.19%
 ----------------------
 ----------------------
 Problem 209: 20ダースのカップは、$6000で売られている半ダースの皿の総額よりも、$1200安いです。それぞれのカップを購入する際の総額を計算しなさい。
-Model Prediction / Ground Truth: 25 / 145
-Correct Predictions / Total Tests: 137 / 209
-Current Accuracy: 65.55%
+Model Prediction / Ground Truth: 300 / 145
+Correct Predictions / Total Tests: 146 / 209
+Current Accuracy: 69.86%
 ----------------------
 ----------------------
 Problem 210: サラは自分の新しいジャケットと2足の靴を買いにいった。彼女が欲しいジャケットは30ドルで、靴は1足20ドルだった。サラは近所の子供の世話を4回してそれぞれ5ドル稼いだ。彼女の両親は彼女が芝を刈るたびに4ドルくれる。もしもサラが、子供の面倒をみ始める前にすでに10ドル貯金している場合、彼女がジャケットと靴を手に入れるためには何回芝を刈る必要がある？
 Model Prediction / Ground Truth: 10 / 10
-Correct Predictions / Total Tests: 138 / 210
-Current Accuracy: 65.71%
+Correct Predictions / Total Tests: 147 / 210
+Current Accuracy: 70.00%
 ----------------------
 ----------------------
 Problem 211: ジェリーは鶏の群れを所有している。赤鶏は1日に3つの卵を産み、白鶏は1日に5つの卵を産む。ジェリーは毎日卵を42個集める。もしも彼が赤鶏よりも2匹多い白鶏を所有していた場合、赤鶏は何匹いるか？
 Model Prediction / Ground Truth: 4 / 4
-Correct Predictions / Total Tests: 139 / 211
-Current Accuracy: 65.88%
+Correct Predictions / Total Tests: 148 / 211
+Current Accuracy: 70.14%
 ----------------------
 ----------------------
 Problem 212: ゲリーは1.5マイルと6マイルの長方形の、地元の公園の端を歩くことが好きだ。彼が1時間に3マイル歩くとすると、彼は何時間歩くことに使う？
-Model Prediction / Ground Truth: 2 / 5
-Correct Predictions / Total Tests: 139 / 212
-Current Accuracy: 65.57%
+Model Prediction / Ground Truth: 5 / 5
+Correct Predictions / Total Tests: 149 / 212
+Current Accuracy: 70.28%
 ----------------------
 ----------------------
 Problem 213: 1ドルストアで、ストーンは入ってくる100人の客を数えた。翌日、彼女は初日よりも50人多い客が入ってくる様子を数えた。3日のお客さんの数が全部で500人の場合、3日目には何人の客が入ってきたか？
 Model Prediction / Ground Truth: 250 / 250
-Correct Predictions / Total Tests: 140 / 213
-Current Accuracy: 65.73%
+Correct Predictions / Total Tests: 150 / 213
+Current Accuracy: 70.42%
 ----------------------
 ----------------------
 Problem 214: ジェリーは2つのプールを持ち、どちらも水漏れがあり、1分に4ガロンの水が出る。4分前、大きいプールには小さいプールの2倍の水が入っていた。今、大きなプールは小さいプールの4倍の水が入っている。今、小さいプールはどれだけの水が入っている？
-Model Prediction / Ground Truth: 24 / 8
-Correct Predictions / Total Tests: 140 / 214
-Current Accuracy: 65.42%
+Model Prediction / Ground Truth: 16 / 8
+Correct Predictions / Total Tests: 150 / 214
+Current Accuracy: 70.09%
 ----------------------
 ----------------------
 Problem 215: ローリーは320ドルの靴とそれに合う32ドルのベルトを買いたいと思っています。彼女はアルバイトで時給8ドルを稼いでいます。買い物ができるまでに何時間働く必要があるでしょうか？
 Model Prediction / Ground Truth: 44 / 44
-Correct Predictions / Total Tests: 141 / 215
-Current Accuracy: 65.58%
+Correct Predictions / Total Tests: 151 / 215
+Current Accuracy: 70.23%
 ----------------------
 ----------------------
 Problem 216: ジャネスは2,000ドル借りて、10%増しで返済すると約束しました。12か月間にわたり月165ドル払うとした場合、12か月後の負債残高はいくらになっていますか？
 Model Prediction / Ground Truth: 220 / 220
-Correct Predictions / Total Tests: 142 / 216
-Current Accuracy: 65.74%
+Correct Predictions / Total Tests: 152 / 216
+Current Accuracy: 70.37%
 ----------------------
 ----------------------
 Problem 217: 花瓶には4本のバラがあります。花瓶に薔薇よりも7本多いダリアが入っています。花瓶には全部で何本の花が入っていますか？
 Model Prediction / Ground Truth: 15 / 15
-Correct Predictions / Total Tests: 143 / 217
-Current Accuracy: 65.90%
+Correct Predictions / Total Tests: 153 / 217
+Current Accuracy: 70.51%
 ----------------------
 ----------------------
 Problem 218: エイドリアンの年齢はハリエットの年齢の3倍で、ハリエットはザックの年齢の半分の年齢です。もしもハリエットが今21歳だとしたら、3年後3人の平均年齢はいくつになりますか。
-Model Prediction / Ground Truth: 33 / 45
-Correct Predictions / Total Tests: 143 / 218
-Current Accuracy: 65.60%
+Model Prediction / Ground Truth: 45 / 45
+Correct Predictions / Total Tests: 154 / 218
+Current Accuracy: 70.64%
 ----------------------
 ----------------------
 Problem 219: ボードゲームで4人の生徒たちは全部で251ポイント獲得しました。ナオミは68ポイント得ました。ユリはナオミが得たポイントの半分よりも10多くポイントを獲得し、ブリアナはナオミよりも17ポイント多く獲得しました。ジョジョは何ポイント得ましたか？
-Model Prediction / Ground Truth: 54 / 54
-Correct Predictions / Total Tests: 144 / 219
-Current Accuracy: 65.75%
+Model Prediction / Ground Truth: 74 / 54
+Correct Predictions / Total Tests: 154 / 219
+Current Accuracy: 70.32%
 ----------------------
 ----------------------
 Problem 220: カルメンはクロスワードパズルを解くのに10分、数独パズルを解くのに5分かかります。週末、クロスワードパズルを3つ、数独パズルを8つ行いました。彼女はどれほどの時間をこれらのパズルに費やしたでしょうか？
 Model Prediction / Ground Truth: 70 / 70
-Correct Predictions / Total Tests: 145 / 220
-Current Accuracy: 65.91%
+Correct Predictions / Total Tests: 155 / 220
+Current Accuracy: 70.45%
 ----------------------
 ----------------------
 Problem 221: ある水槽に120リットルの水が入っています。セリーヌは彼女の小さな庭に水をまくため水槽の水を90リットル分使用しました。その後、残った水量の2倍の量の雨水を集めることができました。水槽に入っている水の量はいくらですか？
 Model Prediction / Ground Truth: 90 / 90
-Correct Predictions / Total Tests: 146 / 221
-Current Accuracy: 66.06%
+Correct Predictions / Total Tests: 156 / 221
+Current Accuracy: 70.59%
 ----------------------
 ----------------------
 Problem 222: アンディは90本のゼラニウムと、ゼラニウムより40本少ないペチュニアを植える。全部で彼はいくら植えている？
 Model Prediction / Ground Truth: 140 / 140
-Correct Predictions / Total Tests: 147 / 222
-Current Accuracy: 66.22%
+Correct Predictions / Total Tests: 157 / 222
+Current Accuracy: 70.72%
 ----------------------
 ----------------------
 Problem 223: ある会社が1年間で15,000ドルの広告費を使い、その3分の1の額を次の年に使いました。2年間で会社が払った広告費の合計はいくらですか？
-Model Prediction / Ground Truth: 20000 / 20000
-Correct Predictions / Total Tests: 148 / 223
-Current Accuracy: 66.37%
+Model Prediction / Ground Truth: 0 / 20000
+Correct Predictions / Total Tests: 157 / 223
+Current Accuracy: 70.40%
 ----------------------
 ----------------------
 Problem 224: カルロスとベンジはビーチにいます。カルロスは1時間30ドルでカヌーを借り、ベンジは1時間18ドルでバナナボートを借りました。カルロスがカヌーを3時間、ベンジがボートを5時間使用した場合、2人が合計で支払うレンタル料はいくらですか？
 Model Prediction / Ground Truth: 180 / 180
-Correct Predictions / Total Tests: 149 / 224
-Current Accuracy: 66.52%
+Correct Predictions / Total Tests: 158 / 224
+Current Accuracy: 70.54%
 ----------------------
 ----------------------
 Problem 225: アンドリューはニュージャージーからロチェスターまで車で旅行しようと計画しています。バスで移動すれば6日間かかり、車で移動すればその半分の日数で済みます。ロチェスターまでバスで移動し、ニュージャージーまで車で帰ってきたとしたら、何日間かかるでしょうか？
 Model Prediction / Ground Truth: 9 / 9
-Correct Predictions / Total Tests: 150 / 225
-Current Accuracy: 66.67%
+Correct Predictions / Total Tests: 159 / 225
+Current Accuracy: 70.67%
 ----------------------
 ----------------------
 Problem 226: ジェームズはポケモンカードを数えています。彼は30枚の炎タイプ、20枚の草タイプ、そして40枚の水タイプがあります。もしも彼が8枚の水タイプをなくし、14枚の草タイプを購入すれば、偶然選んだカードが水タイプになる確率は何になりますか（小数点以下四捨五入）？
-Model Prediction / Ground Truth: 0 / 33
-Correct Predictions / Total Tests: 150 / 226
-Current Accuracy: 66.37%
+Model Prediction / Ground Truth: 33 / 33
+Correct Predictions / Total Tests: 160 / 226
+Current Accuracy: 70.80%
 ----------------------
 ----------------------
 Problem 227: チャドは自分で作るブリトーをランチに注文しました。基本のブリトーは$6.50です。追加の肉を$2.00、追加のチーズを$1.00、$1.00アボカド、$0.25のソースを2つ注文付けます。彼はランチに追加で$3.00払ってアップグレードし、ポテトチップスと飲み物を付けました。会計時に使える$5.00のギフトカードを持っています。彼の料金は今いくらになりますか？
-Model Prediction / Ground Truth: 9 / 9
-Correct Predictions / Total Tests: 151 / 227
-Current Accuracy: 66.52%
+Model Prediction / Ground Truth: 0 / 9
+Correct Predictions / Total Tests: 160 / 227
+Current Accuracy: 70.48%
 ----------------------
 ----------------------
 Problem 228: カリンダは母親と一緒に360ピースのパズルに取り組んでいます。カリンダは1分あたり4つのピースをはめることができます。母親はカリンダの半分の数をはめることができます。このパズルを完成させるのに何時間かかるでしょうか？
 Model Prediction / Ground Truth: 1 / 1
-Correct Predictions / Total Tests: 152 / 228
-Current Accuracy: 66.67%
+Correct Predictions / Total Tests: 161 / 228
+Current Accuracy: 70.61%
 ----------------------
 ----------------------
 Problem 229: あるスイカ農園が120個の実の小さいスイカを栽培しました。アシュリンが農園を2か月後に訪れたところ、スイカの30%が収穫可能となっていたため、自宅に持って帰りました。2週間後に訪れたところ、残りのスイカの4分の3が収穫可能となっていたため、刈り取りました。そのときまだ収穫の準備ができていなかったスイカはいくつありましたか？
 Model Prediction / Ground Truth: 21 / 21
-Correct Predictions / Total Tests: 153 / 229
-Current Accuracy: 66.81%
+Correct Predictions / Total Tests: 162 / 229
+Current Accuracy: 70.74%
 ----------------------
 ----------------------
 Problem 230: マークは自分の会社のため12台の車を買いました。車は1台あたり20,000ドルです。マークは車の税金を10%払い、登録のために1台あたり1,000ドル支払いました。合計でいくら払いましたか？
-Model Prediction / Ground Truth: 276000 / 276000
-Correct Predictions / Total Tests: 154 / 230
-Current Accuracy: 66.96%
+Model Prediction / Ground Truth: 0 / 276000
+Correct Predictions / Total Tests: 162 / 230
+Current Accuracy: 70.43%
 ----------------------
 ----------------------
 Problem 231: カイリーとロバートはビーチで貝殻を集めるのが好きです。月曜日、カイリーはロバートより5つ多く貝殻を集め、ロバートは20の貝殻を集めました。火曜日、カイリーは月曜日の2倍の数の貝殻を集めました。カイリーが火曜日に集めた貝殻の数はいくつですか？
 Model Prediction / Ground Truth: 50 / 50
-Correct Predictions / Total Tests: 155 / 231
-Current Accuracy: 67.10%
+Correct Predictions / Total Tests: 163 / 231
+Current Accuracy: 70.56%
 ----------------------
 ----------------------
 Problem 232: ダックスはリンゴを摘みに畑に行き、庭の虫の数がアリの半分であると気付きました。もしもアリが50匹いたなら、畑には全部で何匹の昆虫がいますか。
 Model Prediction / Ground Truth: 75 / 75
-Correct Predictions / Total Tests: 156 / 232
-Current Accuracy: 67.24%
+Correct Predictions / Total Tests: 164 / 232
+Current Accuracy: 70.69%
 ----------------------
 ----------------------
 Problem 233: 36匹のペンギンが雪の中で日光浴しています。うち3分の1が水にもぐり泳ぎ始めます。もう3分の1は洞窟に入り食料を食べます。まだ日光浴しているペンギンは何匹いますか？
 Model Prediction / Ground Truth: 12 / 12
-Correct Predictions / Total Tests: 157 / 233
-Current Accuracy: 67.38%
+Correct Predictions / Total Tests: 165 / 233
+Current Accuracy: 70.82%
 ----------------------
 ----------------------
 Problem 234: スティーブはもっとトマトを食べようと決意し、自分のチェリートマトの栽培を始めることにしました。彼はガールフレンドの2倍の量のトマトを食べます。彼は1日あたり6個のトマトを食べます。1つのつるから1週間あたり3つのトマトを作れるとした場合、スティーブは何本のつるが必要でしょうか？
-Model Prediction / Ground Truth: 14 / 21
-Correct Predictions / Total Tests: 157 / 234
-Current Accuracy: 67.09%
+Model Prediction / Ground Truth: 21 / 21
+Correct Predictions / Total Tests: 166 / 234
+Current Accuracy: 70.94%
 ----------------------
 ----------------------
 Problem 235: ジョンは友達と一緒にピザを注文しました。友達は合計20人いて、1人あたり4スライス食べられるようにしたいと考えています。ピザのスライスは1枚あたり8スライスです。ジョンはピザを何枚頼む必要がありますか？
 Model Prediction / Ground Truth: 10 / 10
-Correct Predictions / Total Tests: 158 / 235
-Current Accuracy: 67.23%
+Correct Predictions / Total Tests: 167 / 235
+Current Accuracy: 71.06%
 ----------------------
 ----------------------
 Problem 236: ラムはたくさんのペンを使います。5本の空のペンのインクを集めて1本のペンにすることでお金を節約できると気付きました。25本のペンを買って、インクが少なくなったときにそれを集めて1本のペンにした場合、合計何本のペンを使用できることになりますか？
-Model Prediction / Ground Truth: 5 / 31
-Correct Predictions / Total Tests: 158 / 236
-Current Accuracy: 66.95%
+Model Prediction / Ground Truth: 6 / 31
+Correct Predictions / Total Tests: 167 / 236
+Current Accuracy: 70.76%
 ----------------------
 ----------------------
 Problem 237: ジョニーはお小遣いの20ドルに10ドルを新たに加えた後、このお金を投資して1年間で3倍に増やしました。1年たった時点でジョニーはいくらもっていましたか？
-Model Prediction / Ground Truth: 90 / 90
-Correct Predictions / Total Tests: 159 / 237
-Current Accuracy: 67.09%
+Model Prediction / Ground Truth: 120 / 90
+Correct Predictions / Total Tests: 167 / 237
+Current Accuracy: 70.46%
 ----------------------
 ----------------------
 Problem 238: メアリーはジョーンより2歳若く、ジョーンはジェサより5歳年上です。ジェサが20歳の場合、3人の年齢の合計は何歳ですか？
 Model Prediction / Ground Truth: 68 / 68
-Correct Predictions / Total Tests: 160 / 238
-Current Accuracy: 67.23%
+Correct Predictions / Total Tests: 168 / 238
+Current Accuracy: 70.59%
 ----------------------
 ----------------------
 Problem 239: 学校の講堂に1,000人の学生がいました。講堂には3つの出入口A、B、Cがありました。出入口Aから30%の学生が退出して、残りの学生の5分の3が出入口Bから退出して、残りの学生が出入口Cから退出した場合、出入口Cから退出した学生の数は何人だったか、計算してください。
-Model Prediction / Ground Truth: 280 / 280
-Correct Predictions / Total Tests: 161 / 239
-Current Accuracy: 67.36%
+Model Prediction / Ground Truth: 4 / 280
+Correct Predictions / Total Tests: 168 / 239
+Current Accuracy: 70.29%
 ----------------------
 ----------------------
 Problem 240: ジェイムズはロバートより6つ多くキャンディをもっています。ジョンはロバートの2倍の数のキャンディをもっています。ジョンが54個のキャンディをもっている場合、ジョンはジェイムズに比べてキャンディを何個多くもっていますか？
 Model Prediction / Ground Truth: 21 / 21
-Correct Predictions / Total Tests: 162 / 240
-Current Accuracy: 67.50%
+Correct Predictions / Total Tests: 169 / 240
+Current Accuracy: 70.42%
 ----------------------
 ----------------------
 Problem 241: ドリーは2冊の本をもっています。パンドラは1冊もっています。ドリーとパンドラが自分の本に加えて相手の本も読んだとしたら、2人で合計何冊読んだことになりますか？
 Model Prediction / Ground Truth: 3 / 6
-Correct Predictions / Total Tests: 162 / 241
-Current Accuracy: 67.22%
+Correct Predictions / Total Tests: 169 / 241
+Current Accuracy: 70.12%
 ----------------------
 ----------------------
 Problem 242: マイクには5人の文通相手がいます。そのうち2人とは文通を止めました。文通相手はそれぞれ1週間に5枚からなる手紙を2回送ってきます。マイクは同じ要領で返信します。マイクは1枚あたり6分で書くことができます。1週間あたり何時間を手紙の執筆に費やしていますか？
-Model Prediction / Ground Truth: 180 / 3
-Correct Predictions / Total Tests: 162 / 242
-Current Accuracy: 66.94%
+Model Prediction / Ground Truth: 3 / 3
+Correct Predictions / Total Tests: 170 / 242
+Current Accuracy: 70.25%
 ----------------------
 ----------------------
 Problem 243: ジェイソンは1か月あたり1,000分間の通話ができる契約プランに入っています。毎日上司と15分間電話し、それ以外の人に対して今月は300分電話しました。今月が30日までの月だった場合、今月はあと何分間の通話が可能ですか？
 Model Prediction / Ground Truth: 250 / 250
-Correct Predictions / Total Tests: 163 / 243
-Current Accuracy: 67.08%
+Correct Predictions / Total Tests: 171 / 243
+Current Accuracy: 70.37%
 ----------------------
 ----------------------
 Problem 244: グリフィンはフライドポテトを24本もっていましたが、カイルがそのうち5本を取りました。ビリーはカイルの2倍の数を取りました。ジンジャーはグリフィンに何本かあげましたが、コルビーがカイルより3本少ない数のフライドポテトをグリフィンから取りました。最終的にグリフィンが27本のフライドポテトをもっていた場合、ジンジャーがグリフィンにあげた数は何本ですか？
-Model Prediction / Ground Truth: 20 / 20
-Correct Predictions / Total Tests: 164 / 244
-Current Accuracy: 67.21%
+Model Prediction / Ground Truth: 3 / 20
+Correct Predictions / Total Tests: 171 / 244
+Current Accuracy: 70.08%
 ----------------------
 ----------------------
 Problem 245: ある水族館にカタツムリが4匹います。別の水族館にはカタツムリが32匹います。両者の差は、両方の水族館にいる魚の合計数の2倍です。それぞれの水族館に同じ数の魚がいるとすると、それぞれの水族館にいる魚は何匹ずつでしょうか？
-Model Prediction / Ground Truth: 36 / 7
-Correct Predictions / Total Tests: 164 / 245
-Current Accuracy: 66.94%
+Model Prediction / Ground Truth: 14 / 7
+Correct Predictions / Total Tests: 171 / 245
+Current Accuracy: 69.80%
 ----------------------
 ----------------------
 Problem 246: ジーンはメイクアップアーティストから1時間250ドルを請求されます。出演している映画では高額のメイクアップが必要とされていて、メイクアップは毎回6時間かかり、それを1週間に4回行わないといけません。映画は5週間で終わりました。映画が完了した後、多額の支払いになったので、メイクアップアーティストはジーンに10%の割引を与えました。ジーンはいくら払いましたか？
 Model Prediction / Ground Truth: 27000 / 27000
-Correct Predictions / Total Tests: 165 / 246
-Current Accuracy: 67.07%
+Correct Predictions / Total Tests: 172 / 246
+Current Accuracy: 69.92%
 ----------------------
 ----------------------
 Problem 247: イザベルは妹の誕生日会に向けパーティー用品を購入しました。彼女はケーキの材料に$12、誕生日プレゼントに$43、飾り付けに$15、招待カードに$4、会に参加するゲストのお土産バッグに$22使いました。彼女は両親2人と、費用を均等に3等分します。それぞれ何ドル払いましたか？
 Model Prediction / Ground Truth: 32 / 32
-Correct Predictions / Total Tests: 166 / 247
-Current Accuracy: 67.21%
+Correct Predictions / Total Tests: 173 / 247
+Current Accuracy: 70.04%
 ----------------------
 ----------------------
 Problem 248: シェフはタマネギを4袋買いました。それぞれ50ポンドの重さがあります。タマネギ1ポンドは$1.50です。シェフはいくら使いましたか？
-Model Prediction / Ground Truth: 300 / 300
-Correct Predictions / Total Tests: 167 / 248
-Current Accuracy: 67.34%
+Model Prediction / Ground Truth: 0 / 300
+Correct Predictions / Total Tests: 173 / 248
+Current Accuracy: 69.76%
 ----------------------
 
 --- FINAL TEST SUMMARY ---
 Total Samples Tested: 249
-Correct Predictions: 167
-Final Accuracy: 67.34%
+Correct Predictions: 173
+Final Accuracy: 69.76%
 ----------------------
