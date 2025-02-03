@@ -16,22 +16,24 @@ cot_prompt = USER_CHAT_TEMPLATE.format(
 # propose_prompt
 propose_prompt = USER_CHAT_TEMPLATE.format(
     prompt="Imagina que estás compuesto por {n} matemáticos independientes que hablan {lang}, "
-           "cada uno con una perspectiva única sobre cómo abordar un problema matemático de varios pasos.\n\n"
-           "Antes de responder con tu razonamiento, cada matemático debe comenzar su respuesta con "
-           "'Matemático i: ', donde 'i' puede ser 1, 2 o 3.\n\n"
-           "Basándose en la pregunta dada y el razonamiento actual, cada matemático generará de manera independiente "
-           "un siguiente paso único, creativo y válido para resolver el problema. "
-           "Cada paso debe diferir en el enfoque, utilizando diferentes métodos matemáticos, "
-           "desgloses del problema o representaciones alternativas.\n\n"
-           "Cada matemático explicará claramente y de manera concisa su razonamiento antes de proponer su siguiente paso. "
-           "Solo agregarán su primer paso, permitiendo discusión y refinamiento posteriores.\n\n"
-           "Si no hay contexto previo, esto marca el inicio del razonamiento, y los matemáticos propondrán "
-           "diferentes formas de comenzar a resolver el problema.\n\n"
-           "Este proceso continúa paso a paso hasta que se alcance una respuesta definitiva.\n\n"
+           "cada uno con una perspectiva única sobre cómo resolver un problema matemático de varios pasos.\n\n"
+           "Cada matemático propondrá un paso concreto para resolver el problema. "
+           "El paso debe incluir:\n"
+           "- Una **explicación concisa** de por qué este paso es necesario y cómo ayuda a resolver el problema.\n"
+           "- Una **ecuación clara** o un cálculo que implemente este paso.\n"
+           "- Una breve indicación de cuál podría ser el siguiente paso lógico.\n\n"
+           "Cada matemático debe comenzar su respuesta con 'Pensamiento i: ', donde 'i' es 1, 2, ... {n}.\n\n"
+           "Las respuestas deben estar escritas **en una sola línea** con el siguiente formato:\n\n"
+           "La expresión matemática termina con un valor calculado.\n\n"
+           "'Pensamiento i: Propuesta. Ecuación: [Expresión matemática]. Siguiente paso: Próxima acción.'\n\n"
+           "Cada matemático debe abordar el problema de manera independiente, considerando diferentes métodos o descomposiciones.\n\n"
+           "Si este es el primer paso, cada matemático decidirá de manera independiente la mejor forma de empezar.\n"
+           "Si existe un contexto previo, construirán sobre el proceso de razonamiento actual, asegurando un progreso continuo.\n\n"
+           "Este proceso continúa hasta que se alcance una respuesta definitiva, con cada paso refinando la solución.\n\n"
 ) + "---\n" \
     "Pregunta: {question}\n\n" \
-    "Contexto (razonamiento previo, si lo hay):\n{current_thought_process}\n\n" \
-    "Lista de posibles pasos futuros (cada línea representa la perspectiva de un solo matemático):\n" \
+    "Contexto (proceso de pensamiento previo, si lo hay):\n{current_thought_process}\n\n" \
+    "Pasos concretos propuestos por tres matemáticos:\n" \
     + MODEL_CHAT_TEMPLATE
 
 # value_prompt

@@ -15,25 +15,26 @@ cot_prompt = USER_CHAT_TEMPLATE.format(
 
 # propose_prompt
 propose_prompt = USER_CHAT_TEMPLATE.format(
-    prompt="Fikiria kuwa unajumuisha wanahisabati huru {n} wanaozungumza {lang}, "
-           "kila mmoja akiwa na mtazamo wa kipekee juu ya jinsi ya kushughulikia tatizo la hisabati lenye hatua nyingi.\n\n"
-           "Kabla ya kutoa mchakato wako wa mawazo, kila mwanahisabati anapaswa kuanza jibu lake na "
-           "'Mwanahisabati i: ', ambapo 'i' inaweza kuwa 1, 2, au 3.\n\n"
-           "Kutokana na swali lililotolewa na mchakato wa mawazo wa sasa, kila mwanahisabati atatengeneza hatua moja "
-           "ya kipekee, ya ubunifu, na sahihi ya kuelekea kwenye suluhisho. "
-           "Kila hatua inapaswa kuwa na mbinu tofauti, ikitumia njia tofauti za kihisabati, uharibifu wa tatizo, "
-           "au uwakilishi mbadala.\n\n"
-           "Kila mwanahisabati atatoa maelezo wazi na mafupi ya mantiki yao kabla ya kupendekeza hatua yao inayofuata. "
-           "Watakubali kuongeza hatua yao ya kwanza pekee, kuruhusu mjadala zaidi na uboreshaji baadaye.\n\n"
-           "Ikiwa hakuna muktadha wa awali, hii inaashiria mwanzo wa mchakato wa mawazo, na wanahisabati watapendekeza "
-           "njia tofauti za kuanza kutatua tatizo.\n\n"
-           "Mchakato huu utaendelea hatua kwa hatua hadi jibu la mwisho lipatikane.\n\n"
+    prompt="Fikiria kuwa umeundwa na {n} wanahisabati huru wanaozungumza {lang}, "
+           "kila mmoja akiwa na mtazamo wa kipekee wa jinsi ya kutatua tatizo la hisabati lenye hatua nyingi.\n\n"
+           "Kila mwanahisabati atapendekeza hatua mahususi kuelekea kutatua tatizo hilo. "
+           "Hatua hiyo lazima ijumuishe:\n"
+           "- **Maelezo mafupi** ya kwa nini hatua hii ni muhimu na jinsi inavyosaidia kutatua tatizo.\n"
+           "- **Ulinganisho wazi** au hesabu inayotekeleza hatua hii.\n"
+           "- Maelezo mafupi ya nini kinaweza kuwa hatua inayofuata kimantiki.\n\n"
+           "Kila mwanahisabati anapaswa kuanza jibu lake na 'Wazo i: ', ambapo 'i' ni 1, 2, ... {n}.\n\n"
+           "Majibu yanapaswa kuandikwa **katika mstari mmoja** kwa muundo ufuatao:\n\n"
+           "Ufafanuzi wa hisabati unamalizika kwa thamani iliyokokotolewa.\n\n"
+           "'Wazo i: Pendekezo. Ulinganisho: [Ufafanuzi wa kihisabati]. Hatua inayofuata: Hatua inayofuata.'\n\n"
+           "Kila mwanahisabati anapaswa kushughulikia tatizo kwa uhuru, akizingatia mbinu tofauti au njia mbadala.\n\n"
+           "Ikiwa hii ni hatua ya kwanza, kila mwanahisabati ataamua kwa uhuru njia bora ya kuanza.\n"
+           "Ikiwa kuna muktadha wa awali, watajenga juu ya mchakato wa mawazo uliopo, kuhakikisha maendeleo yanaendelea.\n\n"
+           "Mchakato huu unaendelea hadi jibu la mwisho lipatikane, ambapo kila hatua inachangia kuboresha suluhisho.\n\n"
 ) + "---\n" \
     "Swali: {question}\n\n" \
     "Muktadha (mchakato wa mawazo wa awali, ikiwa upo):\n{current_thought_process}\n\n" \
-    "Orodha ya hatua zinazowezekana zijazo (kila mstari unawakilisha mtazamo wa mwanahisabati mmoja):\n" \
+    "Hatua mahususi zilizopendekezwa na wanahisabati watatu:\n" \
     + MODEL_CHAT_TEMPLATE
-
 # value_prompt
 value_prompt = USER_CHAT_TEMPLATE.format(
     prompt="Tathmini ikiwa hatua ya uamuzi iliyotolewa ina mchango wa maana katika kutatua tatizo. "

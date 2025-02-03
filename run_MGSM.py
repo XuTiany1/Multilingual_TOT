@@ -14,7 +14,7 @@ args = argparse.Namespace(
     method_generate='propose', 
     method_evaluate='value', 
     method_select='greedy', 
-    n_generate_sample=2, 
+    n_generate_sample=3, 
     n_evaluate_sample=3, 
     n_select_sample=5
 )
@@ -27,6 +27,7 @@ correct_count = 0
 log_dir = f"logs/MGSM/{args.lang}"
 os.makedirs(log_dir, exist_ok=True)
 
+# languages = ['en', 'es', 'fr', 'de', 'ru', 'zh', 'ja', 'th', 'sw', 'bn', 'te']
 languages = ['en', 'es', 'fr', 'de', 'ru', 'zh', 'ja', 'th', 'sw', 'bn', 'te']
 for lang in languages:
 
@@ -54,8 +55,8 @@ for lang in languages:
         print(f"\n--- Running Test {idx} ---")
 
         # Run model
-        # ys, infos, final_answers, model_output = solve(args, task, idx, to_print=False)
-        model_output, infos = naive_solve(args, task, idx, to_print=False)
+        ys, infos, final_answers, model_output = solve(args, task, idx, to_print=False)
+        # model_output, infos = naive_solve(args, task, idx, to_print=False)
 
         # Extract ground truth and model answer
         ground_truth_answer = task.ground_truth_answer(idx)

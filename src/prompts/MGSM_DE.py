@@ -15,23 +15,25 @@ cot_prompt = USER_CHAT_TEMPLATE.format(
 
 # propose_prompt
 propose_prompt = USER_CHAT_TEMPLATE.format(
-    prompt="Stell dir vor, du bestehst aus {n} unabhängigen Mathematikern, die {lang} sprechen, "
-           "und jeder hat eine einzigartige Perspektive darauf, wie ein mehrstufiges mathematisches Problem gelöst werden kann.\n\n"
-           "Bevor du mit deinem Denkprozess antwortest, sollte jeder Mathematiker seine Antwort mit "
-           "'Mathematiker i: ' beginnen, wobei 'i' 1, 2 oder 3 sein kann.\n\n"
-           "Basierend auf der gegebenen Frage und dem aktuellen Denkprozess wird jeder Mathematiker unabhängig "
-           "einen einzigartigen, kreativen und gültigen nächsten Schritt zur Lösung des Problems vorschlagen. "
-           "Jeder Schritt sollte sich in der Herangehensweise unterscheiden, indem verschiedene mathematische Methoden, "
-           "Problembrechungen oder alternative Darstellungen genutzt werden.\n\n"
-           "Jeder Mathematiker erklärt seine Überlegungen klar und prägnant, bevor er seinen nächsten Schritt vorschlägt. "
-           "Sie fügen nur ihren ersten Schritt hinzu, sodass eine weitere Diskussion und Verfeinerung möglich ist.\n\n"
-           "Falls kein vorheriger Kontext existiert, markiert dies den Beginn des Denkprozesses, und die Mathematiker schlagen "
-           "verschiedene Möglichkeiten vor, das Problem zu lösen.\n\n"
-           "Dieser Prozess wird Schritt für Schritt fortgesetzt, bis eine endgültige Antwort erreicht wird.\n\n"
+    prompt="Stellen Sie sich vor, Sie bestehen aus {n} unabhängigen Mathematikern, die {lang} sprechen, "
+           "jeder mit einer einzigartigen Perspektive darauf, wie man ein mehrstufiges mathematisches Problem löst.\n\n"
+           "Jeder Mathematiker wird einen konkreten Schritt zur Lösung des Problems vorschlagen. "
+           "Der Schritt muss Folgendes beinhalten:\n"
+           "- Eine **prägnante Erklärung**, warum dieser Schritt notwendig ist und wie er zur Lösung des Problems beiträgt.\n"
+           "- Eine **klare Gleichung** oder Berechnung, die diesen Schritt umsetzt.\n"
+           "- Eine kurze Angabe, was der nächste logische Schritt sein könnte.\n\n"
+           "Jeder Mathematiker sollte seine Antwort mit 'Gedanke i: ' beginnen, wobei 'i' 1, 2, ... {n} ist.\n\n"
+           "Antworten müssen **in einer einzigen Zeile** im folgenden Format geschrieben werden:\n\n"
+           "Der mathematische Ausdruck endet mit einem berechneten Wert.\n\n"
+           "'Gedanke i: Vorschlag. Gleichung: [Mathematischer Ausdruck]. Nächster Schritt: Nächste Aktion.'\n\n"
+           "Jeder Mathematiker sollte das Problem unabhängig angehen und verschiedene Methoden oder Zerlegungen in Betracht ziehen.\n\n"
+           "Falls dies der erste Schritt ist, entscheidet jeder Mathematiker unabhängig über den besten Einstieg.\n"
+           "Falls ein vorheriger Kontext existiert, bauen sie auf dem aktuellen Denkprozess auf, um kontinuierlichen Fortschritt zu gewährleisten.\n\n"
+           "Dieser Prozess wird fortgesetzt, bis eine endgültige Antwort erreicht ist, wobei jeder Schritt die Lösung weiter verfeinert.\n\n"
 ) + "---\n" \
     "Frage: {question}\n\n" \
     "Kontext (bisheriger Denkprozess, falls vorhanden):\n{current_thought_process}\n\n" \
-    "Liste möglicher nächster Schritte (jede Zeile stellt die Perspektive eines einzelnen Mathematikers dar):\n" \
+    "Konkrete Schritte, die von drei Mathematikern vorgeschlagen wurden:\n" \
     + MODEL_CHAT_TEMPLATE
 
 # value_prompt
