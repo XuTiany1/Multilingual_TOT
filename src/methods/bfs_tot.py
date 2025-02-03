@@ -2,7 +2,6 @@ import itertools
 import re
 import numpy as np
 from functools import partial
-from src.tasks.MGSM import MgsmTask
 from src.models.gemma import *
 
 
@@ -34,7 +33,7 @@ def extract_thoughts(response):
 
 ##########################################################################
 # EVALUATIVE PROMPTS
-def get_value(task, x, y, n_evaluate_sample, cache_value=True):
+def get_value(task, x, y, n_evaluate_sample, cache_value=True, language=''):
     """
     task - task object
     x - input
@@ -42,7 +41,7 @@ def get_value(task, x, y, n_evaluate_sample, cache_value=True):
     n_evaluate_sample - number of evaluations for y
     cache_value - boolean to store value
     """
-    value_prompt = task.value_prompt_wrap(x, y)
+    value_prompt = task.value_prompt_wrap(x, y, language)
     
     # Cache check
     if cache_value and value_prompt in task.value_cache:
@@ -59,7 +58,7 @@ def get_value(task, x, y, n_evaluate_sample, cache_value=True):
     return value
 
 
-def get_values(task, x, ys, n_evaluate_sample, cache_value=True):
+def get_values(task, x, ys, n_evaluate_sample, cache_value=True, language=''):
     """
     task - task object
     x - input
@@ -75,7 +74,7 @@ def get_values(task, x, ys, n_evaluate_sample, cache_value=True):
         if y in local_value_cache:  # Avoid duplicate evaluation
             value = 0
         else:
-            value = get_value(task, x, y, n_evaluate_sample, cache_value=cache_value)
+            value = get_value(task, x, y, n_evaluate_sample, cache_value=cache_value, language=language)
             local_value_cache[y] = value
         values.append(value)
     
@@ -104,7 +103,7 @@ def get_proposals(task, x, y, num_generate_sample, language):
     """
     y_cleaned = re.sub(r"^\s*Thought \d+: ", "", y.strip())
 
-    propose_prompt = task.propose_prompt_wrap(num_generate_sample, language, x, y_cleaned)
+    propose_prompt = task.propose_prompt_wrap(num_generate_sample, x, y_cleaned, language)
     
     # Generate proposals using Gemma
     proposals = gemma_generate(prompt=propose_prompt, max_tokens=700)
@@ -123,7 +122,7 @@ def get_proposals(task, x, y, num_generate_sample, language):
     return [y_cleaned + _ + '\n' for _ in proposals]
 
 
-def get_samples(task, x, y, n_generate_sample, prompt_sample, stop):
+def get_samples(task, x, y, n_generate_sample, prompt_sample, stop, language):
     """
     task - task object
     x - input
@@ -134,9 +133,9 @@ def get_samples(task, x, y, n_generate_sample, prompt_sample, stop):
     """
 
     if prompt_sample == 'standard':
-        prompt = task.standard_prompt_wrap(x)
+        prompt = task.standard_prompt_wrap(x=x, lang=language)
     elif prompt_sample == 'cot':
-        prompt = task.cot_prompt_wrap(x)
+        prompt = task.cot_prompt_wrap(task, x=x, lang=language)
     else:
         raise ValueError(f'prompt_sample {prompt_sample} not recognized')
     
@@ -148,7 +147,7 @@ def get_samples(task, x, y, n_generate_sample, prompt_sample, stop):
 
 ##########################################################################
 # FORCE OUTPUT PROMPT
-def get_answers(task, x, ys):
+def get_answers(task, x, ys, language):
     """
     task - task object
     x - input
@@ -167,16 +166,16 @@ def get_answers(task, x, ys):
         if y in local_answer_cache:  # Avoid duplicate evaluation
             continue
         else:
-            final_answer_prompt = task.force_output_prompt_wrap(x, y)
+            final_answer_prompt = task.force_output_prompt_wrap(x, y, language)
             answer = gemma_generate(prompt=final_answer_prompt, max_tokens=500)
             local_answer_cache[y] = answer
         answers.append(answer)
     
     return answers
 
-def finalize_answer(task, x, ys):
+def finalize_answer(task, x, ys, language):
 
-    final_judgement_prompt = task.final_judgement_wrap(x, ys)
+    final_judgement_prompt = task.final_judgement_wrap(x, ys, language)
     answer = gemma_generate(prompt=final_judgement_prompt, max_tokens=100)
 
     return answer
@@ -206,7 +205,8 @@ def solve(args, task, idx, to_print=True):
                                   y, 
                                   args.n_generate_sample, 
                                   prompt_sample=args.prompt_sample, 
-                                  stop=task.stops[step]) for y in ys]
+                                  stop=task.stops[step],
+                                  language = args.lang) for y in ys]
         # ToT
         elif args.method_generate == 'propose':
 
@@ -233,7 +233,7 @@ def solve(args, task, idx, to_print=True):
             values = get_votes(task, x, new_ys, args.n_evaluate_sample)
         
         elif args.method_evaluate == 'value':
-            values = get_values(task, x, new_ys, args.n_evaluate_sample)
+            values = get_values(task, x, new_ys, args.n_evaluate_sample, cache_value=True, language=args.lang)
         
         elif args.method_evaluate == 'bypass':
             continue
@@ -272,13 +272,13 @@ def solve(args, task, idx, to_print=True):
 
     ######################
     # Force the final output
-    final_answers = get_answers(task, x, ys)
+    final_answers = get_answers(task, x, ys, args.lang)
 
     if to_print: 
         print(ys)
         print(f"final candidates: {final_answers}")
     
-    model_output = finalize_answer(task, x, final_answers)
+    model_output = finalize_answer(task, x, final_answers, args.lang)
 
     return ys, {'steps': infos}, final_answers, model_output
 
@@ -305,11 +305,13 @@ def naive_solve(args, task, idx, to_print=True):
     x = task.get_input(idx)
 
     # Generate samples using Gemma
-    ys = get_samples(task, x, '', args.n_generate_sample, args.prompt_sample, stop=None)
+    ys = get_samples(task, x, '', args.n_generate_sample, args.prompt_sample, stop=None, language=args.lang)
 
     if args.prompt_sample == 'cot':
-        match = re.search(r'The answer is (\d+)', ys)
-        ys = int(match.group(1)) if match else None
+        #match = re.search(r'The answer is (\d+)', ys)
+        numbers = re.findall(r'\d+', ys)  # Find all numbers in the text
+        #return int(numbers[-1]) if numbers else None  # Return the last number found
+        ys = int(numbers[-1]) if numbers else None
 
     if to_print:
         print(f"Generated response: {ys}")
