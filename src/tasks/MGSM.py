@@ -4,7 +4,7 @@ import sympy
 import pandas as pd
 from src.tasks.task import Task, DATA_PATH
 from datasets import load_dataset
-from src.prompts.MGSM_ES import *
+from src.prompts import load_mgsm_module
 
 
 class MgsmTask(Task):
@@ -120,25 +120,28 @@ class MgsmTask(Task):
     ##################
 
     @staticmethod
-    def standard_prompt_wrap(x: str) -> str:
+    def standard_prompt_wrap(self, x: str, lang: str) -> str:
+        mgsm = load_mgsm_module(lang)
 
-        prompt = standard_prompt.format(
+        prompt = mgsm.standard_prompt.format(
             question = x
         )
         return prompt
 
     @staticmethod
-    def cot_prompt_wrap(x: str) -> str:
+    def cot_prompt_wrap(self, x: str, lang: str) -> str:
+        mgsm = load_mgsm_module(lang)
 
-        prompt = cot_prompt.format(
+        prompt = mgsm.cot_prompt.format(
             question = x
         )
         return prompt
 
     @staticmethod
-    def propose_prompt_wrap(num_mathematicians: int, lang: str, x: str, y: str = '') -> str:
+    def propose_prompt_wrap(num_mathematicians: int, x: str, y: str = '', lang: str = '') -> str:
+        mgsm = load_mgsm_module(lang)
 
-        prompt = propose_prompt.format(
+        prompt = mgsm.propose_prompt.format(
             n = num_mathematicians,
             lang = lang,
             question = x,
@@ -149,8 +152,10 @@ class MgsmTask(Task):
 
 
     @staticmethod
-    def value_prompt_wrap(x:str, y: str) -> str:
-        prompt = value_prompt.format(
+    def value_prompt_wrap(x:str, y: str, lang: str) -> str:
+        mgsm = load_mgsm_module(lang)
+
+        prompt = mgsm.value_prompt.format(
             question = x,
             curr_candidate = y
         )
@@ -213,8 +218,10 @@ class MgsmTask(Task):
         return 0.5  # Default if no valid judgment is found
     
     @staticmethod
-    def force_output_prompt_wrap(x: str, y: str):
-        prompt = force_output_prompt.format(
+    def force_output_prompt_wrap(x: str, y: str, lang: str):
+        mgsm = load_mgsm_module(lang)
+
+        prompt = mgsm.force_output_prompt.format(
             question = x,
             context = y
         )
@@ -224,8 +231,10 @@ class MgsmTask(Task):
 
 
     @staticmethod
-    def final_judgement_wrap(x: str, ys: str):
-        prompt = final_judge_prompt.format(
+    def final_judgement_wrap(self, x: str, ys: str, lang: str):
+        mgsm = load_mgsm_module(lang)
+
+        prompt = mgsm.final_judge_prompt.format(
             question=x,
             candidate_answers=ys
         )
